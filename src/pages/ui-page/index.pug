@@ -5,8 +5,11 @@ html(lang="ru")
     head
         title UI for test
         meta(name="viewport" content="width=device-width, user-scalable=no")
-        link(rel="stylesheet" href="index.css")
+        link(rel="stylesheet" type="text/css" href="index.css")
+        link(rel="stylesheet" href="../../assets/fonts/Montserrat-Bold/fonts.css" type="text/css" charset="utf-8")
+        link(rel="stylesheet" href="../../assets/fonts/Montserrat-Regular/fonts.css" type="text/css" charset="utf-8")
+        link(rel="stylesheet" href="../../assets/fonts/Quicksand-Bold/fonts.css" type="text/css" charset="utf-8")
     +b.BODY
         include ../../components/logo/logo.pug
-        +logo('disabled')
-        +logo
+        include ../../components/button/button.pug
+        +button('','text')
