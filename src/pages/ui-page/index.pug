@@ -1,0 +1,12 @@
+include ../../../bemto/bemto.pug
+
+doctype html
+html(lang="ru")
+    head
+        title UI for test
+        meta(name="viewport" content="width=device-width, user-scalable=no")
+        link(rel="stylesheet" href="index.css")
+    +b.BODY
+        include ../../components/logo/logo.pug
+        +logo('disabled')
+        +logo

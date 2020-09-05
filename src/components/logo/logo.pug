@@ -1,0 +1,5 @@
+mixin logo(name)
+    if(name == 'disabled')
+        +b.IMG.logo_disabled(src="../../components/logo/_disabled/logo_disabled.svg")
+    else
+        +b.IMG.logo(src="../../components/logo/logo.svg")
