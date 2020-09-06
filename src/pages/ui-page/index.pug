@@ -12,4 +12,13 @@ html(lang="ru")
     +b.BODY
         include ../../components/logo/logo.pug
         include ../../components/button/button.pug
-        +button('','text')
+        include ../../components/button/_long/_with-arrow/button_with-arrow.pug
+        +button('button button_short','click me')
+        +button('button button_short button_light','click me')
+        +button('button button_long','click me')
+        +button('button button_long button_long_with-arrow','click me')
+        +button('button button_short button_disabled','click me')
+        +button('button button_short button_light button_disabled-light','click me')
+        +button('button button_without-border_dark','click me')
+        +button('button button_without-border','click me')
+        +button_with-arrow('click me')

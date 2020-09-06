@@ -8,21 +8,93 @@
   height: 45px;
 }
 
+/*	==========================================================================	*/
+/*	BUTTONS                                                                  	*/
+/*	==========================================================================	*/ 
 .button {
-  width: 99px;
+  display: inline-block;
   height: 44px;
   font-family: "Conv_Montserrat-Bold";
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  /* identical to box height */
+  outline: none;
+  text-decoration: none;
   text-transform: uppercase;
   color: white;
+  border: 0px solid transparent;
   border-radius: 22px;
-  border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  border-style: solid;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.button_without-border {
+  color: #BC9CFF;
+  min-width: 73px;
+  height: 15px;
+  border: 0px solid transparent;
+  border-radius: 0px;
+  background: #ffffff;
+}
+
+.button_without-border_dark {
+  color: rgba(31, 32, 65, 0.5);
+  min-width: 73px;
+  height: 15px;
+  border: 0px solid transparent;
+  border-radius: 0px;
+  background: #ffffff;
+}
+
+.button_long {
+  min-width: 320px;
+}
+
+.button_long_with-arrow {
+  background-image: src("../../components/button/_long/_with-arrow/arrow.svg"), linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background-blend-mode: normal;
+}
+
+.text_button {
+  float: left;
+}
+
+.button_short {
+  width: 99px;
+}
+
+.button_light {
+  background: #ffffff;
+  color: #BC9CFF;
+  border: 2px solid transparent;
+  border-color: #BC9CFF;
+}
+
+.button_disabled {
+  background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+}
+
+.button_disabled-light {
+  border-color: rgba(188, 156, 255, 0.5);
+  background: #ffffff;
+}
+
+.button_without-border {
+  color: #BC9CFF;
+  min-width: 73px;
+  height: 15px;
+  border: 0px solid transparent;
+  border-radius: 0px;
+  background: #ffffff;
+}
+
+.button_without-border_dark {
+  color: rgba(31, 32, 65, 0.5);
+  min-width: 73px;
+  height: 15px;
+  border: 0px solid transparent;
+  border-radius: 0px;
+  background: #ffffff;
 }
 
 /*# sourceMappingURL=index.css.map */

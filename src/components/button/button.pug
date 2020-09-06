@@ -1,14 +1,2 @@
 mixin button(name, text)
-    case name
-        when disabled
-            +b.BUTTON.button_disabled click me
-        when long
-            +b.BUTTON.button_long click me
-        when short
-            +b.BUTTON.button_short click me
-        when without-border
-            +b.BUTTON.button_without-border click me
-        when ligth
-            +b.BUTTON.button_light click me
-        default
-            +b.BUTTON.button click me
+    +b.BUTTON(class=name) #{text}
