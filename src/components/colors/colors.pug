@@ -1,0 +1,7 @@
+mixin colors(name, title, color)
+    +b.colors
+        +e.SVG(class='color-box_'+ name width="70px" height="70px")
+            +e.RECT( width="70px" height="70px" rx='6px')
+        +e.text-box
+            +e.title #{title}
+            +e.color-name #{color}
