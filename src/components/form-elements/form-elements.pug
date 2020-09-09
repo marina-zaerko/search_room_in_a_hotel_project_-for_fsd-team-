@@ -1,6 +1,20 @@
 include ../../components/logo/logo.pug
+include ../../components/text-field/text-field.pug
 
 mixin form-elements
     +b.form-elements
         +e.logo
             +logo('disabled')
+        +e.content-container
+            +e.text-checkbox-button-container
+                +e.text-fields
+                    +e.textfields-element
+                        +text-field({id:"email", placeholder:"Email", type:"email", label_text:"Text field", hover_text:"Default"})
+                    +e.textfields-element
+                        +text-field({id:"text", placeholder:"This is pretty awesome", type:"text", state:"hover-focus", label_text:"Text field", hover_text:"Hover / Focus"})
+                    +e.textfields-element
+                        +text-field({id:"text", placeholder:"ДД.ММ.ГГГГ", type:"text", label_text:"masked text field", hover_text:"Default", pattern:"\d{1,2}/\d{1,2}/\d{4}"})
+            +e.dropdown-container
+            +e.checkbox-dropdown
+            +e.comments-container
+        

@@ -1,0 +1,40 @@
+@import '../../assets/fonts/Montserrat-Bold/Montserrat-Bold'
+@import '../../assets/fonts/Montserrat-Regular/Montserrat-Regular'
+
+.text-field
+    width: 320px
+    display: flex
+    flex-direction: column
+
+.text-field__title
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+.text-field__label
+    @extend %montserrat-bold
+
+.text-field__hover-text
+    @extend %montserrat-regular
+    font-size: 12px
+    line-height: 15px
+    text-transform: uppercase
+    color: rgba(31, 32, 65, 0.5)
+
+.text-field__input
+    @extend %montserrat-regular
+    margin-top: 5px
+    height: 42px
+    border-radius: 4px
+    border: 1px solid rgba(31, 32, 65, 0.25)
+    padding-left: 15px
+    padding-right: 15px
+
+.text-field__input::placeholder
+    color: rgba(31, 32, 65, 0.25)
+
+.text-field__input:hover
+    border: 1px solid rgba(31, 32, 65, 0.5)
+
+.text-field__input::focus
+    border: 1px solid rgba(31, 32, 65, 0.5)

@@ -1,0 +1,9 @@
+
+
+mixin text-field(params)
+    +b.text-field
+        +e.title
+            +e.LABEL.label(for=params.id class="text-field__label_"+params.state) #{params.label_text}
+            +e.hover-text #{params.hover_text}
+        +e.INPUT.input(placeholder=params.placeholder id=params.id type=params.type class="text-field__input_"+params.state pattern=params.pattern)
+//pattern="\d{1,2}/\d{1,2}/\d{4}"

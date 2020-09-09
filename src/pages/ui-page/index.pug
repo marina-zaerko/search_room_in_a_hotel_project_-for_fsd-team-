@@ -1,23 +1,25 @@
 include ../../../bemto/bemto.pug
 
 doctype html
-html(lang="ru")
-    head
++b.HTML(lang="ru")
+    +b.HEAD
+        meta(charset="utf-8")
+        meta(name="viewport" content="initial-scale=1.0, width=device-width")
         title UI for test
-        meta(name="viewport" content="width=device-width, user-scalable=no")
         link(rel="stylesheet" type="text/css" href="index.css")
         link(rel="stylesheet" href="../../assets/fonts/Montserrat-Bold/fonts.css" type="text/css" charset="utf-8")
         link(rel="stylesheet" href="../../assets/fonts/Montserrat-Regular/fonts.css" type="text/css" charset="utf-8")
         link(rel="stylesheet" href="../../assets/fonts/Quicksand-Bold/fonts.css" type="text/css" charset="utf-8")
         link(rel="stylesheet" href="../../assets/fonts/Quicksand-Regular/fonts.css" type="text/css" charset="utf-8")
+        link(type="text/javascript" src="./index.js")
+        link(type="text/javascript" src="./jquery.js")
+        link(type="text/javascript" src="./jquery.maskedinput.min.js")
     +b.BODY
-        include ../../components/logo/logo.pug
         include ../../components/button/button.pug
         include ../../components/button/_long/_with-arrow/button_with-arrow.pug
         include ../../components/colors-types/colors-types.pug
-        +colors-types
-        //+colors('dark-shade-100', 'Dark Shade 100%', '#1F2041')
-        //+colors('purple', 'Dark Shade 100%', '#1F2041')
+        include ../../components/form-elements/form-elements.pug
+        +form-elements
         //+button('button button_short','click me')
         //+button('button button_short button_light','click me')
         //+button('button button_long','click me')

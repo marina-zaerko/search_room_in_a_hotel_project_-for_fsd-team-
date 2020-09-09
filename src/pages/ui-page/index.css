@@ -39,7 +39,7 @@
   line-height: 29px;
 }
 
-.button, .colors-types__h3-text {
+.button, .text-field__label, .colors-types__h3-text {
   font-family: "Conv_Montserrat-Bold";
   font-style: normal;
   font-weight: bold;
@@ -49,7 +49,7 @@
   text-transform: uppercase;
 }
 
-.colors-types__body-text, .colors-types__body-title, .colors-types__h3-title, .colors-types__h2-title, .colors-types__h1-title {
+.text-field__input, .text-field__hover-text, .colors-types__body-text, .colors-types__body-title, .colors-types__h3-title, .colors-types__h2-title, .colors-types__h1-title {
   font-family: "Conv_Montserrat-Regular";
   font-style: normal;
   font-weight: normal;
@@ -138,6 +138,56 @@
   width: 301px;
 }
 
+.form-elements {
+  width: 1440px;
+  height: 1853px;
+  background: #FFFFFF;
+}
+
+.form-elements__logo {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.form-elements__text-checkbox-button-container {
+  width: 1159px;
+  height: 636px;
+  margin-top: 62px;
+  margin-left: 140px;
+}
+
+.form-elemnts__text-fields {
+  width: 321px;
+}
+
+.form-elements__dropdown-container {
+  width: 1159px;
+  height: 265.56px;
+  margin-top: 100px;
+  margin-left: 140px;
+  background-color: #000000;
+}
+
+.form-elements__checkbox-dropdown {
+  width: 1131px;
+  height: 281.44px;
+  margin-top: 40.44px;
+  margin-left: 140px;
+  background-color: #000000;
+}
+
+.form-elements__comments-container {
+  width: 1158px;
+  height: 158px;
+  margin-top: 100.56px;
+  margin-left: 140px;
+  background-color: #000000;
+}
+
+.form-elements__textfields-element {
+  margin-bottom: 21px;
+}
+
 /*	==========================================================================	*/
 /*	COLORS                                                                  	*/
 /*	==========================================================================	*/ 
@@ -212,9 +262,79 @@
 }
 
 /*	==========================================================================	*/
+/*	TEXT-FIELD                                                                 	*/
+/*	==========================================================================	*/ 
+.button, .text-field__label, .colors-types__h3-text {
+  font-family: "Conv_Montserrat-Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1F2041;
+  text-transform: uppercase;
+}
+
+.text-field__input, .text-field__hover-text, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text {
+  font-family: "Conv_Montserrat-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.text-field {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-field__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.text-field__hover-text {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.text-field__input {
+  margin-top: 5px;
+  height: 42px;
+  border-radius: 4px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.text-field__input::placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.text-field__input:hover {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.text-field__input::focus {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.text-field__input_hover-focus {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.text-field__input_hover-focus::placeholder {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/*	==========================================================================	*/
 /*	BUTTONS                                                                  	*/
 /*	==========================================================================	*/ 
-.button, .colors-types__h3-text {
+.button, .colors-types__h3-text, .text-field__label {
   font-family: "Conv_Montserrat-Bold";
   font-style: normal;
   font-weight: bold;
@@ -233,6 +353,7 @@
   border: 0px solid transparent;
   border-radius: 22px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  cursor: pointer;
 }
 
 .button_without-border {
