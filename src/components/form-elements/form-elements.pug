@@ -1,5 +1,9 @@
 include ../../components/logo/logo.pug
+include ../../components/cards/calendar/calendar.pug
 include ../../components/text-field/text-field.pug
+include ../../components/dropdown/dropdown.pug
+include ../../components/dropdown/date-dropdown/date-dropdown.pug
+include ../../components/dropdown/filter-date-dropdown/filter-date-dropdown.pug
 
 mixin form-elements
     +b.form-elements
@@ -8,12 +12,29 @@ mixin form-elements
         +e.content-container
             +e.text-checkbox-button-container
                 +e.text-fields
-                    +e.textfields-element
+                    +e.textfield-element
                         +text-field({id:"email", placeholder:"Email", type:"email", label_text:"Text field", hover_text:"Default"})
-                    +e.textfields-element
-                        +text-field({id:"text", placeholder:"This is pretty awesome", type:"text", state:"hover-focus", label_text:"Text field", hover_text:"Hover / Focus"})
-                    +e.textfields-element
-                        +text-field({id:"text", placeholder:"ДД.ММ.ГГГГ", type:"text", label_text:"masked text field", hover_text:"Default", pattern:"\d{1,2}/\d{1,2}/\d{4}"})
+                    +e.textfield-element
+                        +text-field({id:"text", placeholder:"This is pretty awesome", 
+                        type:"text", state:"hover-focus", label_text:"Text field", hover_text:"Hover / Focus"})
+                    +e.textfield-element
+                        +dropdown({id:"dropdown", placeholder:"Сколько гостей", label_text:"dropdown", hover_text:"Default"})
+                    +e.dropdown-element
+                        +text-field({id:"text", placeholder:"ДД.ММ.ГГГГ", type:"text", 
+                        label_text:"masked text field", hover_text:"Default", pattern:"\d{1,2}/\d{1,2}/\d{4}"})
+                    +e.dropdown-element
+                        +e.date-dropdown
+                            +date-dropdown({id:"date-dropdown-default", placeholder:"ДД.ММ.ГГГГ", 
+                            label_text:"date dropdown"})
+                            +date-dropdown({id:"date-dropdown-default", placeholder:"19.08.2019", 
+                            label_text:"date dropdown"})
+                    +e.dropdown-element
+                        +filter-date-dropdown({id:"filter-date-dropdown", placeholder:"19 авг - 23 авг", 
+                        label_text:"filter date dropdown"})
+                    +e.dropdown-element
+                        +text-field({id:"email_subscription", placeholder:"Email", type:"email", state:"with-arrow", 
+                        label_text:"subscription text field", hover_text:""})
+                        //+calendar({state_dropdown_interval: true, state_dropdown_after:true})                     
             +e.dropdown-container
             +e.checkbox-dropdown
             +e.comments-container

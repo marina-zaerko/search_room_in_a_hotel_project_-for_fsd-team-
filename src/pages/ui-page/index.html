@@ -1,1 +1,120 @@
-<!DOCTYPE html><!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="initial-scale=1.0, width=device-width"><title>UI for test</title><link rel="stylesheet" type="text/css" href="index.css"><link rel="stylesheet" href="../../assets/fonts/Montserrat-Bold/fonts.css" type="text/css" charset="utf-8"><link rel="stylesheet" href="../../assets/fonts/Montserrat-Regular/fonts.css" type="text/css" charset="utf-8"><link rel="stylesheet" href="../../assets/fonts/Quicksand-Bold/fonts.css" type="text/css" charset="utf-8"><link rel="stylesheet" href="../../assets/fonts/Quicksand-Regular/fonts.css" type="text/css" charset="utf-8"><link type="text/javascript" src="./index.js"><link type="text/javascript" src="./jquery.js"><link type="text/javascript" src="./jquery.maskedinput.min.js"></head><body><!--pattern="\d{1,2}/\d{1,2}/\d{4}"--><div class="form-elements"><div class="form-elements__logo"><img class="logo logo_disabled" src="../../components/logo/_disabled/logo_disabled.svg" alt="" role="presentation"/></div><div class="form-elements__content-container"><div class="form-elements__text-checkbox-button-container"><div class="form-elements__text-fields"><div class="form-elements__textfields-element"><div class="text-field"><div class="text-field__title"><label class="text-field__label text-field__label text-field__label_undefined" for="email">Text field</label><div class="text-field__hover-text">Default</div></div><input class="text-field__input text-field__input text-field__input_undefined" placeholder="Email" id="email" type="email"/></div></div><div class="form-elements__textfields-element"><div class="text-field"><div class="text-field__title"><label class="text-field__label text-field__label text-field__label_hover-focus" for="text">Text field</label><div class="text-field__hover-text">Hover / Focus</div></div><input class="text-field__input text-field__input text-field__input_hover-focus" placeholder="This is pretty awesome" id="text" type="text"/></div></div><div class="form-elements__textfields-element"><div class="text-field"><div class="text-field__title"><label class="text-field__label text-field__label text-field__label_undefined" for="text">Text field</label><div class="text-field__hover-text">Default</div></div><input class="text-field__input text-field__input text-field__input_undefined" placeholder="ДД.ММ.ГГГГ" id="text" type="text" pattern="d{1,2}/d{1,2}/d{4}"/></div></div></div></div><div class="form-elements__dropdown-container"></div><div class="form-elements__checkbox-dropdown"></div><div class="form-elements__comments-container"></div></div></div><!--+button('button button_short','click me')--><!--+button('button button_short button_light','click me')--><!--+button('button button_long','click me')--><!--+button('button button_long button_long_with-arrow','click me')--><!--+button('button button_short button_disabled','click me')--><!--+button('button button_short button_light button_disabled-light','click me')--><!--+button('button button_without-border_dark','click me')--><!--+button('button button_without-border','click me')--><!--+button_with-arrow('click me')--></body></html>
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>UI for test</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="../../assets/fonts/Montserrat-Bold/fonts.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="../../assets/fonts/Montserrat-Regular/fonts.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="../../assets/fonts/Quicksand-Bold/fonts.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="../../assets/fonts/Quicksand-Regular/fonts.css" type="text/css" charset="utf-8">
+    <link type="text/javascript" src="./index.js">
+    <link type="text/javascript" src="./jquery.js">
+    <link type="text/javascript" src="./jquery.maskedinput.min.js">
+  </head>
+  <body>
+    <div class="form-elements">
+      <div class="form-elements__logo"><img class="logo logo_disabled" src="../../components/logo/_disabled/logo_disabled.svg" alt="" role="presentation"/>
+      </div>
+      <div class="form-elements__content-container">
+        <div class="form-elements__text-checkbox-button-container">
+          <div class="form-elements__text-fields">
+            <div class="form-elements__textfield-element">
+              <div class="text-field">
+                <div class="text-field__title">
+                  <label class="text-field__label text-field__label text-field__label_undefined" for="email">Text field
+                  </label>
+                  <div class="text-field__hover-text">Default
+                  </div>
+                </div><input class="text-field__input text-field__input text-field__input_undefined" placeholder="Email" id="email" type="email"/>
+              </div>
+            </div>
+            <div class="form-elements__textfield-element">
+              <div class="text-field">
+                <div class="text-field__title">
+                  <label class="text-field__label text-field__label text-field__label_hover-focus" for="text">Text field
+                  </label>
+                  <div class="text-field__hover-text">Hover / Focus
+                  </div>
+                </div><input class="text-field__input text-field__input text-field__input_hover-focus" placeholder="This is pretty awesome" id="text" type="text"/>
+              </div>
+            </div>
+            <div class="form-elements__textfield-element">
+              <div class="dropdown">
+                <div class="dropdown__title">
+                  <label class="dropdown__label text-field__label text-field__label_undefined" for="dropdown">dropdown
+                  </label>
+                  <div class="dropdown__hover-text">Default
+                  </div>
+                </div>
+                <select class="dropdown__select" id="dropdown">
+                </select>
+              </div>
+            </div>
+            <div class="form-elements__dropdown-element">
+              <div class="text-field">
+                <div class="text-field__title">
+                  <label class="text-field__label text-field__label text-field__label_undefined" for="text">masked text field
+                  </label>
+                  <div class="text-field__hover-text">Default
+                  </div>
+                </div><input class="text-field__input text-field__input text-field__input_undefined" placeholder="ДД.ММ.ГГГГ" id="text" type="text" pattern="d{1,2}/d{1,2}/d{4}"/>
+              </div>
+            </div>
+            <div class="form-elements__dropdown-element">
+              <div class="form-elements__date-dropdown">
+                <div class="date-dropdown">
+                  <div class="date-dropdown__title">
+                    <label class="date-dropdown__label date-dropdown__label date-dropdown__label_undefined" for="date-dropdown-default">date dropdown
+                    </label>
+                  </div><input class="date-dropdown__input" id="date-dropdown-default" type="text" placeholder="ДД.ММ.ГГГГ"/>
+                </div>
+                <div class="date-dropdown">
+                  <div class="date-dropdown__title">
+                    <label class="date-dropdown__label date-dropdown__label date-dropdown__label_undefined" for="date-dropdown-default">date dropdown
+                    </label>
+                  </div><input class="date-dropdown__input" id="date-dropdown-default" type="text" placeholder="19.08.2019"/>
+                </div>
+              </div>
+            </div>
+            <div class="form-elements__dropdown-element">
+              <div class="filter-date-dropdown">
+                <div class="filter-date-dropdown__title">
+                  <label class="filter-date-dropdown__label filter-date-dropdown__label filter-date-dropdown__label_undefined" for="filter-date-dropdown">filter date dropdown
+                  </label>
+                </div><input class="filter-date-dropdown__input" id="filter-date-dropdown" type="text" placeholder="19 авг - 23 авг"/>
+              </div>
+            </div>
+            <div class="form-elements__dropdown-element">
+              <div class="text-field">
+                <div class="text-field__title">
+                  <label class="text-field__label text-field__label text-field__label_with-arrow" for="email_subscription">subscription text field
+                  </label>
+                  <div class="text-field__hover-text">
+                  </div>
+                </div><input class="text-field__input text-field__input text-field__input_with-arrow" placeholder="Email" id="email_subscription" type="email"/>
+              </div>
+              <!--+calendar({state_dropdown_interval: true, state_dropdown_after:true})                     -->
+            </div>
+          </div>
+        </div>
+        <div class="form-elements__dropdown-container">
+        </div>
+        <div class="form-elements__checkbox-dropdown">
+        </div>
+        <div class="form-elements__comments-container">
+        </div>
+      </div>
+    </div>
+    <!--+button('button button_short','click me')-->
+    <!--+button('button button_short button_light','click me')-->
+    <!--+button('button button_long','click me')-->
+    <!--+button('button button_long button_long_with-arrow','click me')-->
+    <!--+button('button button_short button_disabled','click me')-->
+    <!--+button('button button_short button_light button_disabled-light','click me')-->
+    <!--+button('button button_without-border_dark','click me')-->
+    <!--+button('button button_without-border','click me')-->
+    <!--+button_with-arrow('click me')-->
+  </body>
+</html>

@@ -1,0 +1,6 @@
+mixin dropdown(params)
+    +b.dropdown
+        +e.title
+            +e.LABEL.label(for=params.id class="text-field__label_"+params.state) #{params.label_text}
+            +e.hover-text #{params.hover_text}
+        +e.SELECT.select(id=params.id)

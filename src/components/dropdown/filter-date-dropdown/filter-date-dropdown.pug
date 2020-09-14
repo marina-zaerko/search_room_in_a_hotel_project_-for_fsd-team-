@@ -1,0 +1,5 @@
+mixin filter-date-dropdown(params)
+    +b.filter-date-dropdown
+        +e.title
+            +e.LABEL.label(for=params.id class="filter-date-dropdown__label_"+params.state) #{params.label_text}
+        +e.INPUT.input(id=params.id type="text" placeholder=params.placeholder)

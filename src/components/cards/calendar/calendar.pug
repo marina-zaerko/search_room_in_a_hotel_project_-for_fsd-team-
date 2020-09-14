@@ -1,0 +1,71 @@
+include ../../../components/button/button.pug
+
+mixin calendar(params)
+    +b.calendar
+        +e.month-picker
+            +e.arrow-back
+            +e.title-month Август 2019
+            +e.arrow-forward
+        +e.dates
+            +e.TABLE.table(cellspacing="0", cellpadding="0")
+                +e.TR.row
+                    +e.TH.cell_names Пн
+                    +e.TH.cell_names Вт
+                    +e.TH.cell_names Ср
+                    +e.TH.cell_names Чт
+                    +e.TH.cell_names Пт
+                    +e.TH.cell_names Сб
+                    +e.TH.cell_names Вс
+                +e.TR.row
+                    +e.TH.cell_light 29
+                    +e.TH.cell_light 30
+                    +e.TH.cell_light 31
+                    +e.TH.cell 1
+                    +e.TH.cell 2
+                    +e.TH.cell 3
+                    +e.TH.cell 4
+                +e.TR.row
+                    +e.TH.cell 5
+                    +e.TH.cell 6
+                    +e.TH.cell 7
+                    if (params.state_dropdown_after = true)
+                        +e.TH.cell_chosen 8
+                    else
+                        +e.TH.cell 8
+                    +e.TH.cell 9
+                    +e.TH.cell 10
+                    +e.TH.cell 11
+                +e.TR.row
+                    +e.TH.cell 12
+                    +e.TH.cell 13
+                    +e.TH.cell 14
+                    +e.TH.cell 15
+                    +e.TH.cell 16
+                    +e.TH.cell 17
+                    +e.TH.cell 18
+                +e.TR.row
+                    if (params.state_dropdown_interval = true)
+                        +e.TH.cell_interval-left 19
+                        +e.TH.cell_interval 20
+                        +e.TH.cell_interval 21
+                        +e.TH.cell_interval 22
+                        +e.TH.cell_interval-right 23
+                    else
+                        +e.TH.cell 19
+                        +e.TH.cell 20
+                        +e.TH.cell 21
+                        +e.TH.cell 22
+                        +e.TH.cell 23
+                    +e.TH.cell 24
+                    +e.TH.cell 25
+                +e.TR.row
+                    +e.TH.cell 26
+                    +e.TH.cell 27
+                    +e.TH.cell 28
+                    +e.TH.cell 29
+                    +e.TH.cell 30
+                    +e.TH.cell 31
+                    +e.TH.cell_light 1
+        +e.buttons
+            +button('button button_without-border_dark','очистить')
+            +button('button button_without-border','применить')

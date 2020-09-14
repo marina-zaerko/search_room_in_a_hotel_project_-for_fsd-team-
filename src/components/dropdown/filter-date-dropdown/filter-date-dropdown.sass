@@ -1,44 +1,43 @@
-@import '../../assets/fonts/Montserrat-Bold/Montserrat-Bold'
-@import '../../assets/fonts/Montserrat-Regular/Montserrat-Regular'
+@import '../../../assets/fonts/Montserrat-Bold/Montserrat-Bold'
+@import '../../../assets/fonts/Montserrat-Regular/Montserrat-Regular'
 
-.dropdown
-    width: 320px
+.filter-date-dropdown
     display: flex
     flex-direction: column
 
-.dropdown__title
+.filter-date-dropdown__title
     display: flex
     flex-direction: row
     justify-content: space-between
 
-.dropdown__label
+.filter-date-dropdown__label
     @extend %montserrat-bold
 
-.dropdown__hover-text
-    font-family:'Conv_Montserrat-Regular'
-    font-style: normal
-    font-weight: normal
+.filter-date-dropdown__hover-text
+    @extend %montserrat-regular
     font-size: 12px
     line-height: 15px
     text-transform: uppercase
     color: rgba(31, 32, 65, 0.5)
 
-.dropdown__select
+.filter-date-dropdown__input
     @extend %montserrat-regular
     margin-top: 5px
-    height: 42px
+    height: 40px
+    width: 233px
     border-radius: 4px
     border: 1px solid rgba(31, 32, 65, 0.25)
     padding-left: 15px
     padding-right: 15px
     -webkit-appearance: none
-    background: url('../../components/dropdown/arrow-dropdown.svg') no-repeat 290px
+    background: url('../../components/dropdown/arrow-dropdown.svg') no-repeat 236px
+    cursor: pointer
 
-.dropdown__select::placeholder
+.filter-date-dropdown__input::placeholder
     color: rgba(31, 32, 65, 0.25)
 
-.dropdown__select:hover
+.filter-date-dropdown__input:hover
     border: 1px solid rgba(31, 32, 65, 0.5)
 
-.dropdown__select::focus
+.filter-date-dropdown__input::focus
     border: 1px solid rgba(31, 32, 65, 0.5)

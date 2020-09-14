@@ -11,8 +11,8 @@
 /*	==========================================================================	*/
 /*	SCREENS                                                                  	*/
 /*	==========================================================================	*/ 
-.colors__title, .colors-types__h2-text {
-  font-family: "Conv_Quicksand-Bold";
+.colors__title, .calendar__title-month, .colors-types__h2-text {
+  font-family: "Conv_Quicksand-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
@@ -22,7 +22,7 @@
 }
 
 .colors-types__h1-text {
-  font-family: "Conv_Quicksand-Bold";
+  font-family: "Conv_Quicksand-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -32,15 +32,15 @@
 }
 
 .colors__color-name {
-  font-family: "Conv_Quicksand-Regular";
+  font-family: "Conv_Quicksand-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 19px;
   line-height: 29px;
 }
 
-.button, .text-field__label, .colors-types__h3-text {
-  font-family: "Conv_Montserrat-Bold";
+.button, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__label, .text-field__label, .colors-types__h3-text {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -49,8 +49,8 @@
   text-transform: uppercase;
 }
 
-.text-field__input, .text-field__hover-text, .colors-types__body-text, .colors-types__body-title, .colors-types__h3-title, .colors-types__h2-title, .colors-types__h1-title {
-  font-family: "Conv_Montserrat-Regular";
+.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__select, .text-field__input, .calendar__table, .colors-types__body-text, .colors-types__body-title, .colors-types__h3-title, .colors-types__h2-title, .colors-types__h1-title {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -156,8 +156,19 @@
   margin-left: 140px;
 }
 
-.form-elemnts__text-fields {
-  width: 321px;
+.form-elements__textfield-element {
+  margin-bottom: 21px;
+}
+
+.form-elements__dropdown-element {
+  margin-bottom: 40px;
+}
+
+.form-elements__date-dropdown {
+  display: flex;
+  flex-diraction: row;
+  justify-content: space-between;
+  width: 320px;
 }
 
 .form-elements__dropdown-container {
@@ -184,15 +195,11 @@
   background-color: #000000;
 }
 
-.form-elements__textfields-element {
-  margin-bottom: 21px;
-}
-
 /*	==========================================================================	*/
-/*	COLORS                                                                  	*/
+/*	CARDS                                                                   	*/
 /*	==========================================================================	*/ 
-.colors__title, .colors-types__h2-text {
-  font-family: "Conv_Quicksand-Bold";
+.colors__title, .calendar__title-month, .colors-types__h2-text {
+  font-family: "Conv_Quicksand-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
@@ -202,7 +209,156 @@
 }
 
 .colors-types__h1-text {
-  font-family: "Conv_Quicksand-Bold";
+  font-family: "Conv_Quicksand-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1F2041;
+  letter-spacing: -0.5px;
+}
+
+.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__select, .text-field__input, .calendar__table, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.button, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__label, .text-field__label, .colors-types__h3-text {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1F2041;
+  text-transform: uppercase;
+}
+
+.calendar {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding-left: 20px;
+  padding-top: 20px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+}
+
+.calendar__month-picker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 280px;
+}
+
+.calendar__arrow-back {
+  background: url("../../components/cards/calendar/arrow-back.svg") no-repeat;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.calendar__arrow-forward {
+  background: url("../../components/cards/calendar/arrow-forward.svg") no-repeat;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.calendar__dates {
+  margin-bottom: 20px;
+}
+
+.calendar__table {
+  border-spacing: 0;
+  boder: 0;
+  border-collapse: collapse;
+}
+
+.calendar__row {
+  height: 40px;
+}
+
+.calendar__cell {
+  width: 40px;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+}
+
+.calendar__cell_names {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BC9CFF;
+}
+
+.calendar__cell_light {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.calendar__cell_chosen {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border-radius: 50%;
+}
+
+.calendar__cell_interval {
+  background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
+}
+
+.calendar__cell_interval-left {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: white;
+  background: url("../../components/cards/calendar/interval-circle.svg") no-repeat 100% 100%, url("../../components/cards/calendar/interval-left-background.svg") no-repeat;
+}
+
+.calendar__cell_interval-right {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: white;
+  background: url("../../components/cards/calendar/interval-circle.svg") no-repeat 100% 100%, url("../../components/cards/calendar/interval-right-background.svg") no-repeat;
+}
+
+.calendar__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 280px;
+}
+
+/*	==========================================================================	*/
+/*	COLORS                                                                  	*/
+/*	==========================================================================	*/ 
+.colors__title, .colors-types__h2-text, .calendar__title-month {
+  font-family: "Conv_Quicksand-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #1F2041;
+  letter-spacing: -0.5px;
+}
+
+.colors-types__h1-text {
+  font-family: "Conv_Quicksand-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -212,7 +368,7 @@
 }
 
 .colors__color-name {
-  font-family: "Conv_Quicksand-Regular";
+  font-family: "Conv_Quicksand-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 19px;
@@ -264,8 +420,8 @@
 /*	==========================================================================	*/
 /*	TEXT-FIELD                                                                 	*/
 /*	==========================================================================	*/ 
-.button, .text-field__label, .colors-types__h3-text {
-  font-family: "Conv_Montserrat-Bold";
+.button, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__label, .text-field__label, .colors-types__h3-text {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -274,8 +430,8 @@
   text-transform: uppercase;
 }
 
-.text-field__input, .text-field__hover-text, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text {
-  font-family: "Conv_Montserrat-Regular";
+.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__select, .text-field__input, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -296,6 +452,9 @@
 }
 
 .text-field__hover-text {
+  font-family: "Conv_Montserrat-Regular";
+  font-style: normal;
+  font-weight: normal;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
@@ -331,11 +490,209 @@
   color: rgba(31, 32, 65, 0.75);
 }
 
+.text-field__input_with-arrow {
+  background: url("../../components/text-field/_with-arrow/arrow.svg") no-repeat 233px 15px;
+  background-size: auto 40%;
+  width: 233px;
+}
+
+/*	==========================================================================	*/
+/*	DROPDOWNS                                                                 	*/
+/*	==========================================================================	*/ 
+.button, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__label, .colors-types__h3-text, .text-field__label {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1F2041;
+  text-transform: uppercase;
+}
+
+.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__select, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .text-field__input {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.dropdown {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dropdown__hover-text {
+  font-family: "Conv_Montserrat-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.dropdown__select {
+  margin-top: 5px;
+  height: 42px;
+  border-radius: 4px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-appearance: none;
+  background: url("../../components/dropdown/arrow-dropdown.svg") no-repeat 290px;
+}
+
+.dropdown__select::placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.dropdown__select:hover {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown__select::focus {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.button, .filter-date-dropdown__label, .date-dropdown__label, .colors-types__h3-text, .text-field__label, .dropdown__label {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1F2041;
+  text-transform: uppercase;
+}
+
+.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .text-field__input, .dropdown__select {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.date-dropdown__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.date-dropdown__hover-text {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.date-dropdown__input {
+  margin-top: 5px;
+  height: 40px;
+  width: 118px;
+  border-radius: 4px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-appearance: none;
+  background: url("../../components/dropdown/arrow-dropdown.svg") no-repeat 120px;
+  cursor: pointer;
+}
+
+.date-dropdown__input::placeholder {
+  color: rgba(31, 32, 65, 0.25);
+  text-transform: uppercase;
+}
+
+.date-dropdown__input:hover {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.date-dropdown__input::focus {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.button, .filter-date-dropdown__label, .colors-types__h3-text, .text-field__label, .dropdown__label, .date-dropdown__label {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1F2041;
+  text-transform: uppercase;
+}
+
+.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .text-field__input, .dropdown__select, .date-dropdown__hover-text, .date-dropdown__input {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.filter-date-dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-date-dropdown__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.filter-date-dropdown__hover-text {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.filter-date-dropdown__input {
+  margin-top: 5px;
+  height: 40px;
+  width: 233px;
+  border-radius: 4px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-appearance: none;
+  background: url("../../components/dropdown/arrow-dropdown.svg") no-repeat 236px;
+  cursor: pointer;
+}
+
+.filter-date-dropdown__input::placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.filter-date-dropdown__input:hover {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.filter-date-dropdown__input::focus {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
 /*	==========================================================================	*/
 /*	BUTTONS                                                                  	*/
 /*	==========================================================================	*/ 
-.button, .colors-types__h3-text, .text-field__label {
-  font-family: "Conv_Montserrat-Bold";
+.button, .colors-types__h3-text, .text-field__label, .dropdown__label, .date-dropdown__label, .filter-date-dropdown__label {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
