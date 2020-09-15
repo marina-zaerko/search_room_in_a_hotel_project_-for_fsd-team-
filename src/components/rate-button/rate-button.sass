@@ -1,0 +1,45 @@
+.rate-button
+    position: relative
+    width: 120px
+    height: 24px
+    background: url('../../components/rate-button/rate-button-default.svg') 
+    background-size: auto
+
+.rate-button__input
+    -webkit-appearance: none
+    -mos-appearance: none
+    appearence: none
+    position: absolute
+    top: 0
+    left: 0
+    width: 24px
+    height: 24px
+    font-size: inherit
+    margin: 0
+
+.rate-button__input:focus
+    outline: none
+
+.rate-button__input:checked
+    background: url('../../components/rate-button/rate-button-on.svg') repeat-x 
+    background-size: auto
+
+.rate-button__input:nth-of-type(1)
+    width: 24px
+    z-index: 5
+
+.rate-button__input:nth-of-type(2)
+    width: 48px
+    z-index: 4
+
+.rate-button__input:nth-of-type(3)
+    width: 72px
+    z-index: 3   
+
+.rate-button__input:nth-of-type(4)
+    width: 96px  
+    z-index: 2
+
+.rate-button__input:nth-of-type(5)
+    width: 120px  
+    z-index: 1

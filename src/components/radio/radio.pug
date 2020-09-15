@@ -1,0 +1,6 @@
+mixin radio(params)
+    +b.radio
+        +e.LABEL.label
+            +e.INPUT.input(type="radio" name=params.name value=params.value checked=params.checked)
+            +e.SPAN.span
+            |#{params.label_text}       

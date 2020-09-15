@@ -1,25 +1,26 @@
 
-
+@import '../../assets/fonts/Montserrat-Bold/Montserrat-Bold'
+@import '../../assets/fonts/Montserrat-Regular/Montserrat-Regular'
 
 .form-elements
-    width: 1440px
-    height: 1853px
+    width: 100%
     background: #FFFFFF
-    //display: flex
-    //justify-content: center
-    //align-items: center
 
 .form-elements__logo
     margin-left: 30px
     margin-top: 30px
 
-.form-elements__container
+.form-elements__content-container
 
 .form-elements__text-checkbox-button-container
     width: 1159px
-    height: 636px
     margin-top: 62px
     margin-left: 140px
+    display: flex
+    flex-direction: row
+
+.form-elements__text-fields
+    width: 320px
 
 .form-elements__textfield-element
     margin-bottom: 21px
@@ -31,7 +32,65 @@
     display: flex
     flex-diraction: row
     justify-content: space-between
-    width: 320px
+
+.form-elements__checkboxes
+    display: flex
+    flex-direction: column
+    width: 260px
+    margin-left: 126px
+
+.form-elements__checkbox-element
+    margin-bottom: 40.88px
+    width: 222px
+
+.form-elements__title-first
+    @extend %montserrat-bold
+    margin-bottom: 16.56px
+
+.form-elements__checkbox-first
+    margin-bottom: 11.56px
+
+.form-elements__checkbox-second
+    margin-bottom: 11px
+
+.form-elements__title-second
+    @extend %montserrat-bold
+    margin-bottom: 16px
+
+.form-elements__radio-element
+    width: 220.74px
+    margin-bottom: 44px
+
+.form-elements__radio-group
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+.form-elements__toggle-element
+    display: flex
+    flex-direction: column
+    margin-bottom: 48.44px
+
+.form-elements__toggle
+    margin-bottom: 16px
+
+.form-elements__like-button-element
+    width: 89.72px
+
+.form-elements__like-button
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    padding-bottom: 3px
+    margin-bottom: 37px
+
+.form-elements__rate-button-element
+    width: 259.74px
+
+.form-elements__rate-button
+    display: flex
+    flex-direction: row
+    justify-content: space-between
 
 .form-elements__dropdown-container
     width: 1159px

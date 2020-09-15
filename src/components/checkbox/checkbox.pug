@@ -1,0 +1,6 @@
+mixin checkbox(params)
+    +b.checkbox
+        +e.LABEL.label
+            +e.INPUT.input(type="checkbox" name=params.name value=params.value checked=params.state)
+            +e.SPAN.span
+            +e.label-text #{params.label_text}

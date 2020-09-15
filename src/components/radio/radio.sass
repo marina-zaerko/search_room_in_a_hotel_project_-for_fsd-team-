@@ -1,0 +1,32 @@
+@import '../../assets/fonts/Montserrat-Bold/Montserrat-Bold'
+@import '../../assets/fonts/Montserrat-Regular/Montserrat-Regular'
+
+.radio
+    display: flex
+    flex-direction: row
+
+.radio__input
+    -webkit-appearance: none
+    -mos-appearance: none
+    appearence: none
+    position: absolute
+
+.radio__span
+    position: absolute
+    width: 20px
+    height: 20px
+    background: url('../../components/radio/background-default.svg') no-repeat 100% 100%
+    margin-left: -30px
+    cursor: pointer
+    
+.radio__label
+    font-family:'Conv_Montserrat-Regular',Arial, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 18px
+    color: rgba(31, 32, 65, 0.75)
+    padding-left: 30px
+
+.radio__input:checked + .radio__span
+    background: url('../../components/radio/background-checked.svg') no-repeat 50% 50%

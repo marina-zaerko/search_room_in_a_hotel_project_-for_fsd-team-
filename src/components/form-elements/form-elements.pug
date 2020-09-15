@@ -2,6 +2,11 @@ include ../../components/logo/logo.pug
 include ../../components/cards/calendar/calendar.pug
 include ../../components/text-field/text-field.pug
 include ../../components/dropdown/dropdown.pug
+include ../../components/checkbox/checkbox.pug
+include ../../components/radio/radio.pug
+include ../../components/toggle/toggle.pug
+include ../../components/like-button/like-button.pug
+include ../../components/rate-button/rate-button.pug
 include ../../components/dropdown/date-dropdown/date-dropdown.pug
 include ../../components/dropdown/filter-date-dropdown/filter-date-dropdown.pug
 
@@ -31,11 +36,37 @@ mixin form-elements
                     +e.dropdown-element
                         +filter-date-dropdown({id:"filter-date-dropdown", placeholder:"19 авг - 23 авг", 
                         label_text:"filter date dropdown"})
-                    +e.dropdown-element
-                        +text-field({id:"email_subscription", placeholder:"Email", type:"email", state:"with-arrow", 
-                        label_text:"subscription text field", hover_text:""})
-                        //+calendar({state_dropdown_interval: true, state_dropdown_after:true})                     
+                    +text-field({id:"email_subscription", placeholder:"Email", type:"email", state:"with-arrow", 
+                        label_text:"subscription text field", hover_text:""})   
+                +e.checkboxes
+                    +e.checkbox-element
+                        +e.title-first Checkbox Buttons
+                        +e.checkbox-first
+                            +checkbox({label_text:"Можно курить"})
+                        +e.checkbox-second
+                            +checkbox({label_text:"Можно с питомцами", state:"checked"})
+                        +checkbox({label_text:"Можно пригласить гостей (до 10 человек)", state:"checked"})
+                    +e.radio-element
+                        +e.title-second Radio Buttons
+                        +e.radio-group
+                            +radio({label_text:"Мужчина", name:"gender", state:"checked"})
+                            +radio({label_text:"Женщина", name:"gender"})
+                    +e.toggle-element
+                        +e.title-second Toggle
+                        +e.toggle
+                            +toggle({label_text:"Получать спецпредложения", state:"checked"})
+                        +toggle({label_text:"Получать спецпредложения"})
+                    +e.like-button-element
+                        +e.title-second Like button
+                        +e.like-button
+                            +like-button({text: "2"})
+                            +like-button({text: "12", state: "clicked"})
+                    +e.rate-button-element
+                        +e.title-second Rate button
+                        +e.rate-button
+                            +rate-button({name: "star", star1: "true", star2: "true", star3: "true", star4: "true", star5: "false"})
+                            +rate-button({name: "star1", star1: "true", star2: "true", star3: "true", star4: "true", star5: "true"})
             +e.dropdown-container
             +e.checkbox-dropdown
             +e.comments-container
-        
+//+calendar({state_dropdown_interval: true, state_dropdown_after:true})         

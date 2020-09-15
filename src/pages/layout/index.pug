@@ -1,7 +1,7 @@
 include ../../../bemto/bemto.pug
 
 doctype html
-+b.HTML(lang="ru")
++b.HTML.html(lang="ru")
     +b.HEAD
         meta(charset="utf-8")
         meta(name="viewport" content="initial-scale=1.0, width=device-width")
@@ -14,12 +14,9 @@ doctype html
         link(type="text/javascript" src="./index.js")
         link(type="text/javascript" src="./jquery.js")
         link(type="text/javascript" src="./jquery.maskedinput.min.js")
-    +b.BODY
-        include ../../components/button/button.pug
-        include ../../components/button/_long/_with-arrow/button_with-arrow.pug
-        include ../../components/colors-types/colors-types.pug
-        include ../../components/form-elements/form-elements.pug
-        +form-elements
+    +b.BODY.body
+        include ../ui/ui.pug
+        +ui
         //+button('button button_short','click me')
         //+button('button button_short button_light','click me')
         //+button('button button_long','click me')

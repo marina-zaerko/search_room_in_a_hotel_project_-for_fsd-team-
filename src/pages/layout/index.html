@@ -1,0 +1,193 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html class="html" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>UI for test</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="../../assets/fonts/Montserrat-Bold/fonts.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="../../assets/fonts/Montserrat-Regular/fonts.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="../../assets/fonts/Quicksand-Bold/fonts.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="../../assets/fonts/Quicksand-Regular/fonts.css" type="text/css" charset="utf-8">
+    <link type="text/javascript" src="./index.js">
+    <link type="text/javascript" src="./jquery.js">
+    <link type="text/javascript" src="./jquery.maskedinput.min.js">
+  </head>
+  <body class="body">
+    <!--+calendar({state_dropdown_interval: true, state_dropdown_after:true})         -->
+    <!--+colors-types-->
+    <div class="form-elements">
+      <div class="form-elements__logo"><img class="logo logo_disabled" src="../../components/logo/_disabled/logo_disabled.svg" alt="" role="presentation"/>
+      </div>
+      <div class="form-elements__content-container">
+        <div class="form-elements__text-checkbox-button-container">
+          <div class="form-elements__text-fields">
+            <div class="form-elements__textfield-element">
+              <div class="text-field">
+                <div class="text-field__title">
+                  <label class="text-field__label text-field__label text-field__label_undefined" for="email">Text field
+                  </label>
+                  <div class="text-field__hover-text">Default
+                  </div>
+                </div><input class="text-field__input text-field__input text-field__input_undefined" placeholder="Email" id="email" type="email"/>
+              </div>
+            </div>
+            <div class="form-elements__textfield-element">
+              <div class="text-field">
+                <div class="text-field__title">
+                  <label class="text-field__label text-field__label text-field__label_hover-focus" for="text">Text field
+                  </label>
+                  <div class="text-field__hover-text">Hover / Focus
+                  </div>
+                </div><input class="text-field__input text-field__input text-field__input_hover-focus" placeholder="This is pretty awesome" id="text" type="text"/>
+              </div>
+            </div>
+            <div class="form-elements__textfield-element">
+              <div class="dropdown">
+                <div class="dropdown__title">
+                  <label class="dropdown__label text-field__label text-field__label_undefined" for="dropdown">dropdown
+                  </label>
+                  <div class="dropdown__hover-text">Default
+                  </div>
+                </div>
+                <select class="dropdown__select" id="dropdown">
+                </select>
+              </div>
+            </div>
+            <div class="form-elements__dropdown-element">
+              <div class="text-field">
+                <div class="text-field__title">
+                  <label class="text-field__label text-field__label text-field__label_undefined" for="text">masked text field
+                  </label>
+                  <div class="text-field__hover-text">Default
+                  </div>
+                </div><input class="text-field__input text-field__input text-field__input_undefined" placeholder="ДД.ММ.ГГГГ" id="text" type="text" pattern="d{1,2}/d{1,2}/d{4}"/>
+              </div>
+            </div>
+            <div class="form-elements__dropdown-element">
+              <div class="form-elements__date-dropdown">
+                <div class="date-dropdown">
+                  <div class="date-dropdown__title">
+                    <label class="date-dropdown__label date-dropdown__label date-dropdown__label_undefined" for="date-dropdown-default">date dropdown
+                    </label>
+                  </div><input class="date-dropdown__input" id="date-dropdown-default" type="text" placeholder="ДД.ММ.ГГГГ"/>
+                </div>
+                <div class="date-dropdown">
+                  <div class="date-dropdown__title">
+                    <label class="date-dropdown__label date-dropdown__label date-dropdown__label_undefined" for="date-dropdown-default">date dropdown
+                    </label>
+                  </div><input class="date-dropdown__input" id="date-dropdown-default" type="text" placeholder="19.08.2019"/>
+                </div>
+              </div>
+            </div>
+            <div class="form-elements__dropdown-element">
+              <div class="filter-date-dropdown">
+                <div class="filter-date-dropdown__title">
+                  <label class="filter-date-dropdown__label filter-date-dropdown__label filter-date-dropdown__label_undefined" for="filter-date-dropdown">filter date dropdown
+                  </label>
+                </div><input class="filter-date-dropdown__input" id="filter-date-dropdown" type="text" placeholder="19 авг - 23 авг"/>
+              </div>
+            </div>
+            <div class="text-field">
+              <div class="text-field__title">
+                <label class="text-field__label text-field__label text-field__label_with-arrow" for="email_subscription">subscription text field
+                </label>
+                <div class="text-field__hover-text">
+                </div>
+              </div><input class="text-field__input text-field__input text-field__input_with-arrow" placeholder="Email" id="email_subscription" type="email"/>
+            </div>
+          </div>
+          <div class="form-elements__checkboxes">
+            <div class="form-elements__checkbox-element">
+              <div class="form-elements__title-first">Checkbox Buttons
+              </div>
+              <div class="form-elements__checkbox-first">
+                <div class="checkbox">
+                  <label class="checkbox__label"><input class="checkbox__input" type="checkbox"/><span class="checkbox__span"></span><span class="checkbox__label-text">Можно курить</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-elements__checkbox-second">
+                <div class="checkbox">
+                  <label class="checkbox__label"><input class="checkbox__input" type="checkbox" checked="checked"/><span class="checkbox__span"></span><span class="checkbox__label-text">Можно с питомцами</span>
+                  </label>
+                </div>
+              </div>
+              <div class="checkbox">
+                <label class="checkbox__label"><input class="checkbox__input" type="checkbox" checked="checked"/><span class="checkbox__span"></span><span class="checkbox__label-text">Можно пригласить гостей (до 10 человек)</span>
+                </label>
+              </div>
+            </div>
+            <div class="form-elements__radio-element">
+              <div class="form-elements__title-second">Radio Buttons
+              </div>
+              <div class="form-elements__radio-group">
+                <div class="radio">
+                  <label class="radio__label"><input class="radio__input" type="radio" name="gender"/><span class="radio__span"></span>Мужчина       
+                  </label>
+                </div>
+                <div class="radio">
+                  <label class="radio__label"><input class="radio__input" type="radio" name="gender"/><span class="radio__span"></span>Женщина       
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-elements__toggle-element">
+              <div class="form-elements__title-second">Toggle
+              </div>
+              <div class="form-elements__toggle">
+                <div class="toggle">
+                  <label class="toggle__label"><input class="toggle__input" type="checkbox" checked="checked"/><span class="toggle__span"><span class="toggle__round"></span></span><span class="toggle__label-text">Получать спецпредложения</span>
+                  </label>
+                </div>
+              </div>
+              <div class="toggle">
+                <label class="toggle__label"><input class="toggle__input" type="checkbox"/><span class="toggle__span"><span class="toggle__round"></span></span><span class="toggle__label-text">Получать спецпредложения</span>
+                </label>
+              </div>
+            </div>
+            <div class="form-elements__like-button-element">
+              <div class="form-elements__title-second">Like button
+              </div>
+              <div class="form-elements__like-button">
+                <div class="like-button">
+                  <button class="like-button__button like-button__button like-button__button_undefined">2
+                  </button>
+                </div>
+                <div class="like-button">
+                  <button class="like-button__button like-button__button like-button__button_clicked">12
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="form-elements__rate-button-element">
+              <div class="form-elements__title-second">Rate button
+              </div>
+              <div class="form-elements__rate-button">
+                <div class="rate-button"><input class="rate-button__input" type="radio" name="star" value="1" checked="checked"/><input class="rate-button__input" type="radio" name="star" value="1"/><input class="rate-button__input" type="radio" name="star" value="2" checked="checked"/><input class="rate-button__input" type="radio" name="star" value="2"/><input class="rate-button__input" type="radio" name="star" value="3" checked="checked"/><input class="rate-button__input" type="radio" name="star" value="3"/><input class="rate-button__input" type="radio" name="star" value="4" checked="checked"/><input class="rate-button__input" type="radio" name="star" value="4"/><input class="rate-button__input" type="radio" name="star" value="5" checked="checked"/><input class="rate-button__input" type="radio" name="star" value="5"/>
+                </div>
+                <div class="rate-button"><input class="rate-button__input" type="radio" name="star1" value="1" checked="checked"/><input class="rate-button__input" type="radio" name="star1" value="1"/><input class="rate-button__input" type="radio" name="star1" value="2" checked="checked"/><input class="rate-button__input" type="radio" name="star1" value="2"/><input class="rate-button__input" type="radio" name="star1" value="3" checked="checked"/><input class="rate-button__input" type="radio" name="star1" value="3"/><input class="rate-button__input" type="radio" name="star1" value="4" checked="checked"/><input class="rate-button__input" type="radio" name="star1" value="4"/><input class="rate-button__input" type="radio" name="star1" value="5" checked="checked"/><input class="rate-button__input" type="radio" name="star1" value="5"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-elements__dropdown-container">
+        </div>
+        <div class="form-elements__checkbox-dropdown">
+        </div>
+        <div class="form-elements__comments-container">
+        </div>
+      </div>
+    </div>
+    <!--+button('button button_short','click me')-->
+    <!--+button('button button_short button_light','click me')-->
+    <!--+button('button button_long','click me')-->
+    <!--+button('button button_long button_long_with-arrow','click me')-->
+    <!--+button('button button_short button_disabled','click me')-->
+    <!--+button('button button_short button_light button_disabled-light','click me')-->
+    <!--+button('button button_without-border_dark','click me')-->
+    <!--+button('button button_without-border','click me')-->
+    <!--+button_with-arrow('click me')-->
+  </body>
+</html>

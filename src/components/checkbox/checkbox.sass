@@ -1,0 +1,38 @@
+@import '../../assets/fonts/Montserrat-Bold/Montserrat-Bold'
+@import '../../assets/fonts/Montserrat-Regular/Montserrat-Regular'
+
+.checkbox
+    display: flex
+    flex-direction: row
+
+.checkbox__input
+    -webkit-appearance: none
+    -mos-appearance: none
+    appearence: none
+    position: absolute
+
+.checkbox__span
+    position: absolute
+    width: 20px
+    height: 20px
+    background: url('../../components/checkbox/background-default.svg') no-repeat 100% 100%
+    margin-left: -28px
+    cursor: pointer
+    
+.checkbox__label
+    display: flex
+    flex-direction: row
+    font-family:'Conv_Montserrat-Regular',Arial, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 18px
+    color: rgba(31, 32, 65, 0.75)
+    padding-left: 28px
+
+.checkbox__label-text
+    margin-top: 2px
+
+
+.checkbox__input:checked + .checkbox__span
+    background: url('../../components/checkbox/background-checked.svg') no-repeat 50% 50%

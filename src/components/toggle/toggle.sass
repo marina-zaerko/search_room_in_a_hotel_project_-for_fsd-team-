@@ -1,0 +1,38 @@
+@import '../../assets/fonts/Montserrat-Bold/Montserrat-Bold'
+@import '../../assets/fonts/Montserrat-Regular/Montserrat-Regular'
+
+.toggle
+    display: flex
+    flex-direction: row
+
+.toggle__input
+    -webkit-appearance: none
+    -mos-appearance: none
+    appearence: none
+    position: absolute
+
+.toggle__span //slider
+    position: absolute
+    width: 37px
+    height: 18px
+    margin-left: -50px
+    cursor: pointer
+    transition: .5s
+    background: url('../../components/toggle/background-toggle-light.svg') no-repeat 4px
+    border: 1px solid rgba(31, 32, 65, 0.25)
+    border-radius: 10px
+
+.toggle__label
+    display: flex
+    flex-direction: row
+    font-family:'Conv_Montserrat-Regular',Arial, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 18px
+    color: rgba(31, 32, 65, 0.75)
+    padding-left: 50px
+
+.toggle__input:checked + .toggle__span
+    border: 1px solid #BC9CFF
+    background: url('../../components/toggle/background-toggle.svg') no-repeat 22px
