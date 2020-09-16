@@ -1,9 +1,12 @@
 .button_long_with-arrow
-    background-image:  src('../../components/button/_long/_with-arrow/arrow.svg'), linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
-    background-blend-mode: normal
-    //background: url('./arrow.svg') no-repeat top right
+    background:  url('../../components/button/_long/_with-arrow/arrow.svg') 290px no-repeat, linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
 
-.text_button
-    float: left
+.button_long_with-arrow:focus
+    outline: none
 
-
+.button_long_with-arrow:hover
+    background: url('../../components/button/_long/_with-arrow/arrow.svg') 290px no-repeat, linear-gradient(180deg, rgba(188,156,255,0.5) 0%, rgba(139,164,249,0.5) 100%)

@@ -1,0 +1,57 @@
+.slider
+    width: 266px
+
+.slider__head
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-bottom: 16px
+
+.slider__title
+    font-family:'Conv_Montserrat-Bold',Arial, sans-serif
+    font-weight: bold
+    font-style: normal
+    font-size: 12px
+    line-height: 15px
+    color: #1F2041
+    text-transform: uppercase
+
+.slider__hover-text
+    font-family:'Conv_Montserrat-Regular',Arial, sans-serif
+    font-weight: normal
+    font-style: normal
+    font-size: 12px
+    line-height: 15px
+    color: rgba(31, 32, 65, 0.5)
+    text-transform: uppercase
+
+.slider__input
+    width: 100%
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    height: 4px
+    background: #FFFFFF
+    border-radius: 3px
+    border: 1px solid rgba(31, 32, 65, 0.25)
+
+.slider__input::-webkit-slider-thumb
+    -webkit-appearance: none
+    appearance: none
+    width: 15px
+    height: 15px
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)
+    border: 2px solid #FFFFFF
+    border-radius: 10px
+    cursor: pointer
+
+.slider__input::-moz-range-thumb
+    width: 15px
+    height: 15px
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)
+    border: 2px solid #FFFFFF
+    border-radius: 10px
+    cursor: pointer
+
+.slider__input:focus
+    outline: none

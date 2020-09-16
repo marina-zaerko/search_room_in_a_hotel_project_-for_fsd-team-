@@ -1,0 +1,11 @@
+mixin pagination(params)
+    +b.pagination
+        +e.pages
+            +e.current 
+                +e.text 1
+            +e.default 2
+            +e.default 3
+            +e.default ...
+            +e.default #{params.sum_pages}
+            +e.next
+        +e.comment 1 – 12 из 100+ вариантов аренды

@@ -37,7 +37,7 @@
   line-height: 29px;
 }
 
-.button, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__label, .text-field__label, .form-elements__title-second, .form-elements__title-first, .colors-types__h3-text {
+.filter-date-dropdown__label, .date-dropdown__label, .dropdown__label, .text-field__label, .form-elements__title-second, .form-elements__title-first, .colors-types__h3-text {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -136,7 +136,7 @@
   width: 301px;
 }
 
-.button, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__label, .text-field__label, .form-elements__title-second, .form-elements__title-first, .colors-types__h3-text {
+.filter-date-dropdown__label, .date-dropdown__label, .dropdown__label, .text-field__label, .form-elements__title-second, .form-elements__title-first, .colors-types__h3-text {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -262,6 +262,30 @@
   justify-content: space-between;
 }
 
+.form-elements__buttons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 132px;
+}
+
+.form-elements__slider-element {
+  height: 89px;
+}
+
+.form-elements__button-element {
+  margin-bottom: 40px;
+}
+
+.form-elements__button {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.form-elements__button-second {
+  margin-left: 20px;
+}
+
 .form-elements__dropdown-container {
   width: 1159px;
   height: 265.56px;
@@ -331,7 +355,7 @@
   color: rgba(31, 32, 65, 0.75);
 }
 
-.button, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__label, .text-field__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second {
+.filter-date-dropdown__label, .date-dropdown__label, .dropdown__label, .text-field__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -524,7 +548,7 @@
 /*	==========================================================================	*/
 /*	TEXT-FIELD                                                                 	*/
 /*	==========================================================================	*/ 
-.button, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__label, .text-field__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second {
+.filter-date-dropdown__label, .date-dropdown__label, .dropdown__label, .text-field__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -603,7 +627,7 @@
 /*	==========================================================================	*/
 /*	DROPDOWNS                                                                 	*/
 /*	==========================================================================	*/ 
-.button, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label {
+.filter-date-dropdown__label, .date-dropdown__label, .dropdown__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -667,7 +691,7 @@
   border: 1px solid rgba(31, 32, 65, 0.5);
 }
 
-.button, .filter-date-dropdown__label, .date-dropdown__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label, .dropdown__label {
+.filter-date-dropdown__label, .date-dropdown__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label, .dropdown__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -730,7 +754,7 @@
   border: 1px solid rgba(31, 32, 65, 0.5);
 }
 
-.button, .filter-date-dropdown__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label, .dropdown__label, .date-dropdown__label {
+.filter-date-dropdown__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label, .dropdown__label, .date-dropdown__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -795,7 +819,7 @@
 /*	==========================================================================	*/
 /*	BUTTONS                                                                  	*/
 /*	==========================================================================	*/ 
-.button, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label, .dropdown__label, .date-dropdown__label, .filter-date-dropdown__label {
+.colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label, .dropdown__label, .date-dropdown__label, .filter-date-dropdown__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -806,29 +830,59 @@
 }
 
 .button {
-  display: inline-block;
   height: 44px;
-  outline: none;
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   border: 0px solid transparent;
   border-radius: 22px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   cursor: pointer;
 }
 
+.button:hover {
+  background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+}
+
 .button_without-border {
   color: #BC9CFF;
-  min-width: 73px;
   height: 15px;
-  border: 0px solid transparent;
+  border: 0px solid;
+  border-radius: 0px;
+  background: #ffffff;
+}
+
+.button_without-border:focus {
+  outline: none;
+}
+
+.button_without-border:hover {
+  color: #BC9CFF;
+  height: 15px;
+  border: 0px solid;
   border-radius: 0px;
   background: #ffffff;
 }
 
 .button_without-border_dark {
   color: rgba(31, 32, 65, 0.5);
-  min-width: 73px;
+  height: 15px;
+  border: 0px solid transparent;
+  border-radius: 0px;
+  background: #ffffff;
+}
+
+.button_without-border_dark:focus {
+  outline: none;
+}
+
+.button_without-border_dark:hover {
+  color: rgba(31, 32, 65, 0.5);
   height: 15px;
   border: 0px solid transparent;
   border-radius: 0px;
@@ -839,17 +893,32 @@
   min-width: 320px;
 }
 
-.button_long_with-arrow {
-  background-image: src("../../components/button/_long/_with-arrow/arrow.svg"), linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  background-blend-mode: normal;
+.button-long:fous {
+  outline: none;
 }
 
-.text_button {
-  float: left;
+.button_long_with-arrow {
+  background: url("../../components/button/_long/_with-arrow/arrow.svg") 290px no-repeat, linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_long_with-arrow:focus {
+  outline: none;
+}
+
+.button_long_with-arrow:hover {
+  background: url("../../components/button/_long/_with-arrow/arrow.svg") 290px no-repeat, linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
 }
 
 .button_short {
   width: 99px;
+}
+
+.button_short:focus {
+  outline: none;
 }
 
 .button_light {
@@ -857,6 +926,13 @@
   color: #BC9CFF;
   border: 2px solid transparent;
   border-color: #BC9CFF;
+}
+
+.button_light:hover {
+  background: #ffffff;
+  color: #BC9CFF;
+  border: 2px solid transparent;
+  border-color: rgba(188, 156, 255, 0.5);
 }
 
 .button_disabled {
@@ -870,16 +946,38 @@
 
 .button_without-border {
   color: #BC9CFF;
-  min-width: 73px;
   height: 15px;
-  border: 0px solid transparent;
+  border: 0px solid;
+  border-radius: 0px;
+  background: #ffffff;
+}
+
+.button_without-border:focus {
+  outline: none;
+}
+
+.button_without-border:hover {
+  color: #BC9CFF;
+  height: 15px;
+  border: 0px solid;
   border-radius: 0px;
   background: #ffffff;
 }
 
 .button_without-border_dark {
   color: rgba(31, 32, 65, 0.5);
-  min-width: 73px;
+  height: 15px;
+  border: 0px solid transparent;
+  border-radius: 0px;
+  background: #ffffff;
+}
+
+.button_without-border_dark:focus {
+  outline: none;
+}
+
+.button_without-border_dark:hover {
+  color: rgba(31, 32, 65, 0.5);
   height: 15px;
   border: 0px solid transparent;
   border-radius: 0px;
@@ -980,7 +1078,7 @@
 /*	==========================================================================	*/
 /*	CHECKBOX & RADIO & TOGGLE                                                	*/
 /*	==========================================================================	*/ 
-.colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label, .dropdown__label, .date-dropdown__label, .filter-date-dropdown__label, .button {
+.colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label, .dropdown__label, .date-dropdown__label, .filter-date-dropdown__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1040,7 +1138,7 @@
   background: url("../../components/checkbox/background-checked.svg") no-repeat 50% 50%;
 }
 
-.colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label, .dropdown__label, .date-dropdown__label, .filter-date-dropdown__label, .button {
+.colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label, .dropdown__label, .date-dropdown__label, .filter-date-dropdown__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1094,7 +1192,7 @@
   background: url("../../components/radio/background-checked.svg") no-repeat 50% 50%;
 }
 
-.colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label, .dropdown__label, .date-dropdown__label, .filter-date-dropdown__label, .button {
+.colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label, .dropdown__label, .date-dropdown__label, .filter-date-dropdown__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1152,6 +1250,141 @@
 .toggle__input:checked + .toggle__span {
   border: 1px solid #BC9CFF;
   background: url("../../components/toggle/background-toggle.svg") no-repeat 22px;
+}
+
+/*	==========================================================================	*/
+/*	SLIDER                                                                  	*/
+/*	==========================================================================	*/     
+.slider {
+  width: 266px;
+}
+
+.slider__head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.slider__title {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1F2041;
+  text-transform: uppercase;
+}
+
+.slider__hover-text {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(31, 32, 65, 0.5);
+  text-transform: uppercase;
+}
+
+.slider__input {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 4px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.slider__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.slider__input::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.slider__input:focus {
+  outline: none;
+}
+
+/*	==========================================================================	*/
+/*	PAGINATION                                                                 	*/
+/*	==========================================================================	*/  
+.pagination__next, .pagination__default, .pagination__current {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination__current {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.pagination__comment, .pagination__default {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.pagination__next, .pagination__default, .pagination__current {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.pagination {
+  width: 241px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pagination__pages {
+  display: flex;
+  flex-direction: row;
+}
+
+.pagination__current {
+  color: #ffffff;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+}
+
+.pagination__default {
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.pagination__next {
+  background: url("../../components/pagination/arrow.svg") no-repeat 50% 50%, linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border-radius: 22px;
+}
+
+.pagination__comment {
+  margin-top: 10.56px;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
 }
 
 /*# sourceMappingURL=index.css.map */

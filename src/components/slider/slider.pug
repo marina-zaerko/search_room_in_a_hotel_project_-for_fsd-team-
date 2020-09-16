@@ -1,0 +1,7 @@
+mixin slider(params)
+    +b.slider
+        +e.head
+            +e.title #{params.title}
+            +e.hover-text #{params.hover_text}
+        +e.INPUT.input(type="range")
+        

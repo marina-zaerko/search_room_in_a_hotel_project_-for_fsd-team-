@@ -1,13 +1,19 @@
 @import '../../assets/fonts/Montserrat-Bold/Montserrat-Bold'
 
 .button
-    display: inline-block
     height: 44px
-    @extend %montserrat-bold
-    outline: none
+    font-family:'Conv_Montserrat-Bold',Arial, sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    text-transform: uppercase
     text-decoration: none
-    color: white
+    color: #ffffff
     border: 0px solid transparent
     border-radius: 22px
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
     cursor: pointer
+
+.button:hover
+    background: linear-gradient(180deg, rgba(188,156,255,0.5) 0%, rgba(139,164,249,0.5) 100%)

@@ -7,6 +7,10 @@ include ../../components/radio/radio.pug
 include ../../components/toggle/toggle.pug
 include ../../components/like-button/like-button.pug
 include ../../components/rate-button/rate-button.pug
+include ../../components/slider/slider.pug
+include ../../components/button/button.pug
+include ../../components/button/_long/_with-arrow/button_with-arrow.pug
+include ../../components/pagination/pagination.pug
 include ../../components/dropdown/date-dropdown/date-dropdown.pug
 include ../../components/dropdown/filter-date-dropdown/filter-date-dropdown.pug
 
@@ -66,6 +70,27 @@ mixin form-elements
                         +e.rate-button
                             +rate-button({name: "star", star1: "true", star2: "true", star3: "true", star4: "true", star5: "false"})
                             +rate-button({name: "star1", star1: "true", star2: "true", star3: "true", star4: "true", star5: "true"})
+                +e.buttons
+                    +e.slider-element
+                        +slider({title:"Range Slider", hover_text:"5 000₽ - 10 000₽"})
+                    +e.button-element
+                        +e.title-second Buttons
+                        +e.button
+                            +button('button button_short','click me')
+                            +e.button-second
+                                +button('button button_short button_disabled','click me')
+                        +e.button
+                            +button('button button_short button_light','click me')
+                            +e.button-second
+                                +button('button button_short button_light button_disabled-light','click me')
+                        +e.button
+                            +button('button button_without-border_dark','click me')
+                            +button('button button_without-border','click me')
+                        +button_with-arrow('перейти к оплате')
+                    +e.pagination-element
+                        +e.title-second Pagination
+                        +pagination({sum_pages:"15"})
+
             +e.dropdown-container
             +e.checkbox-dropdown
             +e.comments-container
