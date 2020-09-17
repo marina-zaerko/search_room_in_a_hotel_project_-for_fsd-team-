@@ -2,4 +2,4 @@ mixin date-dropdown(params)
     +b.date-dropdown
         +e.title
             +e.LABEL.label(for=params.id class="date-dropdown__label_"+params.state) #{params.label_text}
-        +e.INPUT.input(id=params.id type="text" placeholder=params.placeholder)
+        +e.input #{params.placeholder}

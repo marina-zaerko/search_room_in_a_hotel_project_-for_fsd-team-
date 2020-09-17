@@ -1,0 +1,26 @@
+@import '../../../assets/fonts/Montserrat-Bold/Montserrat-Bold'
+
+.dropdown-checkbox-list__head
+    width: 252px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    cursor: pointer
+
+.dropdown-checkbox-list__label
+    @extend %montserrat-bold
+
+.dropdown-checkbox-list__arrow
+    width: 15px
+    height: 8px
+    background: url('../../components/dropdown/arrow-dropdown.svg') no-repeat
+
+.dropdown-checkbox-list__arrow_droped
+    transform: rotate(180deg)
+
+.dropdown-checkbox-list__list
+    margin-bottom: 17px
+
+.dropdown-checkbox-list__box
+    margin-bottom: 10.5px

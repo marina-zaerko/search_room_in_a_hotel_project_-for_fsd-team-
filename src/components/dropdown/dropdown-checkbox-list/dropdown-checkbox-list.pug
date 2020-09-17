@@ -1,0 +1,16 @@
+include ../../../components/checkbox/checkbox.pug
+
+mixin dropdown-checkbox-list(params)
+    +b.dropdown-checkbox-list
+        +e.head
+            +e.label #{params.label_text}
+            +e.arrow(class="dropdown-checkbox-list__arrow_"+params.state)
+        if(params.state == "droped")
+            +e.list
+            each val in params.items
+                if (val.checked == "checked")
+                    +e.box
+                        +checkbox({label_text: val.name, state: val.checked})
+                else
+                    +e.box
+                        +checkbox({label_text: val.name})

@@ -1,6 +1,30 @@
+include ../../components/button/button.pug
+
 mixin dropdown(params)
-    +b.dropdown
+    - var item = params.items
+    - var nums = 0
+    +b.dropdown(class="dropdown_" + params.len)
         +e.title
-            +e.LABEL.label(for=params.id class="text-field__label_"+params.state) #{params.label_text}
+            +e.LABEL.label #{params.label_text}
             +e.hover-text #{params.hover_text}
-        +e.SELECT.select(id=params.id)
+        +e.select(class="dropdown__select_" + params.state + " dropdown__select_" + params.len) #{params.placeholder}
+        if(params.state == "droped" && item.length > 0)
+            +e.list(class="dropdown__list_" + params.len)
+                each val in item
+                    +e.item
+                        +e.name #{val.name}
+                        +e.counter
+                            if (val.number <= 0)
+                                +e.count_disabled -
+                            else
+                                +e.count -
+                                - nums = 1
+                            +e.number #{val.number}
+                            +e.count +
+                if(params.len == "")
+                    +e.buttons
+                        +button('button button_without-border','применить')
+                        if(nums > 0) 
+                            +button('button button_without-border_dark','очистить')
+
+                    

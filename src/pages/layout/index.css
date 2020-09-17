@@ -37,7 +37,7 @@
   line-height: 29px;
 }
 
-.filter-date-dropdown__label, .date-dropdown__label, .dropdown__label, .text-field__label, .form-elements__title-second, .form-elements__title-first, .colors-types__h3-text {
+.dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .form-elements__title-second, .form-elements__title-first, .colors-types__h3-text {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -47,7 +47,7 @@
   text-transform: uppercase;
 }
 
-.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__select, .text-field__input, .calendar__table, .colors-types__body-text, .colors-types__body-title, .colors-types__h3-title, .colors-types__h2-title, .colors-types__h1-title {
+.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .calendar__table, .colors-types__body-text, .colors-types__body-title, .colors-types__h3-title, .colors-types__h2-title, .colors-types__h1-title {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -136,7 +136,7 @@
   width: 301px;
 }
 
-.filter-date-dropdown__label, .date-dropdown__label, .dropdown__label, .text-field__label, .form-elements__title-second, .form-elements__title-first, .colors-types__h3-text {
+.dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .form-elements__title-second, .form-elements__title-first, .colors-types__h3-text {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -146,7 +146,7 @@
   text-transform: uppercase;
 }
 
-.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__select, .text-field__input, .calendar__table, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text {
+.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .calendar__table, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -166,7 +166,6 @@
 }
 
 .form-elements__text-checkbox-button-container {
-  width: 1159px;
   margin-top: 62px;
   margin-left: 140px;
   display: flex;
@@ -178,11 +177,27 @@
 }
 
 .form-elements__textfield-element {
-  margin-bottom: 21px;
+  margin-bottom: 20px;
+}
+
+.textfield-element1 {
+  margin-top: 2px;
+}
+
+.textfield-element2 {
+  margin-bottom: 24px;
 }
 
 .form-elements__dropdown-element {
   margin-bottom: 40px;
+}
+
+.dropdown-element1 {
+  margin-bottom: 42px;
+}
+
+.dropdown-element2 {
+  margin-bottom: 42px;
 }
 
 .form-elements__date-dropdown {
@@ -286,20 +301,42 @@
   margin-left: 20px;
 }
 
+.form-elements__button-third {
+  width: 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .form-elements__dropdown-container {
-  width: 1159px;
-  height: 265.56px;
+  display: flex;
+  flex-direction: row;
   margin-top: 100px;
   margin-left: 140px;
-  background-color: #000000;
+}
+
+.form-elements__dropdown-without-button-element {
+  margin-bottom: 21px;
+}
+
+.form-elements__dropdown-one-button {
+  margin-left: 181px;
+}
+
+.form-elements__dropdown-two-button {
+  margin-left: 72px;
 }
 
 .form-elements__checkbox-dropdown {
-  width: 1131px;
-  height: 281.44px;
+  display: flex;
+  flex-direction: row;
   margin-top: 40.44px;
   margin-left: 140px;
-  background-color: #000000;
+}
+
+.form-elements__expandable-dropdown-element {
+  margin-top: 14px;
+  margin-bottom: 51px;
 }
 
 .form-elements__comments-container {
@@ -346,7 +383,7 @@
   letter-spacing: -0.5px;
 }
 
-.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__select, .text-field__input, .calendar__table, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text {
+.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .calendar__table, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -355,7 +392,7 @@
   color: rgba(31, 32, 65, 0.75);
 }
 
-.filter-date-dropdown__label, .date-dropdown__label, .dropdown__label, .text-field__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second {
+.dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -548,7 +585,7 @@
 /*	==========================================================================	*/
 /*	TEXT-FIELD                                                                 	*/
 /*	==========================================================================	*/ 
-.filter-date-dropdown__label, .date-dropdown__label, .dropdown__label, .text-field__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second {
+.dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -558,7 +595,7 @@
   text-transform: uppercase;
 }
 
-.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__select, .text-field__input, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table {
+.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -591,11 +628,12 @@
 
 .text-field__input {
   margin-top: 5px;
-  height: 42px;
+  height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   padding-left: 15px;
   padding-right: 15px;
+  outline: none;
 }
 
 .text-field__input::placeholder {
@@ -608,6 +646,7 @@
 
 .text-field__input::focus {
   border: 1px solid rgba(31, 32, 65, 0.5);
+  outline: none;
 }
 
 .text-field__input_hover-focus {
@@ -619,7 +658,7 @@
 }
 
 .text-field__input_with-arrow {
-  background: url("../../components/text-field/_with-arrow/arrow.svg") no-repeat 233px 15px;
+  background: url("../../components/text-field/_with-arrow/arrow.svg") no-repeat 233px 13px;
   background-size: auto 40%;
   width: 233px;
 }
@@ -627,7 +666,7 @@
 /*	==========================================================================	*/
 /*	DROPDOWNS                                                                 	*/
 /*	==========================================================================	*/ 
-.filter-date-dropdown__label, .date-dropdown__label, .dropdown__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label {
+.dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -637,7 +676,7 @@
   text-transform: uppercase;
 }
 
-.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__select, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .text-field__input {
+.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .text-field__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -650,6 +689,11 @@
   width: 320px;
   display: flex;
   flex-direction: column;
+  filter: drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.05));
+}
+
+.dropdown_middle {
+  width: 265px;
 }
 
 .dropdown__title {
@@ -670,13 +714,28 @@
 
 .dropdown__select {
   margin-top: 5px;
-  height: 42px;
   border-radius: 4px;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   -webkit-appearance: none;
+  -moz-appearance: none;
   background: url("../../components/dropdown/arrow-dropdown.svg") no-repeat 290px;
+  cursor: pointer;
+}
+
+.dropdown__select_droped {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.dropdown__select_middle {
+  background: url("../../components/dropdown/arrow-dropdown.svg") no-repeat 236px;
 }
 
 .dropdown__select::placeholder {
@@ -691,7 +750,74 @@
   border: 1px solid rgba(31, 32, 65, 0.5);
 }
 
-.filter-date-dropdown__label, .date-dropdown__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label, .dropdown__label {
+.dropdown__list {
+  width: 296px;
+  border-top: 0px solid rgba(31, 32, 65, 0.5);
+  border-bottom: 1px solid rgba(31, 32, 65, 0.5);
+  border-left: 1px solid rgba(31, 32, 65, 0.5);
+  border-right: 1px solid rgba(31, 32, 65, 0.5);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background: #ffffff;
+  padding-top: 4px;
+  padding-bottom: 1px;
+  padding-left: 13px;
+  padding-right: 9px;
+}
+
+.dropdown__list_middle {
+  width: 241px;
+  padding-top: 4px;
+  padding-bottom: 1px;
+  padding-left: 13px;
+  padding-right: 9px;
+}
+
+.dropdown__item {
+  margin-bottom: 6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown__counter {
+  width: 92px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown__count {
+  height: 29px;
+  width: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(31, 32, 65, 0.5);
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 22px;
+  cursor: pointer;
+}
+
+.dropdown__count_disabled {
+  opacity: 0.38;
+}
+
+.dropdown__buttons {
+  margin-top: 22px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label, .dropdown__label, .dropdown__item {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -701,7 +827,7 @@
   text-transform: uppercase;
 }
 
-.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .text-field__input, .dropdown__select {
+.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .text-field__input, .dropdown__select, .dropdown__count {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -730,12 +856,13 @@
 
 .date-dropdown__input {
   margin-top: 5px;
-  height: 40px;
   width: 118px;
   border-radius: 4px;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   -webkit-appearance: none;
   background: url("../../components/dropdown/arrow-dropdown.svg") no-repeat 120px;
   cursor: pointer;
@@ -754,7 +881,7 @@
   border: 1px solid rgba(31, 32, 65, 0.5);
 }
 
-.filter-date-dropdown__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label, .dropdown__label, .date-dropdown__label {
+.dropdown-checkbox-list__label, .filter-date-dropdown__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -764,7 +891,7 @@
   text-transform: uppercase;
 }
 
-.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .text-field__input, .dropdown__select, .date-dropdown__hover-text, .date-dropdown__input {
+.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -793,12 +920,13 @@
 
 .filter-date-dropdown__input {
   margin-top: 5px;
-  height: 40px;
   width: 233px;
   border-radius: 4px;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   -webkit-appearance: none;
   background: url("../../components/dropdown/arrow-dropdown.svg") no-repeat 236px;
   cursor: pointer;
@@ -816,10 +944,47 @@
   border: 1px solid rgba(31, 32, 65, 0.5);
 }
 
+.dropdown-checkbox-list__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1F2041;
+  text-transform: uppercase;
+}
+
+.dropdown-checkbox-list__head {
+  width: 252px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.dropdown-checkbox-list__arrow {
+  width: 15px;
+  height: 8px;
+  background: url("../../components/dropdown/arrow-dropdown.svg") no-repeat;
+}
+
+.dropdown-checkbox-list__arrow_droped {
+  transform: rotate(180deg);
+}
+
+.dropdown-checkbox-list__list {
+  margin-bottom: 17px;
+}
+
+.dropdown-checkbox-list__box {
+  margin-bottom: 10.5px;
+}
+
 /*	==========================================================================	*/
 /*	BUTTONS                                                                  	*/
 /*	==========================================================================	*/ 
-.colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label, .dropdown__label, .date-dropdown__label, .filter-date-dropdown__label {
+.colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label, .dropdown-checkbox-list__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -855,6 +1020,7 @@
   border: 0px solid;
   border-radius: 0px;
   background: #ffffff;
+  padding: 0px;
 }
 
 .button_without-border:focus {
@@ -875,6 +1041,7 @@
   border: 0px solid transparent;
   border-radius: 0px;
   background: #ffffff;
+  padding: 0px;
 }
 
 .button_without-border_dark:focus {
@@ -950,6 +1117,7 @@
   border: 0px solid;
   border-radius: 0px;
   background: #ffffff;
+  padding: 0px;
 }
 
 .button_without-border:focus {
@@ -970,6 +1138,7 @@
   border: 0px solid transparent;
   border-radius: 0px;
   background: #ffffff;
+  padding: 0px;
 }
 
 .button_without-border_dark:focus {
@@ -984,7 +1153,7 @@
   background: #ffffff;
 }
 
-.colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .text-field__input, .dropdown__select, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
+.colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1078,7 +1247,7 @@
 /*	==========================================================================	*/
 /*	CHECKBOX & RADIO & TOGGLE                                                	*/
 /*	==========================================================================	*/ 
-.colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label, .dropdown__label, .date-dropdown__label, .filter-date-dropdown__label {
+.colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label, .dropdown-checkbox-list__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1088,7 +1257,7 @@
   text-transform: uppercase;
 }
 
-.colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .text-field__input, .dropdown__select, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
+.colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1138,7 +1307,7 @@
   background: url("../../components/checkbox/background-checked.svg") no-repeat 50% 50%;
 }
 
-.colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label, .dropdown__label, .date-dropdown__label, .filter-date-dropdown__label {
+.colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label, .dropdown-checkbox-list__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1148,7 +1317,7 @@
   text-transform: uppercase;
 }
 
-.colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .text-field__input, .dropdown__select, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
+.colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1192,7 +1361,7 @@
   background: url("../../components/radio/background-checked.svg") no-repeat 50% 50%;
 }
 
-.colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label, .dropdown__label, .date-dropdown__label, .filter-date-dropdown__label {
+.colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label, .dropdown-checkbox-list__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1202,7 +1371,7 @@
   text-transform: uppercase;
 }
 
-.colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .text-field__input, .dropdown__select, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
+.colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;

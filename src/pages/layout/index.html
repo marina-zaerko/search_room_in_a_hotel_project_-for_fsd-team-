@@ -22,7 +22,7 @@
       <div class="form-elements__content-container">
         <div class="form-elements__text-checkbox-button-container">
           <div class="form-elements__text-fields">
-            <div class="form-elements__textfield-element">
+            <div class="form-elements__textfield-element textfield-element1">
               <div class="text-field">
                 <div class="text-field__title">
                   <label class="text-field__label text-field__label text-field__label_undefined" for="email">Text field
@@ -42,16 +42,16 @@
                 </div><input class="text-field__input text-field__input text-field__input_hover-focus" placeholder="This is pretty awesome" id="text" type="text"/>
               </div>
             </div>
-            <div class="form-elements__textfield-element">
-              <div class="dropdown">
+            <div class="form-elements__textfield-element textfield-element2">
+              <div class="dropdown dropdown_">
                 <div class="dropdown__title">
-                  <label class="dropdown__label text-field__label text-field__label_undefined" for="dropdown">dropdown
+                  <label class="dropdown__label">dropdown
                   </label>
                   <div class="dropdown__hover-text">Default
                   </div>
                 </div>
-                <select class="dropdown__select" id="dropdown">
-                </select>
+                <div class="dropdown__select dropdown__select dropdown__select_undefined dropdown__select_">Сколько гостей
+                </div>
               </div>
             </div>
             <div class="form-elements__dropdown-element">
@@ -64,28 +64,34 @@
                 </div><input class="text-field__input text-field__input text-field__input_undefined" placeholder="ДД.ММ.ГГГГ" id="text" type="text" pattern="d{1,2}/d{1,2}/d{4}"/>
               </div>
             </div>
-            <div class="form-elements__dropdown-element">
+            <div class="form-elements__dropdown-element dropdown-element1">
               <div class="form-elements__date-dropdown">
                 <div class="date-dropdown">
                   <div class="date-dropdown__title">
                     <label class="date-dropdown__label date-dropdown__label date-dropdown__label_undefined" for="date-dropdown-default">date dropdown
                     </label>
-                  </div><input class="date-dropdown__input" id="date-dropdown-default" type="text" placeholder="ДД.ММ.ГГГГ"/>
+                  </div>
+                  <div class="date-dropdown__input">ДД.ММ.ГГГГ
+                  </div>
                 </div>
                 <div class="date-dropdown">
                   <div class="date-dropdown__title">
                     <label class="date-dropdown__label date-dropdown__label date-dropdown__label_undefined" for="date-dropdown-default">date dropdown
                     </label>
-                  </div><input class="date-dropdown__input" id="date-dropdown-default" type="text" placeholder="19.08.2019"/>
+                  </div>
+                  <div class="date-dropdown__input">19.08.2019
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="form-elements__dropdown-element">
+            <div class="form-elements__dropdown-element dropdown-element2">
               <div class="filter-date-dropdown">
                 <div class="filter-date-dropdown__title">
                   <label class="filter-date-dropdown__label filter-date-dropdown__label filter-date-dropdown__label_undefined" for="filter-date-dropdown">filter date dropdown
                   </label>
-                </div><input class="filter-date-dropdown__input" id="filter-date-dropdown" type="text" placeholder="19 авг - 23 авг"/>
+                </div>
+                <div class="filter-date-dropdown__input">19 авг - 23 авг
+                </div>
               </div>
             </div>
             <div class="text-field">
@@ -164,9 +170,9 @@
               <div class="form-elements__title-second">Rate button
               </div>
               <div class="form-elements__rate-button">
-                <div class="rate-button"><input class="rate-button__input" type="radio" name="star" value="1" checked="checked"/><input class="rate-button__input" type="radio" name="star" value="1"/><input class="rate-button__input" type="radio" name="star" value="2" checked="checked"/><input class="rate-button__input" type="radio" name="star" value="2"/><input class="rate-button__input" type="radio" name="star" value="3" checked="checked"/><input class="rate-button__input" type="radio" name="star" value="3"/><input class="rate-button__input" type="radio" name="star" value="4" checked="checked"/><input class="rate-button__input" type="radio" name="star" value="4"/><input class="rate-button__input" type="radio" name="star" value="5" checked="checked"/><input class="rate-button__input" type="radio" name="star" value="5"/>
+                <div class="rate-button"><input class="rate-button__input" type="radio" name="star" value="1" checked="checked"/><input class="rate-button__input" type="radio" name="star" value="2" checked="checked"/><input class="rate-button__input" type="radio" name="star" value="3" checked="checked"/><input class="rate-button__input" type="radio" name="star" value="4" checked="checked"/><input class="rate-button__input" type="radio" name="star" value="5"/>
                 </div>
-                <div class="rate-button"><input class="rate-button__input" type="radio" name="star1" value="1" checked="checked"/><input class="rate-button__input" type="radio" name="star1" value="1"/><input class="rate-button__input" type="radio" name="star1" value="2" checked="checked"/><input class="rate-button__input" type="radio" name="star1" value="2"/><input class="rate-button__input" type="radio" name="star1" value="3" checked="checked"/><input class="rate-button__input" type="radio" name="star1" value="3"/><input class="rate-button__input" type="radio" name="star1" value="4" checked="checked"/><input class="rate-button__input" type="radio" name="star1" value="4"/><input class="rate-button__input" type="radio" name="star1" value="5" checked="checked"/><input class="rate-button__input" type="radio" name="star1" value="5"/>
+                <div class="rate-button"><input class="rate-button__input" type="radio" name="star1" value="1" checked="checked"/><input class="rate-button__input" type="radio" name="star1" value="2" checked="checked"/><input class="rate-button__input" type="radio" name="star1" value="3" checked="checked"/><input class="rate-button__input" type="radio" name="star1" value="4" checked="checked"/><input class="rate-button__input" type="radio" name="star1" value="5" checked="checked"/>
                 </div>
               </div>
             </div>
@@ -202,10 +208,12 @@
                 </div>
               </div>
               <div class="form-elements__button">
-                <button class="button button button_without-border_dark">click me
-                </button>
-                <button class="button button button_without-border">click me
-                </button>
+                <div class="form-elements__button-third">
+                  <button class="button button button_without-border">click me
+                  </button>
+                  <button class="button button button_without-border_dark">click me
+                  </button>
+                </div>
               </div>
               <button class="button button button_long button button_long_with-arrow"> 
                 <div class="text text_button">перейти к оплате
@@ -239,8 +247,238 @@
           </div>
         </div>
         <div class="form-elements__dropdown-container">
+          <div class="form-elements__dropdown-without-button">
+            <div class="form-elements__dropdown-without-button-element">
+              <div class="dropdown dropdown dropdown_middle">
+                <div class="dropdown__title">
+                  <label class="dropdown__label">dropdown
+                  </label>
+                  <div class="dropdown__hover-text">Default
+                  </div>
+                </div>
+                <div class="dropdown__select dropdown__select dropdown__select_undefined dropdown__select dropdown__select_middle">2 спальни, 2 кровати...
+                </div>
+              </div>
+            </div>
+            <div class="dropdown dropdown dropdown_middle">
+              <div class="dropdown__title">
+                <label class="dropdown__label">dropdown
+                </label>
+                <div class="dropdown__hover-text">Expanded
+                </div>
+              </div>
+              <div class="dropdown__select dropdown__select dropdown__select_droped dropdown__select dropdown__select_middle">2 спальни, 2 кровати...
+              </div>
+              <div class="dropdown__list dropdown__list dropdown__list_middle">
+                <div class="dropdown__item">
+                  <div class="dropdown__name">Спальни
+                  </div>
+                  <div class="dropdown__counter">
+                    <div class="dropdown__count">-
+                    </div>
+                    <div class="dropdown__number">2
+                    </div>
+                    <div class="dropdown__count">+
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown__item">
+                  <div class="dropdown__name">Кровати
+                  </div>
+                  <div class="dropdown__counter">
+                    <div class="dropdown__count">-
+                    </div>
+                    <div class="dropdown__number">2
+                    </div>
+                    <div class="dropdown__count">+
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown__item">
+                  <div class="dropdown__name">Ванные комнаты
+                  </div>
+                  <div class="dropdown__counter">
+                    <div class="dropdown__count dropdown__count_disabled">-
+                    </div>
+                    <div class="dropdown__number">0
+                    </div>
+                    <div class="dropdown__count">+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-elements__dropdown-one-button">
+            <div class="dropdown dropdown_">
+              <div class="dropdown__title">
+                <label class="dropdown__label">dropdown
+                </label>
+                <div class="dropdown__hover-text">
+                </div>
+              </div>
+              <div class="dropdown__select dropdown__select dropdown__select_droped dropdown__select_">Сколько гостей
+              </div>
+              <div class="dropdown__list dropdown__list_">
+                <div class="dropdown__item">
+                  <div class="dropdown__name">Взрослые
+                  </div>
+                  <div class="dropdown__counter">
+                    <div class="dropdown__count dropdown__count_disabled">-
+                    </div>
+                    <div class="dropdown__number">0
+                    </div>
+                    <div class="dropdown__count">+
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown__item">
+                  <div class="dropdown__name">Дети
+                  </div>
+                  <div class="dropdown__counter">
+                    <div class="dropdown__count dropdown__count_disabled">-
+                    </div>
+                    <div class="dropdown__number">0
+                    </div>
+                    <div class="dropdown__count">+
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown__item">
+                  <div class="dropdown__name">Младенцы
+                  </div>
+                  <div class="dropdown__counter">
+                    <div class="dropdown__count dropdown__count_disabled">-
+                    </div>
+                    <div class="dropdown__number">0
+                    </div>
+                    <div class="dropdown__count">+
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown__buttons">
+                  <button class="button button button_without-border">применить
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-elements__dropdown-two-button">
+            <div class="dropdown dropdown_">
+              <div class="dropdown__title">
+                <label class="dropdown__label">dropdown
+                </label>
+                <div class="dropdown__hover-text">
+                </div>
+              </div>
+              <div class="dropdown__select dropdown__select dropdown__select_droped dropdown__select_">3 гостя
+              </div>
+              <div class="dropdown__list dropdown__list_">
+                <div class="dropdown__item">
+                  <div class="dropdown__name">Взрослые
+                  </div>
+                  <div class="dropdown__counter">
+                    <div class="dropdown__count">-
+                    </div>
+                    <div class="dropdown__number">2
+                    </div>
+                    <div class="dropdown__count">+
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown__item">
+                  <div class="dropdown__name">Дети
+                  </div>
+                  <div class="dropdown__counter">
+                    <div class="dropdown__count">-
+                    </div>
+                    <div class="dropdown__number">1
+                    </div>
+                    <div class="dropdown__count">+
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown__item">
+                  <div class="dropdown__name">Младенцы
+                  </div>
+                  <div class="dropdown__counter">
+                    <div class="dropdown__count dropdown__count_disabled">-
+                    </div>
+                    <div class="dropdown__number">0
+                    </div>
+                    <div class="dropdown__count">+
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown__buttons">
+                  <button class="button button button_without-border">применить
+                  </button>
+                  <button class="button button button_without-border_dark">очистить
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="form-elements__checkbox-dropdown">
+          <div class="form-elements__expandable-dropdown">
+            <div class="form-elements__expandable-dropdown-element">
+              <div class="dropdown-checkbox-list">
+                <div class="dropdown-checkbox-list__head">
+                  <div class="dropdown-checkbox-list__label">expandable checkbox list
+                  </div>
+                  <div class="dropdown-checkbox-list__arrow dropdown-checkbox-list__arrow_">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-checkbox-list">
+              <div class="dropdown-checkbox-list__head">
+                <div class="dropdown-checkbox-list__label">expandable checkbox list
+                </div>
+                <div class="dropdown-checkbox-list__arrow dropdown-checkbox-list__arrow dropdown-checkbox-list__arrow_droped">
+                </div>
+              </div>
+              <div class="dropdown-checkbox-list__list">
+              </div>
+              <div class="dropdown-checkbox-list__box">
+                <div class="checkbox">
+                  <label class="checkbox__label"><input class="checkbox__input" type="checkbox"/><span class="checkbox__span"></span><span class="checkbox__label-text">Завтрак</span>
+                  </label>
+                </div>
+              </div>
+              <div class="dropdown-checkbox-list__box">
+                <div class="checkbox">
+                  <label class="checkbox__label"><input class="checkbox__input" type="checkbox" checked="checked"/><span class="checkbox__span"></span><span class="checkbox__label-text">Письменный стол</span>
+                  </label>
+                </div>
+              </div>
+              <div class="dropdown-checkbox-list__box">
+                <div class="checkbox">
+                  <label class="checkbox__label"><input class="checkbox__input" type="checkbox" checked="checked"/><span class="checkbox__span"></span><span class="checkbox__label-text">Стул для кормления</span>
+                  </label>
+                </div>
+              </div>
+              <div class="dropdown-checkbox-list__box">
+                <div class="checkbox">
+                  <label class="checkbox__label"><input class="checkbox__input" type="checkbox" checked="checked"/><span class="checkbox__span"></span><span class="checkbox__label-text">Кроватка</span>
+                  </label>
+                </div>
+              </div>
+              <div class="dropdown-checkbox-list__box">
+                <div class="checkbox">
+                  <label class="checkbox__label"><input class="checkbox__input" type="checkbox"/><span class="checkbox__span"></span><span class="checkbox__label-text">Телевизор</span>
+                  </label>
+                </div>
+              </div>
+              <div class="dropdown-checkbox-list__box">
+                <div class="checkbox">
+                  <label class="checkbox__label"><input class="checkbox__input" type="checkbox"/><span class="checkbox__span"></span><span class="checkbox__label-text">Шампунь</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="form-elements__comments-container">
         </div>

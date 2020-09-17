@@ -5,6 +5,10 @@
     width: 320px
     display: flex
     flex-direction: column
+    filter: drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.05))
+
+.dropdown_middle
+    width: 265px
 
 .dropdown__title
     display: flex
@@ -26,13 +30,28 @@
 .dropdown__select
     @extend %montserrat-regular
     margin-top: 5px
-    height: 42px
     border-radius: 4px
     border: 1px solid rgba(31, 32, 65, 0.25)
-    padding-left: 15px
-    padding-right: 15px
+    padding-left: 14px
+    padding-right: 14px
+    padding-top: 9px
+    padding-bottom: 9px
     -webkit-appearance: none
+    -moz-appearance: none
     background: url('../../components/dropdown/arrow-dropdown.svg') no-repeat 290px
+    cursor: pointer
+
+
+.dropdown__select_droped
+    border: 1px solid rgba(31, 32, 65, 0.5)
+    border-top-left-radius: 4px
+    border-top-right-radius: 4px
+    border-bottom-left-radius: 0px
+    border-bottom-right-radius: 0px
+
+.dropdown__select_middle
+    background: url('../../components/dropdown/arrow-dropdown.svg') no-repeat 236px
+
 
 .dropdown__select::placeholder
     color: rgba(31, 32, 65, 0.25)
@@ -42,3 +61,65 @@
 
 .dropdown__select::focus
     border: 1px solid rgba(31, 32, 65, 0.5)
+
+.dropdown__list
+    width: 296px
+    border-top: 0px solid rgba(31, 32, 65, 0.5)
+    border-bottom: 1px solid rgba(31, 32, 65, 0.5)
+    border-left: 1px solid rgba(31, 32, 65, 0.5)
+    border-right: 1px solid rgba(31, 32, 65, 0.5)
+    border-top-left-radius: 0px
+    border-top-right-radius: 0px
+    border-bottom-left-radius: 4px
+    border-bottom-right-radius: 4px
+    background: #ffffff
+    padding-top: 4px
+    padding-bottom: 1px
+    padding-left: 13px
+    padding-right: 9px
+
+.dropdown__list_middle
+    width: 241px
+    padding-top: 4px
+    padding-bottom: 1px
+    padding-left: 13px
+    padding-right: 9px
+
+.dropdown__item
+    margin-bottom: 6px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    @extend %montserrat-bold
+
+.dropdown__counter
+    width: 92px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+
+.dropdown__count
+    height: 29px
+    width: 29px
+    display: flex
+    justify-content: center
+    align-items: center
+    @extend %montserrat-regular
+    font-size: 18px
+    line-height: 22px
+    color: rgba(31, 32, 65, 0.5)
+    border: 1px solid rgba(31, 32, 65, 0.25)
+    border-radius: 22px
+    cursor: pointer
+
+.dropdown__count_disabled
+    opacity: 0.38
+
+.dropdown__buttons
+    margin-top: 22px
+    margin-bottom: 10px
+    display: flex
+    flex-direction: row-reverse
+    justify-content: space-between
