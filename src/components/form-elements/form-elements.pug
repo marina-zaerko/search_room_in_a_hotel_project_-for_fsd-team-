@@ -3,6 +3,7 @@ include ../../components/cards/calendar/calendar.pug
 include ../../components/text-field/text-field.pug
 include ../../components/dropdown/dropdown.pug
 include ../../components/checkbox/checkbox.pug
+include ../../components/checkbox/rich-checkbox/rich-checkbox.pug
 include ../../components/radio/radio.pug
 include ../../components/toggle/toggle.pug
 include ../../components/like-button/like-button.pug
@@ -14,6 +15,7 @@ include ../../components/pagination/pagination.pug
 include ../../components/dropdown/date-dropdown/date-dropdown.pug
 include ../../components/dropdown/filter-date-dropdown/filter-date-dropdown.pug
 include ../../components/dropdown/dropdown-checkbox-list/dropdown-checkbox-list.pug
+include ../../components/bullet-list/bullet-list.pug
 
 mixin form-elements
     +b.form-elements
@@ -112,5 +114,14 @@ mixin form-elements
                     +dropdown-checkbox-list({label_text:"expandable checkbox list", state:"droped", 
                         items:[{name:"Завтрак", checked:""},{name:"Письменный стол", checked:"checked"},{name:"Стул для кормления", checked:"checked"},
                         {name:"Кроватка", checked:"checked"},{name:"Телевизор", checked:""},{name:"Шампунь", checked:""}]})
+                +e.rich-checkbox
+                    +e.title-second Rich checkbox buttons
+                    +e.rich-checkbox-element 
+                        +rich-checkbox({label_text:"Широкий коридор", content_text:"Ширина коридоров в номере не менее 91 см.", width:"233px"})
+                    +rich-checkbox({label_text:"Помощник для инвалидов", content_text:"На 1 этаже вас встретит специалист  и проводит до номера.", width:"260px"})
+                +e.bullet-list 
+                    +bullet-list({label_text:"bullet list", items:["Нельзя с питомцами","Без вечеринок и мероприятий","Время прибытия — после 13:00, а выезд до 12:00"]})
             +e.comments-container
+                +e.icons
+                +e.comments
 //+calendar({state_dropdown_interval: true, state_dropdown_after:true})         

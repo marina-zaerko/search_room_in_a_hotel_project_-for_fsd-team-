@@ -1,0 +1,6 @@
+mixin bullet-list(params)
+    +b.bullet-list
+        +e.title #{params.label_text}
+        +e.OL.list
+            each val in params.items
+                +e.LI.item #{val}

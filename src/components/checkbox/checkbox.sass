@@ -1,23 +1,35 @@
 @import '../../assets/fonts/Montserrat-Bold/Montserrat-Bold'
 @import '../../assets/fonts/Montserrat-Regular/Montserrat-Regular'
 
-.checkbox
-    display: flex
-    flex-direction: row
-
-.checkbox__input
+%checkbox__input
     -webkit-appearance: none
     -mos-appearance: none
     appearence: none
     position: absolute
 
-.checkbox__span
+%checkbox
+    display: flex
+    flex-direction: row
+
+%checkbox__span
     position: absolute
     width: 20px
     height: 20px
     background: url('../../components/checkbox/background-default.svg') no-repeat 100% 100%
     margin-left: -28px
     cursor: pointer
+
+%checkbox_input_checked
+    background: url('../../components/checkbox/background-checked.svg') no-repeat 50% 50%
+
+.checkbox
+    @extend %checkbox
+
+.checkbox__input
+    @extend %checkbox__input
+
+.checkbox__span
+    @extend %checkbox__span
     
 .checkbox__label
     display: flex
@@ -35,4 +47,4 @@
 
 
 .checkbox__input:checked + .checkbox__span
-    background: url('../../components/checkbox/background-checked.svg') no-repeat 50% 50%
+    @extend %checkbox_input_checked
