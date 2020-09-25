@@ -1,0 +1,6 @@
+mixin icon-text(params)
+    +b.icon-text
+        +e.icon(class="icon-text__icon_" + params.state)
+        +e.text
+            +e.title #{params.label_text}
+            +e.content #{params.content_text}

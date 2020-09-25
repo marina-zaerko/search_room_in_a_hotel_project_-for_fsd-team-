@@ -1,15 +1,21 @@
 /*	==========================================================================	*/
 /*	PAGES                                                                    	*/
 /*	==========================================================================	*/
-.body .html {
+.body {
   height: 100%;
+  width: 100%;
   margin: 0;
+  padding: 0;
+}
+
+.ui {
+  background: #E5E5E5;
 }
 
 /*	==========================================================================	*/
 /*	SCREENS                                                                  	*/
 /*	==========================================================================	*/ 
-.colors__title, .calendar__title-month, .colors-types__h2-text {
+.colors__title, .summary__out, .calendar__title-month, .colors-types__h2-text {
   font-family: "Conv_Quicksand-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -29,6 +35,16 @@
   letter-spacing: -0.5px;
 }
 
+.enter__title, .reg-user__title, .find-room__title {
+  font-family: "Conv_Quicksand-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 30px;
+  color: #1F2041;
+  letter-spacing: -0.2px;
+  font-size: 26px;
+}
+
 .colors__color-name {
   font-family: "Conv_Quicksand-Regular", Arial, sans-serif;
   font-style: normal;
@@ -37,7 +53,15 @@
   line-height: 29px;
 }
 
-.dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .bullet-list__title, .form-elements__title-second, .form-elements__title-first, .colors-types__h3-text {
+.room__num, .summary__num {
+  font-family: "Conv_Quicksand-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .bullet-list__title, .form-elements__title-second, .form-elements__title-first, .colors-types__h3-text {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -47,13 +71,50 @@
   text-transform: uppercase;
 }
 
-.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .calendar__table, .colors-types__body-text, .colors-types__body-title, .colors-types__h3-title, .colors-types__h2-title, .colors-types__h1-title {
+.room__class, .summary__class {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+.room__num-review, .room__sum-set, .summary__sum-set {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .enter__comment, .reg-user__comment, .calendar__table, .colors-types__body-text, .colors-types__body-title, .colors-types__h3-title, .colors-types__h2-title, .colors-types__h1-title {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
+}
+
+.room__interval, .summary__interval {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.room__text-review {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
 }
 
 .colors-types {
@@ -136,7 +197,7 @@
   width: 301px;
 }
 
-.dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .bullet-list__title, .form-elements__title-second, .form-elements__title-first, .colors-types__h3-text {
+.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .bullet-list__title, .form-elements__title-second, .form-elements__title-first, .colors-types__h3-text {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -146,7 +207,26 @@
   text-transform: uppercase;
 }
 
-.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .calendar__table, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text {
+.room__class, .summary__class {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+.room__num-review, .room__sum-set, .summary__sum-set {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .enter__comment, .reg-user__comment, .calendar__table, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -155,9 +235,28 @@
   color: rgba(31, 32, 65, 0.75);
 }
 
+.room__interval, .summary__interval {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.room__text-review {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
 .form-elements {
   width: 100%;
   background: #FFFFFF;
+  padding-bottom: 131px;
 }
 
 .form-elements__logo {
@@ -354,11 +453,118 @@
 }
 
 .form-elements__comments-container {
-  width: 1158px;
-  height: 158px;
-  margin-top: 100.56px;
-  margin-left: 140px;
-  background-color: #000000;
+  margin-top: 90px;
+  margin-left: 139px;
+  display: flex;
+  flex-direction: row;
+}
+
+.form-elements__icon-first {
+  margin-bottom: 19px;
+}
+
+.form-elements__dividing-line {
+  width: 280px;
+  height: 1px;
+  background: rgba(31, 32, 65, 0.1);
+}
+
+.form-elements__icon-second {
+  margin-top: 21px;
+  margin-bottom: 19px;
+}
+
+.form-elements__comments {
+  margin-left: 166px;
+  margin-top: 8px;
+}
+
+.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .bullet-list__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1F2041;
+  text-transform: uppercase;
+}
+
+.room__class, .summary__class {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+.room__num-review, .room__sum-set, .summary__sum-set {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .enter__comment, .reg-user__comment, .calendar__table, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.room__interval, .summary__interval {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.room__text-review {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background: url("../../components/logo/_disabled/logo_disabled.svg") no-repeat 30px 30px, #E5E5E5;
+  background-size: 47px 47px;
+  padding-bottom: 140px;
+  padding-left: 140px;
+  padding-right: 0;
+  padding-top: 150px;
+  margin: 0;
+}
+
+.cards__find-room {
+  margin-bottom: 40px;
+}
+
+.cards__col-second {
+  margin-left: 37px;
+  margin-right: 40px;
+}
+
+.cards__summary {
+  margin-bottom: 40px;
+}
+
+.cards__room {
+  margin-top: 40px;
+  margin-bottom: 39.5px;
 }
 
 /*	==========================================================================	*/
@@ -377,7 +583,7 @@
 /*	==========================================================================	*/
 /*	CARDS                                                                   	*/
 /*	==========================================================================	*/ 
-.colors__title, .calendar__title-month, .colors-types__h2-text {
+.colors__title, .summary__out, .calendar__title-month, .colors-types__h2-text {
   font-family: "Conv_Quicksand-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -397,7 +603,17 @@
   letter-spacing: -0.5px;
 }
 
-.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .calendar__table, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text {
+.enter__title, .reg-user__title, .find-room__title {
+  font-family: "Conv_Quicksand-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 30px;
+  color: #1F2041;
+  letter-spacing: -0.2px;
+  font-size: 26px;
+}
+
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .enter__comment, .reg-user__comment, .calendar__table, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -406,7 +622,25 @@
   color: rgba(31, 32, 65, 0.75);
 }
 
-.dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .bullet-list__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second {
+.room__interval, .summary__interval {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.room__text-review {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .bullet-list__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -416,6 +650,25 @@
   text-transform: uppercase;
 }
 
+.room__class, .summary__class {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+.room__num-review, .room__sum-set, .summary__sum-set {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
 .calendar {
   background: white;
   display: flex;
@@ -423,6 +676,7 @@
   width: 320px;
   padding-left: 20px;
   padding-top: 20px;
+  padding-bottom: 20px;
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -523,10 +777,387 @@
   width: 280px;
 }
 
+.find-room {
+  width: 380px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.find-room__content {
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+.find-room__dropdown {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.find-room__long-dropdown {
+  margin-top: 22px;
+  margin-bottom: 32px;
+}
+
+.reg-user {
+  width: 380px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.reg-user__content {
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+.reg-user__title {
+  margin-bottom: 12px;
+}
+
+.reg-user__name {
+  margin-bottom: 5px;
+}
+
+.reg-user__surname {
+  margin-bottom: 11px;
+}
+
+.reg-user__radio {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 27px;
+}
+
+.reg-user__radio-button {
+  margin-right: 20px;
+}
+
+.reg-user__login-data {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.reg-user__email {
+  margin-bottom: 5px;
+}
+
+.reg-user__button {
+  margin-top: 26px;
+  margin-bottom: 30px;
+}
+
+.reg-user__sign-in {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary {
+  width: 380px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.summary__content {
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+.summary__head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.summary__head-elem {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.summary__num-set {
+  margin-left: 3px;
+  margin-right: 5px;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 30px;
+  color: #1F2041;
+  letter-spacing: -0.2px;
+  font-size: 26px;
+}
+
+.summary__sum-set {
+  margin-right: 4px;
+}
+
+.summary__dropdown {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.summary__long-dropdown {
+  margin-top: 22px;
+  margin-bottom: 19px;
+}
+
+.summary__description {
+  margin-bottom: 27px;
+}
+
+.summary__icon {
+  width: 20px;
+  height: 20px;
+  background: url("../../components/cards/summary/info-background.svg") no-repeat 100% 100%;
+  margin-left: 5px;
+}
+
+.summary__description-element {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.summary__description-title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.summary__middle-description-element {
+  margin-top: 13px;
+  margin-bottom: 14px;
+}
+
+.summary__name {
+  width: 214px;
+}
+
+.summary__out {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.summary__out-line {
+  width: 182px;
+  border: 1px dashed rgba(31, 32, 65, 0.25);
+}
+
+.summary__button {
+  margin-top: 20px;
+}
+
+.enter {
+  width: 380px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.enter__content {
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+.enter__title {
+  margin-bottom: 13px;
+}
+
+.enter__login-data {
+  margin-bottom: 20px;
+}
+
+.enter__email {
+  margin-bottom: 5px;
+}
+
+.enter__sign-in {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.room {
+  width: 270px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+}
+
+.room__slides {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 270px;
+  height: 151px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 4px 4px 0px 0px;
+}
+
+.room__left-grad {
+  width: 42px;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px 0px 0px 0px;
+}
+
+.room__right-grad {
+  width: 42px;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px 0px 0px 0px;
+}
+
+.room__left-button {
+  width: 24px;
+  height: 24px;
+  background: url("../../components/cards/room/expand-more-left.svg") no-repeat 7px 4px;
+  cursor: pointer;
+}
+
+.room__right-button {
+  width: 24px;
+  height: 24px;
+  background: url("../../components/cards/room/expand-more-left.svg") no-repeat 7px 4px;
+  cursor: pointer;
+}
+
+.room__dotts {
+  width: 41px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 110px;
+  margin-left: 213px;
+  z-index: 100;
+}
+
+.room__dot {
+  width: 7.5px;
+  height: 7.5px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
+}
+
+.room__dot_fill {
+  background: none;
+  box-sizing: border-box;
+  border: 1px solid #FFFFFF;
+}
+
+.room__content {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 19px;
+  padding-right: 17px;
+}
+
+.room__up {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.room__head-elem {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.room__num-set {
+  margin-left: 6px;
+  margin-right: 5px;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 24px;
+  color: #1F2041;
+  letter-spacing: -0.2px;
+  font-size: 19px;
+}
+
+.room__class {
+  display: none;
+}
+
+.room__class_lux {
+  display: block;
+}
+
+.room__sum-set {
+  margin-right: 4px;
+}
+
+.room__line {
+  width: 230px;
+  height: 1px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  background: rgba(31, 32, 65, 0.1);
+}
+
+.room__down {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.room__down-elem {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.room__text-review {
+  margin-left: 5px;
+}
+
 /*	==========================================================================	*/
 /*	LIST                                                                    	*/
 /*	==========================================================================	*/ 
-.dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .bullet-list__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second {
+.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .bullet-list__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -536,13 +1167,50 @@
   text-transform: uppercase;
 }
 
-.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table {
+.summary__class, .room__class {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+.summary__sum-set, .room__sum-set, .room__num-review {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .reg-user__comment, .enter__comment {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
+}
+
+.summary__interval, .room__interval {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.room__text-review {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
 }
 
 .bullet-list__title {
@@ -566,7 +1234,7 @@
 /*	==========================================================================	*/
 /*	COLORS                                                                  	*/
 /*	==========================================================================	*/ 
-.colors__title, .colors-types__h2-text, .calendar__title-month {
+.colors__title, .colors-types__h2-text, .calendar__title-month, .summary__out {
   font-family: "Conv_Quicksand-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -586,12 +1254,30 @@
   letter-spacing: -0.5px;
 }
 
+.find-room__title, .reg-user__title, .enter__title {
+  font-family: "Conv_Quicksand-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 30px;
+  color: #1F2041;
+  letter-spacing: -0.2px;
+  font-size: 26px;
+}
+
 .colors__color-name {
   font-family: "Conv_Quicksand-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 19px;
   line-height: 29px;
+}
+
+.summary__num, .room__num {
+  font-family: "Conv_Quicksand-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .colors {
@@ -639,7 +1325,7 @@
 /*	==========================================================================	*/
 /*	TEXT-FIELD                                                                 	*/
 /*	==========================================================================	*/ 
-.dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title {
+.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -649,13 +1335,50 @@
   text-transform: uppercase;
 }
 
-.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .bullet-list__item {
+.summary__class, .room__class {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+.summary__sum-set, .room__sum-set, .room__num-review {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
+}
+
+.summary__interval, .room__interval {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.room__text-review {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
 }
 
 .text-field {
@@ -720,7 +1443,7 @@
 /*	==========================================================================	*/
 /*	DROPDOWNS                                                                 	*/
 /*	==========================================================================	*/ 
-.dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label {
+.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -730,13 +1453,50 @@
   text-transform: uppercase;
 }
 
-.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .bullet-list__item, .text-field__input {
+.summary__class, .room__class {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+.summary__sum-set, .room__sum-set, .room__num-review {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
+}
+
+.summary__interval, .room__interval {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.room__text-review {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
 }
 
 .dropdown {
@@ -871,7 +1631,7 @@
   justify-content: space-between;
 }
 
-.dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item {
+.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -881,13 +1641,50 @@
   text-transform: uppercase;
 }
 
-.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count {
+.summary__class, .room__class {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+.summary__sum-set, .room__sum-set, .room__num-review {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
+}
+
+.summary__interval, .room__interval {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.room__text-review {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
 }
 
 .date-dropdown {
@@ -935,7 +1732,7 @@
   border: 1px solid rgba(31, 32, 65, 0.5);
 }
 
-.dropdown-checkbox-list__label, .filter-date-dropdown__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label {
+.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -945,13 +1742,50 @@
   text-transform: uppercase;
 }
 
-.filter-date-dropdown__input, .filter-date-dropdown__hover-text, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input {
+.summary__class, .room__class {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+.summary__sum-set, .room__sum-set, .room__num-review {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
+}
+
+.summary__interval, .room__interval {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.room__text-review {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
 }
 
 .filter-date-dropdown {
@@ -998,7 +1832,7 @@
   border: 1px solid rgba(31, 32, 65, 0.5);
 }
 
-.dropdown-checkbox-list__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label {
+.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1006,6 +1840,25 @@
   line-height: 15px;
   color: #1F2041;
   text-transform: uppercase;
+}
+
+.summary__class, .room__class {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+.summary__sum-set, .room__sum-set, .room__num-review {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
 }
 
 .dropdown-checkbox-list__head {
@@ -1038,7 +1891,7 @@
 /*	==========================================================================	*/
 /*	BUTTONS                                                                  	*/
 /*	==========================================================================	*/ 
-.colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label, .dropdown-checkbox-list__label {
+.comment__name, .icon-text__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label, .dropdown-checkbox-list__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1046,6 +1899,25 @@
   line-height: 15px;
   color: #1F2041;
   text-transform: uppercase;
+}
+
+.summary__class, .room__class {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+.summary__sum-set, .room__sum-set, .room__num-review {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
 }
 
 .button {
@@ -1207,13 +2079,31 @@
   background: #ffffff;
 }
 
-.colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
+.comment__message, .comment__time, .icon-text__content, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
+}
+
+.summary__interval, .room__interval {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.room__text-review {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
 }
 
 .like-button__button {
@@ -1301,7 +2191,7 @@
 /*	==========================================================================	*/
 /*	CHECKBOX & RADIO & TOGGLE                                                	*/
 /*	==========================================================================	*/ 
-.colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label, .dropdown-checkbox-list__label {
+.comment__name, .icon-text__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label, .dropdown-checkbox-list__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1311,13 +2201,50 @@
   text-transform: uppercase;
 }
 
-.colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
+.summary__class, .room__class {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+.summary__sum-set, .room__sum-set, .room__num-review {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.comment__message, .comment__time, .icon-text__content, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
+}
+
+.summary__interval, .room__interval {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.room__text-review {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
 }
 
 .checkbox__input {
@@ -1416,7 +2343,7 @@
   background: url("../../components/checkbox/background-checked.svg") no-repeat 50% 50%;
 }
 
-.colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label, .dropdown-checkbox-list__label {
+.comment__name, .icon-text__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label, .dropdown-checkbox-list__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1426,13 +2353,50 @@
   text-transform: uppercase;
 }
 
-.colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
+.summary__class, .room__class {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+.summary__sum-set, .room__sum-set, .room__num-review {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.comment__message, .comment__time, .icon-text__content, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
+}
+
+.summary__interval, .room__interval {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.room__text-review {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
 }
 
 .radio {
@@ -1470,7 +2434,7 @@
   background: url("../../components/radio/background-checked.svg") no-repeat 50% 50%;
 }
 
-.colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label, .dropdown-checkbox-list__label {
+.comment__name, .icon-text__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label, .dropdown-checkbox-list__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1480,13 +2444,50 @@
   text-transform: uppercase;
 }
 
-.colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
+.summary__class, .room__class {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+.summary__sum-set, .room__sum-set, .room__num-review {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.comment__message, .comment__time, .icon-text__content, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
+}
+
+.summary__interval, .room__interval {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.room__text-review {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
 }
 
 .toggle {
@@ -1663,6 +2664,133 @@
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
+}
+
+/*	==========================================================================	*/
+/*	ICON-TEXT & COMMENT                                                        	*/
+/*	==========================================================================	*/ 
+.comment__name, .icon-text__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label, .dropdown-checkbox-list__label {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1F2041;
+  text-transform: uppercase;
+}
+
+.summary__class, .room__class {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+.summary__sum-set, .room__sum-set, .room__num-review {
+  font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.comment__message, .comment__time, .icon-text__content, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.summary__interval, .room__interval {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.room__text-review {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon-text__icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+}
+
+.icon-text__icon_comfort {
+  background: url("../../components/icon-text/insert_emoticon.svg") no-repeat 50% 50%;
+}
+
+.icon-text__icon_conv {
+  background: url("../../components/icon-text/location_city.svg") no-repeat 50% 50%;
+}
+
+.icon-text__title {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  text-transform: none;
+}
+
+.comment {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.comment__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment__right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+.comment__img {
+  width: 44px;
+  height: 44px;
+  border: 2px solid #FFFFFF;
+  filter: drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.1));
+  border-radius: 32px;
+  margin-bottom: 13px;
+}
+
+.comment__name {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  text-transform: none;
+}
+
+.comment__message {
+  width: 653px;
+  margin-top: 9px;
 }
 
 /*# sourceMappingURL=index.css.map */

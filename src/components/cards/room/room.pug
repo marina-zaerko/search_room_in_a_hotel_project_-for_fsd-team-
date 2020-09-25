@@ -1,0 +1,31 @@
+include ../../../components/rate-button/rate-button.pug
+
+mixin room(params)
+    +b.room
+        +e.slides(style="background: url('" + params.url + "') no-repeat 100% 100%")
+            +e.left-grad
+                +e.left-button
+            +e.right-grad
+                +e.right-button
+            +e.dotts
+                +e.dot
+                +e.dot_fill
+                +e.dot_fill
+                +e.dot_fill
+        +e.content
+            +e.up
+                +e.head-elem
+                    +e.num №
+                    +e.num-set #{params.num}
+                    +e.class(class="room__class_"+params.class) люкс
+                +e.head-elem
+                    +e.sum-set #{params.sum}₽
+                    +e.interval в сутки
+            +e.line
+            +e.down
+                +e.down-elem
+                    +rate-button(params.stars)
+                +e.down-elem   
+                    +e.num-review #{params.num_review}
+                    +e.text-review Отзывов
+

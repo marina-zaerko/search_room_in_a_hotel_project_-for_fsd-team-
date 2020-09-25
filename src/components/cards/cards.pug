@@ -1,0 +1,25 @@
+include ../../components/cards/calendar/calendar.pug
+include ../../components/cards/find-room/find-room.pug
+include ../../components/cards/reg-user/reg-user.pug
+include ../../components/cards/summary/summary.pug
+include ../../components/cards/enter/enter.pug
+include ../../components/cards/room/room.pug
+
+mixin cards
+    +b.SECTION.cards
+        +e.col-first
+            +e.find-room
+                +find-room
+            +reg-user
+        +e.col-second
+            +e.summary
+                +summary({num:"888", class:"люкс", sum:"9 990", time:"4", discaunt:"2 179", payment:"39 960", 
+                    collect:"0", collect_dop:"300", out:"38 081"})
+            +enter
+        +e.col-third
+            +calendar({state_dropdown_interval: true, state_dropdown_after:true})
+            +e.room
+                +room({num:"888", class:"lux", sum:"9 990", num_review:"145", url:"../../components/cards/room/first-room-background.png",
+                    stars:{name: "star1", star1: "true", star2: "true", star3: "true", star4: "true", star5: "true"}})
+            +room({num:"840", class:"", sum:"9 990", num_review:"65", url:"../../components/cards/room/second-room-background.png",
+                    stars:{name: "star1", star1: "true", star2: "true", star3: "true", star4: "true", star5: "false"}})       

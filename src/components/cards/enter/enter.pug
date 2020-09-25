@@ -1,0 +1,17 @@
+include ../../../components/text-field/text-field.pug
+include ../../../components/button/_long/_with-arrow/button_with-arrow.pug
+include ../../../components/button/button.pug
+
+
+mixin enter
+    +b.enter
+        +e.content
+            +e.title Войти
+            +e.login-data
+                    +e.email
+                        +text-field({placeholder:"Email", type:"email", label_text:"", hover_text:""})
+                    +text-field({placeholder:"Пароль", type:"password", label_text:"", hover_text:""})
+            +button_with-arrow('войти')
+            +e.sign-in
+                    +e.comment Нет аккаунта на Toxin?
+                    +button('button button_short button_light','создать')

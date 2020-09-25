@@ -1,0 +1,28 @@
+@import '../../assets/fonts/Montserrat-Bold/Montserrat-Bold'
+@import '../../assets/fonts/Montserrat-Regular/Montserrat-Regular'
+
+.icon-text
+    display: flex
+    flex-direction: row
+    align-items: center
+
+.icon-text__icon
+    width: 48px
+    height: 48px
+    margin-right: 10px
+
+.icon-text__icon_comfort
+    background: url('../../components/icon-text/insert_emoticon.svg') no-repeat 50% 50%
+
+.icon-text__icon_conv
+    background: url('../../components/icon-text/location_city.svg') no-repeat 50% 50%
+
+.icon-text__title
+    @extend %montserrat-bold
+    font-size: 14px
+    line-height: 24px
+    color: rgba(31, 32, 65, 0.75)
+    text-transform: none
+
+.icon-text__content
+    @extend %montserrat-regular

@@ -1,0 +1,11 @@
+include ../../components/like-button/like-button.pug
+
+mixin comment(params)
+    +b.comment
+        +e.left
+            +e.IMG.img(src=params.src_img)
+            +like-button({text: params.likes, state: "clicked"})
+        +e.right
+            +e.name #{params.name}
+            +e.time #{params.time}
+            +e.message #{params.message}

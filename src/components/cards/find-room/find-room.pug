@@ -1,0 +1,14 @@
+include ../../../components/dropdown/date-dropdown/date-dropdown.pug
+include ../../../components/dropdown/dropdown.pug
+include ../../../components/button/_long/_with-arrow/button_with-arrow.pug
+
+mixin find-room
+    +b.find-room
+        +e.content
+            +e.title Найдём номера под ваши пожелания
+            +e.dropdown
+                +date-dropdown({id:"date-dropdown-default", placeholder:"ДД.ММ.ГГГГ", label_text:"прибытие"})
+                +date-dropdown({id:"date-dropdown-default", placeholder:"ДД.ММ.ГГГГ", label_text:"выезд"})
+            +e.long-dropdown
+                +dropdown({placeholder:"Сколько гостей", label_text:"гости", hover_text:"",len:""})
+            +button_with-arrow('подобрать номер')

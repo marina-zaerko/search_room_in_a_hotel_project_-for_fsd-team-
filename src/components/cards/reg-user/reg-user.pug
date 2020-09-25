@@ -1,0 +1,31 @@
+include ../../../components/text-field/text-field.pug
+include ../../../components/radio/radio.pug
+include ../../../components/toggle/toggle.pug
+include ../../../components/button/_long/_with-arrow/button_with-arrow.pug
+include ../../../components/button/button.pug
+
+mixin reg-user
+    +b.reg-user
+        +e.content
+            +e.title Регистрация аккаунта
+            +e.name
+                +text-field({placeholder:"Имя", type:"text", label_text:"", hover_text:""})
+            +e.surname
+                +text-field({placeholder:"Фамилия", type:"text", label_text:"", hover_text:""})
+            +e.radio
+                +e.radio-button
+                    +radio({label_text:"Мужчина", name:"gender", state:"checked"})
+                +radio({label_text:"Женщина", name:"gender"})
+            +text-field({placeholder:"ДД.ММ.ГГГГ", type:"text", 
+                        label_text:"дата рождения", hover_text:"", pattern:"\d{1,2}/\d{1,2}/\d{4}"})      
+            +e.login-data
+                +e.email
+                    +text-field({placeholder:"Email", type:"email", label_text:"Данные для входа в сервис", hover_text:""})
+                +text-field({placeholder:"Пароль", type:"password", label_text:"", hover_text:""})
+            +toggle({label_text:"Получать спецпредложения"})
+            +e.button
+                +button_with-arrow('перейти к оплате')
+            +e.sign-in
+                +e.comment Уже есть аккаунт на Toxin
+                +button('button button_short button_light','войти')
+

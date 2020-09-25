@@ -1,5 +1,4 @@
 include ../../components/logo/logo.pug
-include ../../components/cards/calendar/calendar.pug
 include ../../components/text-field/text-field.pug
 include ../../components/dropdown/dropdown.pug
 include ../../components/checkbox/checkbox.pug
@@ -16,9 +15,11 @@ include ../../components/dropdown/date-dropdown/date-dropdown.pug
 include ../../components/dropdown/filter-date-dropdown/filter-date-dropdown.pug
 include ../../components/dropdown/dropdown-checkbox-list/dropdown-checkbox-list.pug
 include ../../components/bullet-list/bullet-list.pug
+include ../../components/icon-text/icon-text.pug
+include ../../components/comment/comment.pug
 
 mixin form-elements
-    +b.form-elements
+    +b.SECTION.form-elements
         +e.logo
             +logo('disabled')
         +e.content-container
@@ -123,5 +124,13 @@ mixin form-elements
                     +bullet-list({label_text:"bullet list", items:["Нельзя с питомцами","Без вечеринок и мероприятий","Время прибытия — после 13:00, а выезд до 12:00"]})
             +e.comments-container
                 +e.icons
+                    +e.icon-first
+                        +icon-text({label_text:"Комфорт", content_text:"Шумопоглощающие стены", state:"comfort"})
+                    +e.dividing-line
+                    +e.icon-second
+                        +icon-text({label_text:"Удобство", content_text:"Окно в каждой из спален", state:"conv"})
+                    +e.dividing-line
                 +e.comments
-//+calendar({state_dropdown_interval: true, state_dropdown_after:true})         
+                    +comment({src_img:"../../components/comment/man-img.png", 
+                        name:"Мурад Сарафанов", time:"5 дней назад", likes:"12",
+                        message:"Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})
