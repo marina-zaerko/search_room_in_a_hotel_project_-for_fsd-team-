@@ -1,0 +1,13 @@
+include ../../components/headers-footers/standart-nav-bar/standart-nav-bar.pug
+include ../../components/headers-footers/footer-creative/footer-creative.pug
+include ../../components/headers-footers/footer-widgets-copyright/footer-widgets-copyright.pug
+
+
+mixin headers-footers
+    +b.SECTION.headers-footers
+        +standart-nav-bar({state:""})
+        +e.nav-bar
+            +standart-nav-bar({state:"enter"})
+        +e.creative
+            +footer-widgets-copyright
+        +footer-creative

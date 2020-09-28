@@ -1,0 +1,58 @@
+
+.standart-nav-bar
+    width: 100%
+    box-sizing: border-box
+    height: 70px
+    background: #FFFFFF
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05)
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    padding-left: 140px
+    padding-right: 140px
+
+.standart-nav-bar__options
+    width: 770px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+
+.standart-nav-bar__options_enter
+    width: 588px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+
+.standart-nav-bar__navigate
+    width: 447px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+
+.standart-nav-bar__nav-item
+    @extend %montserrat-bold-room-interval
+    cursor: pointer
+
+.standart-nav-bar__nav-item-actual
+    @extend %montserrat-bold-summary-sum
+
+.standart-nav-bar__nav-dropdown
+    display: flex
+    flex-direction: row
+    align-items: center
+    cursor: pointer
+
+.standart-nav-bar__nav-arrow
+    width: 24px
+    height: 21px
+    background: url('../../components/headers-footers/standart-nav-bar/expand_more.svg') no-repeat 7.5px 7.5px
+
+.standart-nav-bar__line
+    height: 30px
+    width: 1px
+    background: rgba(31, 32, 65, 0.1)

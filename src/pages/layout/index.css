@@ -2,8 +2,6 @@
 /*	PAGES                                                                    	*/
 /*	==========================================================================	*/
 .body {
-  height: 100%;
-  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -61,7 +59,7 @@
   line-height: 17px;
 }
 
-.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .bullet-list__title, .form-elements__title-second, .form-elements__title-first, .colors-types__h3-text {
+.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .bullet-list__title, .footer-widgets-copyright__title, .form-elements__title-second, .form-elements__title-first, .colors-types__h3-text {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -81,7 +79,7 @@
   color: #BC9CFF;
 }
 
-.room__num-review, .room__sum-set, .summary__sum-set {
+.room__num-review, .room__sum-set, .summary__sum-set, .standart-nav-bar__nav-item-actual {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -90,7 +88,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .enter__comment, .reg-user__comment, .calendar__table, .colors-types__body-text, .colors-types__body-title, .colors-types__h3-title, .colors-types__h2-title, .colors-types__h1-title {
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .enter__comment, .reg-user__comment, .calendar__table, .footer-creative__copyright-text, .footer-widgets-copyright__copyright-text, .footer-widgets-copyright__text, .colors-types__body-text, .colors-types__body-title, .colors-types__h3-title, .colors-types__h2-title, .colors-types__h1-title {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -108,12 +106,21 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.room__text-review {
+.room__text-review, .standart-nav-bar__nav-item {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.footer-widgets-copyright__point {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -197,7 +204,7 @@
   width: 301px;
 }
 
-.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .bullet-list__title, .form-elements__title-second, .form-elements__title-first, .colors-types__h3-text {
+.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .bullet-list__title, .footer-widgets-copyright__title, .form-elements__title-second, .form-elements__title-first, .colors-types__h3-text {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -217,7 +224,7 @@
   color: #BC9CFF;
 }
 
-.room__num-review, .room__sum-set, .summary__sum-set {
+.room__num-review, .room__sum-set, .summary__sum-set, .standart-nav-bar__nav-item-actual {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -226,7 +233,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .enter__comment, .reg-user__comment, .calendar__table, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text {
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .enter__comment, .reg-user__comment, .calendar__table, .footer-creative__copyright-text, .footer-widgets-copyright__copyright-text, .footer-widgets-copyright__text, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -244,12 +251,21 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.room__text-review {
+.room__text-review, .standart-nav-bar__nav-item {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.footer-widgets-copyright__point {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -479,7 +495,7 @@
   margin-top: 8px;
 }
 
-.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .bullet-list__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second {
+.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .bullet-list__title, .footer-widgets-copyright__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -499,7 +515,7 @@
   color: #BC9CFF;
 }
 
-.room__num-review, .room__sum-set, .summary__sum-set {
+.room__num-review, .room__sum-set, .summary__sum-set, .standart-nav-bar__nav-item-actual {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -508,7 +524,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .enter__comment, .reg-user__comment, .calendar__table, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text {
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .enter__comment, .reg-user__comment, .calendar__table, .footer-creative__copyright-text, .footer-widgets-copyright__copyright-text, .footer-widgets-copyright__text, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -526,12 +542,21 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.room__text-review {
+.room__text-review, .standart-nav-bar__nav-item {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.footer-widgets-copyright__point {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -567,17 +592,237 @@
   margin-bottom: 39.5px;
 }
 
+.headers-footers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("../../components/logo/_disabled/logo_disabled.svg") no-repeat 30px 30px, #E5E5E5;
+  background-size: 47px 47px;
+  padding-bottom: 140px;
+  padding-top: 140px;
+  margin: 0;
+}
+
+.headers-footers__nav-bar {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.headers-footers__creative {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
 /*	==========================================================================	*/
 /*  LOGO                                                                       	*/
 /*	==========================================================================	*/ 
 .logo {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
+}
+
+.headers-footers-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.headers-footers-logo__toxin-text {
+  margin-left: 12.5px;
+  height: 13px;
+  width: 53px;
 }
 
 .logo_disabled {
   width: 45px;
   height: 45px;
+}
+
+/*	==========================================================================	*/
+/*	HEADERS & FOOTERS                                                          	*/
+/*	==========================================================================	*/
+.standart-nav-bar {
+  width: 100%;
+  box-sizing: border-box;
+  height: 70px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+.standart-nav-bar__options {
+  width: 770px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.standart-nav-bar__options_enter {
+  width: 588px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.standart-nav-bar__navigate {
+  width: 447px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.standart-nav-bar__nav-item {
+  cursor: pointer;
+}
+
+.standart-nav-bar__nav-dropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.standart-nav-bar__nav-arrow {
+  width: 24px;
+  height: 21px;
+  background: url("../../components/headers-footers/standart-nav-bar/expand_more.svg") no-repeat 7.5px 7.5px;
+}
+
+.standart-nav-bar__line {
+  height: 30px;
+  width: 1px;
+  background: rgba(31, 32, 65, 0.1);
+}
+
+.footer-widgets-copyright {
+  width: 100%;
+}
+
+.footer-widgets-copyright__widgets {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding-top: 104px;
+  padding-bottom: 100px;
+  padding-left: 140px;
+  padding-right: 140px;
+  margin-bottom: 1px;
+}
+
+.footer-widgets-copyright__text {
+  width: 260px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-widgets-copyright__point {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.footer-widgets-copyright__copyright {
+  height: 70px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+.footer-widgets-copyright__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 112px;
+}
+
+.footer-widgets-copyright__icon-1 {
+  width: 24px;
+  height: 24px;
+  background: url("../../components/headers-footers/footer-widgets-copyright/twitter-icon.svg") no-repeat;
+  cursor: pointer;
+}
+
+.footer-widgets-copyright__icon-2 {
+  width: 24px;
+  height: 24px;
+  background: url("../../components/headers-footers/footer-widgets-copyright/facebook-icon.svg") no-repeat;
+  cursor: pointer;
+}
+
+.footer-widgets-copyright__icon-3 {
+  width: 24px;
+  height: 24px;
+  background: url("../../components/headers-footers/footer-widgets-copyright/inst-icon.svg") no-repeat;
+  cursor: pointer;
+}
+
+.footer-creative {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  padding-top: 120px;
+  padding-bottom: 120px;
+  width: 768px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-creative__copyright-text {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.footer-creative__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 112px;
+}
+
+.footer-creative__icon-1 {
+  width: 24px;
+  height: 24px;
+  background: url("../../components/headers-footers/footer-widgets-copyright/twitter-icon.svg") no-repeat;
+  cursor: pointer;
+}
+
+.footer-creative__icon-2 {
+  width: 24px;
+  height: 24px;
+  background: url("../../components/headers-footers/footer-widgets-copyright/facebook-icon.svg") no-repeat;
+  cursor: pointer;
+}
+
+.footer-creative__icon-3 {
+  width: 24px;
+  height: 24px;
+  background: url("../../components/headers-footers/footer-widgets-copyright/inst-icon.svg") no-repeat;
+  cursor: pointer;
 }
 
 /*	==========================================================================	*/
@@ -613,7 +858,7 @@
   font-size: 26px;
 }
 
-.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .enter__comment, .reg-user__comment, .calendar__table, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text {
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .enter__comment, .reg-user__comment, .calendar__table, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -631,7 +876,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.room__text-review {
+.room__text-review, .standart-nav-bar__nav-item {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -640,7 +885,16 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .bullet-list__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second {
+.footer-widgets-copyright__point {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .bullet-list__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .footer-widgets-copyright__title {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -660,7 +914,7 @@
   color: #BC9CFF;
 }
 
-.room__num-review, .room__sum-set, .summary__sum-set {
+.room__num-review, .room__sum-set, .summary__sum-set, .standart-nav-bar__nav-item-actual {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1157,7 +1411,7 @@
 /*	==========================================================================	*/
 /*	LIST                                                                    	*/
 /*	==========================================================================	*/ 
-.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .bullet-list__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second {
+.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .bullet-list__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .footer-widgets-copyright__title {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1177,7 +1431,7 @@
   color: #BC9CFF;
 }
 
-.summary__sum-set, .room__sum-set, .room__num-review {
+.standart-nav-bar__nav-item-actual, .summary__sum-set, .room__sum-set, .room__num-review {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1186,7 +1440,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .reg-user__comment, .enter__comment {
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1204,12 +1458,21 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.room__text-review {
+.standart-nav-bar__nav-item, .room__text-review {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.footer-widgets-copyright__point {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -1325,7 +1588,7 @@
 /*	==========================================================================	*/
 /*	TEXT-FIELD                                                                 	*/
 /*	==========================================================================	*/ 
-.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title {
+.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .text-field__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .footer-widgets-copyright__title, .bullet-list__title {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1345,7 +1608,7 @@
   color: #BC9CFF;
 }
 
-.summary__sum-set, .room__sum-set, .room__num-review {
+.standart-nav-bar__nav-item-actual, .summary__sum-set, .room__sum-set, .room__num-review {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1354,7 +1617,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item {
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1372,12 +1635,21 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.room__text-review {
+.standart-nav-bar__nav-item, .room__text-review {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.footer-widgets-copyright__point {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -1443,7 +1715,7 @@
 /*	==========================================================================	*/
 /*	DROPDOWNS                                                                 	*/
 /*	==========================================================================	*/ 
-.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label {
+.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .dropdown__item, .dropdown__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .footer-widgets-copyright__title, .bullet-list__title, .text-field__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1463,7 +1735,7 @@
   color: #BC9CFF;
 }
 
-.summary__sum-set, .room__sum-set, .room__num-review {
+.standart-nav-bar__nav-item-actual, .summary__sum-set, .room__sum-set, .room__num-review {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1472,7 +1744,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input {
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1490,12 +1762,21 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.room__text-review {
+.standart-nav-bar__nav-item, .room__text-review {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.footer-widgets-copyright__point {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -1631,7 +1912,7 @@
   justify-content: space-between;
 }
 
-.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item {
+.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .date-dropdown__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .footer-widgets-copyright__title, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1651,7 +1932,7 @@
   color: #BC9CFF;
 }
 
-.summary__sum-set, .room__sum-set, .room__num-review {
+.standart-nav-bar__nav-item-actual, .summary__sum-set, .room__sum-set, .room__num-review {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1660,7 +1941,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count {
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1678,12 +1959,21 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.room__text-review {
+.standart-nav-bar__nav-item, .room__text-review {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.footer-widgets-copyright__point {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -1732,7 +2022,7 @@
   border: 1px solid rgba(31, 32, 65, 0.5);
 }
 
-.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label {
+.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .filter-date-dropdown__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .footer-widgets-copyright__title, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1752,7 +2042,7 @@
   color: #BC9CFF;
 }
 
-.summary__sum-set, .room__sum-set, .room__num-review {
+.standart-nav-bar__nav-item-actual, .summary__sum-set, .room__sum-set, .room__num-review {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1761,7 +2051,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input {
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1779,12 +2069,21 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.room__text-review {
+.standart-nav-bar__nav-item, .room__text-review {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.footer-widgets-copyright__point {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -1832,7 +2131,7 @@
   border: 1px solid rgba(31, 32, 65, 0.5);
 }
 
-.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label {
+.comment__name, .icon-text__title, .dropdown-checkbox-list__label, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .footer-widgets-copyright__title, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1852,7 +2151,7 @@
   color: #BC9CFF;
 }
 
-.summary__sum-set, .room__sum-set, .room__num-review {
+.standart-nav-bar__nav-item-actual, .summary__sum-set, .room__sum-set, .room__num-review {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1891,7 +2190,7 @@
 /*	==========================================================================	*/
 /*	BUTTONS                                                                  	*/
 /*	==========================================================================	*/ 
-.comment__name, .icon-text__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label, .dropdown-checkbox-list__label {
+.comment__name, .icon-text__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .footer-widgets-copyright__title, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label, .dropdown-checkbox-list__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1911,7 +2210,7 @@
   color: #BC9CFF;
 }
 
-.summary__sum-set, .room__sum-set, .room__num-review {
+.standart-nav-bar__nav-item-actual, .summary__sum-set, .room__sum-set, .room__num-review {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1934,6 +2233,24 @@
   border-radius: 22px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   cursor: pointer;
+}
+
+.button_hight-short {
+  height: 34px;
+  width: 87px;
+}
+
+.button_hight-short:focus {
+  outline: none;
+}
+
+.button_hight-long {
+  width: 196px;
+  height: 34px;
+}
+
+.button_hight-long:focus {
+  outline: none;
 }
 
 .button:hover {
@@ -2079,7 +2396,7 @@
   background: #ffffff;
 }
 
-.comment__message, .comment__time, .icon-text__content, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
+.comment__message, .comment__time, .icon-text__content, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -2097,12 +2414,21 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.room__text-review {
+.standart-nav-bar__nav-item, .room__text-review {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.footer-widgets-copyright__point {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -2191,7 +2517,7 @@
 /*	==========================================================================	*/
 /*	CHECKBOX & RADIO & TOGGLE                                                	*/
 /*	==========================================================================	*/ 
-.comment__name, .icon-text__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label, .dropdown-checkbox-list__label {
+.comment__name, .icon-text__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .footer-widgets-copyright__title, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label, .dropdown-checkbox-list__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -2211,7 +2537,7 @@
   color: #BC9CFF;
 }
 
-.summary__sum-set, .room__sum-set, .room__num-review {
+.standart-nav-bar__nav-item-actual, .summary__sum-set, .room__sum-set, .room__num-review {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -2220,7 +2546,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.comment__message, .comment__time, .icon-text__content, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
+.comment__message, .comment__time, .icon-text__content, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -2238,12 +2564,21 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.room__text-review {
+.standart-nav-bar__nav-item, .room__text-review {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.footer-widgets-copyright__point {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -2343,7 +2678,7 @@
   background: url("../../components/checkbox/background-checked.svg") no-repeat 50% 50%;
 }
 
-.comment__name, .icon-text__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label, .dropdown-checkbox-list__label {
+.comment__name, .icon-text__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .footer-widgets-copyright__title, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label, .dropdown-checkbox-list__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -2363,7 +2698,7 @@
   color: #BC9CFF;
 }
 
-.summary__sum-set, .room__sum-set, .room__num-review {
+.standart-nav-bar__nav-item-actual, .summary__sum-set, .room__sum-set, .room__num-review {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -2372,7 +2707,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.comment__message, .comment__time, .icon-text__content, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
+.comment__message, .comment__time, .icon-text__content, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -2390,12 +2725,21 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.room__text-review {
+.standart-nav-bar__nav-item, .room__text-review {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.footer-widgets-copyright__point {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -2434,7 +2778,7 @@
   background: url("../../components/radio/background-checked.svg") no-repeat 50% 50%;
 }
 
-.comment__name, .icon-text__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label, .dropdown-checkbox-list__label {
+.comment__name, .icon-text__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .footer-widgets-copyright__title, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label, .dropdown-checkbox-list__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -2454,7 +2798,7 @@
   color: #BC9CFF;
 }
 
-.summary__sum-set, .room__sum-set, .room__num-review {
+.standart-nav-bar__nav-item-actual, .summary__sum-set, .room__sum-set, .room__num-review {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -2463,7 +2807,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.comment__message, .comment__time, .icon-text__content, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
+.comment__message, .comment__time, .icon-text__content, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -2481,12 +2825,21 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.room__text-review {
+.standart-nav-bar__nav-item, .room__text-review {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.footer-widgets-copyright__point {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -2669,7 +3022,7 @@
 /*	==========================================================================	*/
 /*	ICON-TEXT & COMMENT                                                        	*/
 /*	==========================================================================	*/ 
-.comment__name, .icon-text__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label, .dropdown-checkbox-list__label {
+.comment__name, .icon-text__title, .colors-types__h3-text, .form-elements__title-first, .form-elements__title-second, .footer-widgets-copyright__title, .bullet-list__title, .text-field__label, .dropdown__label, .dropdown__item, .date-dropdown__label, .filter-date-dropdown__label, .dropdown-checkbox-list__label {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -2689,7 +3042,7 @@
   color: #BC9CFF;
 }
 
-.summary__sum-set, .room__sum-set, .room__num-review {
+.standart-nav-bar__nav-item-actual, .summary__sum-set, .room__sum-set, .room__num-review {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -2698,7 +3051,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.comment__message, .comment__time, .icon-text__content, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
+.comment__message, .comment__time, .icon-text__content, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -2716,12 +3069,21 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.room__text-review {
+.standart-nav-bar__nav-item, .room__text-review {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.footer-widgets-copyright__point {
+  font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
 }
 

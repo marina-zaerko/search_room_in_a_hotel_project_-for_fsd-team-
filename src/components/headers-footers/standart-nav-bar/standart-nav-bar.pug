@@ -1,0 +1,23 @@
+include ../../../components/headers-footers-logo/headers-footers-logo.pug
+include ../../../components/button/button.pug
+
+mixin standart-nav-bar(params)
+    +b.HEADER.standart-nav-bar
+        +headers-footers-logo
+        +e.options(class="standart-nav-bar__options_" + params.state)
+            +e.NAV.navigate
+                +e.nav-item-actual О нас
+                +e.nav-dropdown
+                    +e.nav-item Услуги
+                    +e.nav-arrow
+                +e.nav-item Вакансии
+                +e.nav-item Новости
+                +e.nav-dropdown
+                    +e.nav-item Соглашения
+                    +e.nav-arrow
+            if(params.state == "enter")
+                +e.line
+                +e.nav-item Юлий Цезарь
+            else
+                +button('button button_light button_hight-short','войти')
+                +button('button button_hight-long','зарегистрироваться')
