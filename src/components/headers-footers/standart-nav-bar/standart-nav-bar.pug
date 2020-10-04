@@ -15,9 +15,12 @@ mixin standart-nav-bar(params)
                 +e.nav-dropdown
                     +e.nav-item Соглашения
                     +e.nav-arrow
+            +e.menu-icon
             if(params.state == "enter")
-                +e.line
-                +e.nav-item Юлий Цезарь
+                +e.change_enter
+                    +e.line
+                    +e.nav-item Юлий Цезарь
             else
-                +button('button button_light button_hight-short','войти')
-                +button('button button_hight-long','зарегистрироваться')
+                +e.change
+                    +button('button button_light button_hight-short','войти')
+                    +button('button button_hight-long','зарегистрироваться')

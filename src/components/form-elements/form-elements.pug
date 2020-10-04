@@ -20,117 +20,114 @@ include ../../components/comment/comment.pug
 
 mixin form-elements
     +b.SECTION.form-elements
-        +e.logo
-            +logo('disabled')
-        +e.content-container
-            +e.text-checkbox-button-container
-                +e.text-fields
-                    +e.textfield-element.textfield-element1
-                        +text-field({id:"email", placeholder:"Email", type:"email", label_text:"Text field", hover_text:"Default"})
-                    +e.textfield-element
-                        +text-field({id:"text", placeholder:"This is pretty awesome", 
-                        type:"text", state:"hover-focus", label_text:"Text field", hover_text:"Hover / Focus"})
-                    +e.textfield-element.textfield-element2
-                        +dropdown({placeholder:"Сколько гостей", label_text:"dropdown", hover_text:"Default",len:""})
-                    +e.dropdown-element
-                        +text-field({id:"text", placeholder:"ДД.ММ.ГГГГ", type:"text", 
-                        label_text:"masked text field", hover_text:"Default", pattern:"\d{1,2}/\d{1,2}/\d{4}"})
-                    +e.dropdown-element.dropdown-element1
-                        +e.date-dropdown
-                            +date-dropdown({id:"date-dropdown-default", placeholder:"ДД.ММ.ГГГГ", 
-                            label_text:"date dropdown"})
-                            +date-dropdown({id:"date-dropdown-default", placeholder:"19.08.2019", 
-                            label_text:"date dropdown"})
-                    +e.dropdown-element.dropdown-element2
-                        +filter-date-dropdown({id:"filter-date-dropdown", placeholder:"19 авг - 23 авг", 
-                        label_text:"filter date dropdown"})
-                    +text-field({id:"email_subscription", placeholder:"Email", type:"email", state:"with-arrow", 
-                        label_text:"subscription text field", hover_text:""})   
-                +e.checkboxes
-                    +e.checkbox-element
-                        +e.title-first Checkbox Buttons
-                        +e.checkbox-first
-                            +checkbox({label_text:"Можно курить"})
-                        +e.checkbox-second
-                            +checkbox({label_text:"Можно с питомцами", state:"checked"})
-                        +checkbox({label_text:"Можно пригласить гостей (до 10 человек)", state:"checked"})
-                    +e.radio-element
-                        +e.title-second Radio Buttons
-                        +e.radio-group
-                            +radio({label_text:"Мужчина", name:"gender", state:"checked"})
-                            +radio({label_text:"Женщина", name:"gender"})
-                    +e.toggle-element
-                        +e.title-second Toggle
-                        +e.toggle
-                            +toggle({label_text:"Получать спецпредложения", state:"checked"})
-                        +toggle({label_text:"Получать спецпредложения"})
-                    +e.like-button-element
-                        +e.title-second Like button
-                        +e.like-button
-                            +like-button({text: "2"})
-                            +like-button({text: "12", state: "clicked"})
-                    +e.rate-button-element
-                        +e.title-second Rate button
-                        +e.rate-button
-                            +rate-button({name: "star", star1: "true", star2: "true", star3: "true", star4: "true", star5: "false"})
-                            +rate-button({name: "star1", star1: "true", star2: "true", star3: "true", star4: "true", star5: "true"})
-                +e.buttons
-                    +e.slider-element
-                        +slider({title:"Range Slider", hover_text:"5 000₽ - 10 000₽"})
-                    +e.button-element
-                        +e.title-second Buttons
-                        +e.button
-                            +button('button button_short','click me')
-                            +e.button-second
-                                +button('button button_short button_disabled','click me')
-                        +e.button
-                            +button('button button_short button_light','click me')
-                            +e.button-second
-                                +button('button button_short button_light button_disabled-light','click me')
-                        +e.button
-                            +e.button-third
-                                +button('button button_without-border','click me')
-                                +button('button button_without-border_dark','click me')
-                        +button_with-arrow('перейти к оплате')
-                    +e.pagination-element
-                        +e.title-second Pagination
-                        +pagination({sum_pages:"15"})
+        +e.text-checkbox-button-container
+            +e.text-fields
+                +e.textfield-element.textfield-element1
+                    +text-field({id:"email", placeholder:"Email", type:"email", label_text:"Text field", hover_text:"Default"})
+                +e.textfield-element
+                    +text-field({id:"text", placeholder:"This is pretty awesome", 
+                    type:"text", state:"hover-focus", label_text:"Text field", hover_text:"Hover / Focus"})
+                +e.textfield-element.textfield-element2
+                    +dropdown({placeholder:"Сколько гостей", label_text:"dropdown", hover_text:"Default",len:""})
+                +e.dropdown-element
+                    +text-field({id:"text", placeholder:"ДД.ММ.ГГГГ", type:"text", 
+                    label_text:"masked text field", hover_text:"Default", pattern:"\d{1,2}/\d{1,2}/\d{4}"})
+                +e.dropdown-element.dropdown-element1
+                    +e.date-dropdown
+                        +date-dropdown({id:"date-dropdown-default", placeholder:"ДД.ММ.ГГГГ", 
+                        label_text:"date dropdown"})
+                        +date-dropdown({id:"date-dropdown-default", placeholder:"19.08.2019", 
+                        label_text:"date dropdown"})
+                +e.dropdown-element.dropdown-element2
+                    +filter-date-dropdown({id:"filter-date-dropdown", placeholder:"19 авг - 23 авг", 
+                    label_text:"filter date dropdown"})
+                +text-field({id:"email_subscription", placeholder:"Email", type:"email", state:"with-arrow", 
+                    label_text:"subscription text field", hover_text:""})   
+            +e.checkboxes
+                +e.checkbox-element
+                    +e.title-first Checkbox Buttons
+                    +e.checkbox-first
+                        +checkbox({label_text:"Можно курить"})
+                    +e.checkbox-second
+                        +checkbox({label_text:"Можно с питомцами", state:"checked"})
+                    +checkbox({label_text:"Можно пригласить гостей (до 10 человек)", state:"checked"})
+                +e.radio-element
+                    +e.title-second Radio Buttons
+                    +e.radio-group
+                        +radio({label_text:"Мужчина", name:"gender", state:"checked"})
+                        +radio({label_text:"Женщина", name:"gender"})
+                +e.toggle-element
+                    +e.title-second Toggle
+                    +e.toggle
+                        +toggle({label_text:"Получать спецпредложения", state:"checked"})
+                    +toggle({label_text:"Получать спецпредложения"})
+                +e.like-button-element
+                    +e.title-second Like button
+                    +e.like-button
+                        +like-button({text: "2"})
+                        +like-button({text: "12", state: "clicked"})
+                +e.rate-button-element
+                    +e.title-second Rate button
+                    +e.rate-button
+                        +rate-button({name: "star", star1: "true", star2: "true", star3: "true", star4: "true", star5: "false"})
+                        +rate-button({name: "star1", star1: "true", star2: "true", star3: "true", star4: "true", star5: "true"})
+            +e.buttons
+                +e.slider-element
+                    +slider({title:"Range Slider", hover_text:"5 000₽ - 10 000₽"})
+                +e.button-element
+                    +e.title-second Buttons
+                    +e.button
+                        +button('button button_short','click me')
+                        +e.button-second
+                            +button('button button_short button_disabled','click me')
+                    +e.button
+                        +button('button button_short button_light','click me')
+                        +e.button-second
+                            +button('button button_short button_light button_disabled-light','click me')
+                    +e.button
+                        +e.button-third
+                            +button('button button_without-border','click me')
+                            +button('button button_without-border_dark','click me')
+                    +button_with-arrow('перейти к оплате')
+                +e.pagination-element
+                    +e.title-second Pagination
+                    +pagination({sum_pages:"15"})
 
-            +e.dropdown-container
-                +e.dropdown-without-button
-                    +e.dropdown-without-button-element
-                        +dropdown({placeholder:"2 спальни, 2 кровати...", label_text:"dropdown", hover_text:"Default", len:"middle"})
-                    +dropdown({placeholder:"2 спальни, 2 кровати...", label_text:"dropdown", hover_text:"Expanded", len:"middle", state:"droped", 
-                            items:[{name:"Спальни", number: 2},{name:"Кровати", number: 2},{name:"Ванные комнаты", number: 0}]})
-                +e.dropdown-one-button
-                    +dropdown({placeholder:"Сколько гостей", label_text:"dropdown", state:"droped", len:"", 
-                            items:[{name:"Взрослые", number: 0},{name:"Дети", number: 0},{name:"Младенцы", number: 0}]})
-                +e.dropdown-two-button
-                    +dropdown({placeholder:"3 гостя", label_text:"dropdown", state:"droped", len:"", 
-                            items:[{name:"Взрослые", number: 2},{name:"Дети", number: 1},{name:"Младенцы", number: 0}]})
-            +e.checkbox-dropdown
-                +e.expandable-dropdown
-                    +e.expandable-dropdown-element
-                        +dropdown-checkbox-list({label_text:"expandable checkbox list", state:""})
-                    +dropdown-checkbox-list({label_text:"expandable checkbox list", state:"droped", 
-                        items:[{name:"Завтрак", checked:""},{name:"Письменный стол", checked:"checked"},{name:"Стул для кормления", checked:"checked"},
-                        {name:"Кроватка", checked:"checked"},{name:"Телевизор", checked:""},{name:"Шампунь", checked:""}]})
-                +e.rich-checkbox
-                    +e.title-second Rich checkbox buttons
-                    +e.rich-checkbox-element 
-                        +rich-checkbox({label_text:"Широкий коридор", content_text:"Ширина коридоров в номере не менее 91 см.", width:"233px"})
-                    +rich-checkbox({label_text:"Помощник для инвалидов", content_text:"На 1 этаже вас встретит специалист  и проводит до номера.", width:"260px"})
-                +e.bullet-list 
-                    +bullet-list({label_text:"bullet list", items:["Нельзя с питомцами","Без вечеринок и мероприятий","Время прибытия — после 13:00, а выезд до 12:00"]})
-            +e.comments-container
-                +e.icons
-                    +e.icon-first
-                        +icon-text({label_text:"Комфорт", content_text:"Шумопоглощающие стены", state:"comfort"})
-                    +e.dividing-line
-                    +e.icon-second
-                        +icon-text({label_text:"Удобство", content_text:"Окно в каждой из спален", state:"conv"})
-                    +e.dividing-line
-                +e.comments
-                    +comment({src_img:"../../components/comment/man-img.png", 
-                        name:"Мурад Сарафанов", time:"5 дней назад", likes:"12",
-                        message:"Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})
+        +e.dropdown-container
+            +e.dropdown-without-button
+                +e.dropdown-without-button-element
+                    +dropdown({placeholder:"2 спальни, 2 кровати...", label_text:"dropdown", hover_text:"Default", len:"middle"})
+                +dropdown({placeholder:"2 спальни, 2 кровати...", label_text:"dropdown", hover_text:"Expanded", len:"middle", state:"droped", 
+                        items:[{name:"Спальни", number: 2},{name:"Кровати", number: 2},{name:"Ванные комнаты", number: 0}]})
+            +e.dropdown-one-button
+                +dropdown({placeholder:"Сколько гостей", label_text:"dropdown", state:"droped", len:"", 
+                        items:[{name:"Взрослые", number: 0},{name:"Дети", number: 0},{name:"Младенцы", number: 0}]})
+            +e.dropdown-two-button
+                +dropdown({placeholder:"3 гостя", label_text:"dropdown", state:"droped", len:"", 
+                        items:[{name:"Взрослые", number: 2},{name:"Дети", number: 1},{name:"Младенцы", number: 0}]})
+        +e.checkbox-dropdown
+            +e.expandable-dropdown
+                +e.expandable-dropdown-element
+                    +dropdown-checkbox-list({label_text:"expandable checkbox list", state:""})
+                +dropdown-checkbox-list({label_text:"expandable checkbox list", state:"droped", 
+                    items:[{name:"Завтрак", checked:""},{name:"Письменный стол", checked:"checked"},{name:"Стул для кормления", checked:"checked"},
+                    {name:"Кроватка", checked:"checked"},{name:"Телевизор", checked:""},{name:"Шампунь", checked:""}]})
+            +e.rich-checkbox
+                +e.title-second Rich checkbox buttons
+                +e.rich-checkbox-element 
+                    +rich-checkbox({label_text:"Широкий коридор", content_text:"Ширина коридоров в номере не менее 91 см.", width:"233px"})
+                +rich-checkbox({label_text:"Помощник для инвалидов", content_text:"На 1 этаже вас встретит специалист  и проводит до номера.", width:"260px"})
+            +e.bullet-list 
+                +bullet-list({label_text:"bullet list", items:["Нельзя с питомцами","Без вечеринок и мероприятий","Время прибытия — после 13:00, а выезд до 12:00"]})
+        +e.comments-container
+            +e.icons
+                +e.icon-first
+                    +icon-text({label_text:"Комфорт", content_text:"Шумопоглощающие стены", state:"comfort"})
+                +e.dividing-line
+                +e.icon-second
+                    +icon-text({label_text:"Удобство", content_text:"Окно в каждой из спален", state:"conv"})
+                +e.dividing-line
+            +e.comments
+                +comment({src_img:"../../components/comment/man-img.png", 
+                    name:"Мурад Сарафанов", time:"5 дней назад", likes:"12",
+                    message:"Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})

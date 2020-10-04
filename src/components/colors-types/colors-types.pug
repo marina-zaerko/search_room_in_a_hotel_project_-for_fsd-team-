@@ -12,32 +12,27 @@ include ../../components/logo/logo.pug
     ]
 mixin colors-types
     +b.SECTION.colors-types
-        +e.logo
-            +logo('disabled')
-        +e.content
-            +e.color
-                each val in colorContent
-                    +colors(val.name, val.title, val.color) 
-            +e.type
-                +e.font-block
-                    +e.title-block
-                        +e.h1-title H1
-                    +e.text-block
-                        +e.h1-text This one is the sub-section or widget title
-                +e.font-block
-                    +e.title-block
-                        +e.h2-title H2
-                    +e.text-block
-                        +e.h2-text Next one is the item title inside widgets
-                +e.font-block
-                    +e.title-block
-                        +e.h3-title H3
-                    +e.text-block
-                        +e.h3-text This is a label or CTA text
-                +e.font-block
-                    +e.title-block
-                        +e.body-title Body
-                    +e.text-block
-                        +e.body-text This is the body text which is used for most of the design, like paragraphs, lists, etc.
-
-
+        +e.color
+            each val in colorContent
+                +colors(val.name, val.title, val.color) 
+        +e.type
+            +e.font-block
+                +e.title-block
+                    +e.h1-title H1
+                +e.text-block
+                    +e.h1-text This one is the sub-section or widget title
+            +e.font-block
+                +e.title-block
+                    +e.h2-title H2
+                +e.text-block
+                    +e.h2-text Next one is the item title inside widgets
+            +e.font-block
+                +e.title-block
+                    +e.h3-title H3
+                +e.text-block
+                    +e.h3-text This is a label or CTA text
+            +e.font-block
+                +e.title-block
+                    +e.body-title Body
+                +e.text-block
+                    +e.body-text This is the body text which is used for most of the design, like paragraphs, lists, etc.

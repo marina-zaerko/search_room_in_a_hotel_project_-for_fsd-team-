@@ -1,0 +1,82 @@
+include ../../components/headers-footers/standart-nav-bar/standart-nav-bar.pug
+include ../../components/headers-footers/footer-widgets-copyright/footer-widgets-copyright.pug
+include ../../components/cards/room/room.pug
+include ../../components/dropdown/filter-date-dropdown/filter-date-dropdown.pug
+include ../../components/dropdown/dropdown.pug
+include ../../components/slider/slider.pug
+include ../../components/checkbox/checkbox.pug
+include ../../components/checkbox/rich-checkbox/rich-checkbox.pug
+include ../../components/dropdown/dropdown-checkbox-list/dropdown-checkbox-list.pug
+include ../../components/pagination/pagination.pug
+include ../../components/button/button.pug
+-
+    var roomContent = [
+        {num:"888", class:"lux", sum:"9 900", num_review:"145", url:"../search/background-room/background-room0.png", stars:{name: "star1", star1: "true", star2: "true", star3: "true", star4: "true", star5: "true"}},
+        {num:"840", class:"", sum:"9 900", num_review:"65", url:"../search/background-room/background-room1.png", stars:{name: "room1", star1: "true", star2: "true", star3: "true", star4: "true", star5: "false"}},
+        {num:"980", class:"", sum:"8 500", num_review:"35", url:"../search/background-room/background-room2.png", stars:{name: "room2", star1: "true", star2: "true", star3: "true", star4: "false", star5: "false"}},
+        {num:"856", class:"lux", sum:"7 300", num_review:"19", url:"../search/background-room/background-room3.png", stars:{name: "room3", star1: "true", star2: "true", star3: "true", star4: "true", star5: "true"}},
+        {num:"780", class:"", sum:"6 000", num_review:"44", url:"../search/background-room/background-room4.png", stars:{name: "room4", star1: "true", star2: "true", star3: "true", star4: "true", star5: "false"}},
+        {num:"982", class:"", sum:"5 800", num_review:"56", url:"../search/background-room/background-room5.png", stars:{name: "room5", star1: "true", star2: "true", star3: "true", star4: "false", star5: "false"}},
+        {num:"678", class:"", sum:"5 500", num_review:"45", url:"../search/background-room/background-room6.png", stars:{name: "room6", star1: "true", star2: "true", star3: "true", star4: "true", star5: "true"}},
+        {num:"450", class:"", sum:"5 300", num_review:"39", url:"../search/background-room/background-room7.png", stars:{name: "room7", star1: "true", star2: "true", star3: "true", star4: "true", star5: "false"}},
+        {num:"350", class:"", sum:"5 000", num_review:"77", url:"../search/background-room/background-room8.png", stars:{name: "room8", star1: "true", star2: "true", star3: "true", star4: "false", star5: "false"}},
+        {num:"666", class:"", sum:"5 000", num_review:"25", url:"../search/background-room/background-room9.png", stars:{name: "room9", star1: "true", star2: "true", star3: "true", star4: "true", star5: "true"}},
+        {num:"444", class:"", sum:"5 000", num_review:"15", url:"../search/background-room/background-room10.png", stars:{name: "room10", star1: "true", star2: "true", star3: "true", star4: "false", star5: "false"}},
+        {num:"352", class:"", sum:"5 000", num_review:"55", url:"../search/background-room/background-room11.png", stars:{name: "room11", star1: "true", star2: "true", star3: "true", star4: "false", star5: "false"}}
+    ]
+
+mixin search(params)
+    +b.search
+        +standart-nav-bar({state:""})
+        +e.SECTION.main
+            +e.params
+                +e.el-1
+                    +filter-date-dropdown({id:"filter-date-dropdown", placeholder:"19 авг - 23 авг", 
+                        label_text:"даты пребывания в отеле"})
+                +e.el-2
+                    +dropdown({placeholder:"3 гостя, 1 младенец", label_text:"Гости", hover_text:"",len:"middle"})
+                +e.el-3
+                    +slider({title:"Диапазон цены", hover_text:"5 000₽ - 10 000₽"})
+                +e.el-4
+                    +e.comment Стоимость за сутки пребывания в номере
+                +e.el-5
+                    +e.title-params Дополнительно
+                    +e.checkbox-first
+                        +checkbox({label_text:"Можно курить"})
+                    +e.checkbox-second
+                        +checkbox({label_text:"Можно с питомцами", state:"checked"})
+                    +checkbox({label_text:"Можно пригласить гостей (до 10 человек)", state:"checked"})
+                +e.el-6
+                    +e.title-params Доступность
+                    +e.rich-checkbox-element 
+                        +rich-checkbox({label_text:"Широкий коридор", content_text:"Ширина коридоров в номере не менее 91 см.", width:"233px"})
+                    +rich-checkbox({label_text:"Помощник для инвалидов", content_text:"На 1 этаже вас встретит специалист  и проводит до номера.", width:"260px"})
+                +e.el-7
+                    +dropdown({placeholder:"2 спальни, 2 кровати...", label_text:"Удобства номера", hover_text:"", len:"middle"})
+                +e.el-8
+                    +dropdown-checkbox-list({label_text:"Дополнительные удобства", state:""})
+            +e.result
+                +e.title-box
+                    +e.title Номера, которые мы для вас подобрали
+                    +e.params-button
+                        +button('button button_without-border','параметры')
+                +e.rooms
+                    each val in roomContent
+                        +e.room
+                            +room(val)
+                +e.pagination
+                    +pagination({sum_pages:"15"})
+        +e.margin
+        +footer-widgets-copyright
+
+//+room({num:"840", class:"", sum:"9 990", num_review:"65", url:"../../components/cards/room/second-room-background.png",
+                    stars:{name: "star1", star1: "true", star2: "true", star3: "true", star4: "true", star5: "false", name:"room"}})
+    +dropdown({placeholder:"2 спальни, 2 кровати...", label_text:"dropdown", hover_text:"Default", len:"middle"})
+     
+      +e.expandable-dropdown-element
+                    +dropdown-checkbox-list({label_text:"expandable checkbox list", state:""})
+                +dropdown-checkbox-list({label_text:"expandable checkbox list", state:"droped", 
+                    items:[{name:"Завтрак", checked:""},{name:"Письменный стол", checked:"checked"},{name:"Стул для кормления", checked:"checked"},
+                    {name:"Кроватка", checked:"checked"},{name:"Телевизор", checked:""},{name:"Шампунь", checked:""}]})
+           
+           

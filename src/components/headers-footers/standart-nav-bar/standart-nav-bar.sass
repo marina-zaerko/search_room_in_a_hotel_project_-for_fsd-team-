@@ -34,6 +34,20 @@
     align-items: center
     justify-content: space-between
 
+.standart-nav-bar__change
+    width: 305px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+
+.standart-nav-bar__change_enter
+    width: 125px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+
 .standart-nav-bar__nav-item
     @extend %montserrat-bold-room-interval
     cursor: pointer
@@ -56,3 +70,42 @@
     height: 30px
     width: 1px
     background: rgba(31, 32, 65, 0.1)
+
+.standart-nav-bar__menu-icon
+    width: 44px
+    height: 28px
+    background: url('../../components/headers-footers/standart-nav-bar/menu-icon.svg') no-repeat
+    background-size: 100% 100%
+    display: none
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    cursor: pointer
+
+@media screen and (max-width: 1170px)
+    .standart-nav-bar
+        padding-left: 50px
+        padding-right: 50px
+
+
+@media screen and (max-width: 1000px)
+    .standart-nav-bar__navigate
+        display: none
+
+    .standart-nav-bar__menu-icon
+        display: flex
+
+    .standart-nav-bar__options
+        width: 380px
+
+
+@media screen and (max-width: 620px)
+    .standart-nav-bar__change
+        display: none
+
+    .standart-nav-bar__change_enter
+        display: none
+
+    .standart-nav-bar__options
+        justify-content: flex-end
+        width: 40px

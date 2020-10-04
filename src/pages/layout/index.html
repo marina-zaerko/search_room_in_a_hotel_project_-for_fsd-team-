@@ -1,10 +1,22 @@
-<!DOCTYPE html><!DOCTYPE html>
+
+<!--+room({num:"840", class:"", sum:"9 990", num_review:"65", url:"../../components/cards/room/second-room-background.png",
+                stars:{name: "star1", star1: "true", star2: "true", star3: "true", star4: "true", star5: "false", name:"room"}})
++dropdown({placeholder:"2 спальни, 2 кровати...", label_text:"dropdown", hover_text:"Default", len:"middle"})
+ 
+  +e.expandable-dropdown-element
+                +dropdown-checkbox-list({label_text:"expandable checkbox list", state:""})
+            +dropdown-checkbox-list({label_text:"expandable checkbox list", state:"droped", 
+                items:[{name:"Завтрак", checked:""},{name:"Письменный стол", checked:"checked"},{name:"Стул для кормления", checked:"checked"},
+                {name:"Кроватка", checked:"checked"},{name:"Телевизор", checked:""},{name:"Шампунь", checked:""}]})
+       
+       
+--><!DOCTYPE html><!DOCTYPE html>
 <html class="html" lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <title>UI for test</title>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="./normalize.css/normalize.css">
     <link rel="stylesheet" href="../../assets/fonts/Montserrat-Bold/fonts.css" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="../../assets/fonts/Montserrat-Regular/fonts.css" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="../../assets/fonts/Quicksand-Bold/fonts.css" type="text/css" charset="utf-8">
@@ -13,502 +25,924 @@
     <link type="text/javascript" src="./jquery.js">
     <link type="text/javascript" src="./jquery.maskedinput.min.js">
     <link rel="shortcut icon" href="../../components/logo/logo.svg" type="image/svg">
+    <title>Search page</title>
   </head>
   <body class="body">
-    <div class="ui">
-      <!--+headers-footers-->
-      <section class="cards">
-        <div class="cards__col-first">
-          <div class="cards__find-room">
-            <div class="find-room">
-              <div class="find-room__content">
-                <div class="find-room__title">Найдём номера под ваши пожелания
-                </div>
-                <div class="find-room__dropdown">
-                  <div class="date-dropdown">
-                    <div class="date-dropdown__title">
-                      <label class="date-dropdown__label date-dropdown__label date-dropdown__label_undefined" for="date-dropdown-default">прибытие
-                      </label>
-                    </div>
-                    <div class="date-dropdown__input">ДД.ММ.ГГГГ
-                    </div>
-                  </div>
-                  <div class="date-dropdown">
-                    <div class="date-dropdown__title">
-                      <label class="date-dropdown__label date-dropdown__label date-dropdown__label_undefined" for="date-dropdown-default">выезд
-                      </label>
-                    </div>
-                    <div class="date-dropdown__input">ДД.ММ.ГГГГ
-                    </div>
-                  </div>
-                </div>
-                <div class="find-room__long-dropdown">
-                  <div class="dropdown dropdown_">
-                    <div class="dropdown__title">
-                      <label class="dropdown__label">гости
-                      </label>
-                      <div class="dropdown__hover-text">
-                      </div>
-                    </div>
-                    <div class="dropdown__select dropdown__select dropdown__select_undefined dropdown__select_">Сколько гостей
-                    </div>
-                  </div>
-                </div>
-                <button class="button button button_long button button_long_with-arrow"> 
-                  <div class="text text_button">подобрать номер
-                  </div>
-                </button>
+    <!--+landing({})-->
+    <div class="search">
+      <header class="standart-nav-bar">
+        <div class="headers-footers-logo">
+          <div class="headers-footers-logo__logo"><img class="logo" src="../../components/logo/logo.svg" alt="" role="presentation"/>
+          </div><img class="headers-footers-logo__toxin-text" src="../../components/headers-footers-logo/toxin-logo.svg" alt="" role="presentation"/>
+        </div>
+        <div class="standart-nav-bar__options standart-nav-bar__options_">
+          <nav class="standart-nav-bar__navigate">
+            <div class="standart-nav-bar__nav-item-actual">О нас
+            </div>
+            <div class="standart-nav-bar__nav-dropdown">
+              <div class="standart-nav-bar__nav-item">Услуги
+              </div>
+              <div class="standart-nav-bar__nav-arrow">
               </div>
             </div>
+            <div class="standart-nav-bar__nav-item">Вакансии
+            </div>
+            <div class="standart-nav-bar__nav-item">Новости
+            </div>
+            <div class="standart-nav-bar__nav-dropdown">
+              <div class="standart-nav-bar__nav-item">Соглашения
+              </div>
+              <div class="standart-nav-bar__nav-arrow">
+              </div>
+            </div>
+          </nav>
+          <div class="standart-nav-bar__menu-icon">
           </div>
-          <div class="reg-user">
-            <div class="reg-user__content">
-              <div class="reg-user__title">Регистрация аккаунта
-              </div>
-              <div class="reg-user__name">
-                <div class="text-field">
-                  <div class="text-field__title">
-                    <label class="text-field__label text-field__label text-field__label_undefined">
-                    </label>
-                    <div class="text-field__hover-text">
-                    </div>
-                  </div><input class="text-field__input text-field__input text-field__input_undefined" placeholder="Имя" type="text"/>
-                </div>
-              </div>
-              <div class="reg-user__surname">
-                <div class="text-field">
-                  <div class="text-field__title">
-                    <label class="text-field__label text-field__label text-field__label_undefined">
-                    </label>
-                    <div class="text-field__hover-text">
-                    </div>
-                  </div><input class="text-field__input text-field__input text-field__input_undefined" placeholder="Фамилия" type="text"/>
-                </div>
-              </div>
-              <div class="reg-user__radio">
-                <div class="reg-user__radio-button">
-                  <div class="radio">
-                    <label class="radio__label"><input class="radio__input" type="radio" name="gender"/><span class="radio__span"></span>Мужчина       
-                    </label>
-                  </div>
-                </div>
-                <div class="radio">
-                  <label class="radio__label"><input class="radio__input" type="radio" name="gender"/><span class="radio__span"></span>Женщина       
-                  </label>
-                </div>
-              </div>
-              <div class="text-field">
-                <div class="text-field__title">
-                  <label class="text-field__label text-field__label text-field__label_undefined">дата рождения
-                  </label>
-                  <div class="text-field__hover-text">
-                  </div>
-                </div><input class="text-field__input text-field__input text-field__input_undefined" placeholder="ДД.ММ.ГГГГ" type="text" pattern="d{1,2}/d{1,2}/d{4}"/>
-              </div>
-              <div class="reg-user__login-data">
-                <div class="reg-user__email">
-                  <div class="text-field">
-                    <div class="text-field__title">
-                      <label class="text-field__label text-field__label text-field__label_undefined">Данные для входа в сервис
-                      </label>
-                      <div class="text-field__hover-text">
-                      </div>
-                    </div><input class="text-field__input text-field__input text-field__input_undefined" placeholder="Email" type="email"/>
-                  </div>
-                </div>
-                <div class="text-field">
-                  <div class="text-field__title">
-                    <label class="text-field__label text-field__label text-field__label_undefined">
-                    </label>
-                    <div class="text-field__hover-text">
-                    </div>
-                  </div><input class="text-field__input text-field__input text-field__input_undefined" placeholder="Пароль" type="password"/>
-                </div>
-              </div>
-              <div class="toggle">
-                <label class="toggle__label"><input class="toggle__input" type="checkbox"/><span class="toggle__span"><span class="toggle__round"></span></span><span class="toggle__label-text">Получать спецпредложения</span>
+          <div class="standart-nav-bar__change">
+            <button class="button button button_light button button_hight-short">войти
+            </button>
+            <button class="button button button_hight-long">зарегистрироваться
+            </button>
+          </div>
+        </div>
+      </header>
+      <section class="search__main">
+        <div class="search__params">
+          <div class="search__el-1">
+            <div class="filter-date-dropdown">
+              <div class="filter-date-dropdown__title">
+                <label class="filter-date-dropdown__label filter-date-dropdown__label filter-date-dropdown__label_undefined" for="filter-date-dropdown">даты пребывания в отеле
                 </label>
               </div>
-              <div class="reg-user__button">
-                <button class="button button button_long button button_long_with-arrow"> 
-                  <div class="text text_button">перейти к оплате
-                  </div>
-                </button>
+              <div class="filter-date-dropdown__input">19 авг - 23 авг
               </div>
-              <div class="reg-user__sign-in">
-                <div class="reg-user__comment">Уже есть аккаунт на Toxin
+            </div>
+          </div>
+          <div class="search__el-2">
+            <div class="dropdown dropdown dropdown_middle">
+              <div class="dropdown__title">
+                <label class="dropdown__label">Гости
+                </label>
+                <div class="dropdown__hover-text">
                 </div>
-                <button class="button button button_short button button_light">войти
-                </button>
+              </div>
+              <div class="dropdown__select dropdown__select dropdown__select_undefined dropdown__select dropdown__select_middle">3 гостя, 1 младенец
+              </div>
+            </div>
+          </div>
+          <div class="search__el-3">
+            <div class="slider">
+              <div class="slider__head">
+                <div class="slider__title">Диапазон цены
+                </div>
+                <div class="slider__hover-text">5 000₽ - 10 000₽
+                </div>
+              </div><input class="slider__input" type="range"/>
+            </div>
+          </div>
+          <div class="search__el-4">
+            <div class="search__comment">Стоимость за сутки пребывания в номере
+            </div>
+          </div>
+          <div class="search__el-5">
+            <div class="search__title-params">Дополнительно
+            </div>
+            <div class="search__checkbox-first">
+              <div class="checkbox">
+                <label class="checkbox__label"><input class="checkbox__input" type="checkbox"/><span class="checkbox__span"></span><span class="checkbox__label-text">Можно курить</span>
+                </label>
+              </div>
+            </div>
+            <div class="search__checkbox-second">
+              <div class="checkbox">
+                <label class="checkbox__label"><input class="checkbox__input" type="checkbox" checked="checked"/><span class="checkbox__span"></span><span class="checkbox__label-text">Можно с питомцами</span>
+                </label>
+              </div>
+            </div>
+            <div class="checkbox">
+              <label class="checkbox__label"><input class="checkbox__input" type="checkbox" checked="checked"/><span class="checkbox__span"></span><span class="checkbox__label-text">Можно пригласить гостей (до 10 человек)</span>
+              </label>
+            </div>
+          </div>
+          <div class="search__el-6">
+            <div class="search__title-params">Доступность
+            </div>
+            <div class="search__rich-checkbox-element"> 
+              <div class="rich-checkbox" style="width: 233px">
+                <label class="rich-checkbox__label"><input class="rich-checkbox__input" type="checkbox"/><span class="rich-checkbox__span"></span><span class="rich-checkbox__text"><span class="rich-checkbox__label-text">Широкий коридор</span><span class="rich-checkbox__content-text">Ширина коридоров в номере не менее 91 см.</span></span>
+                </label>
+              </div>
+            </div>
+            <div class="rich-checkbox" style="width: 260px">
+              <label class="rich-checkbox__label"><input class="rich-checkbox__input" type="checkbox"/><span class="rich-checkbox__span"></span><span class="rich-checkbox__text"><span class="rich-checkbox__label-text">Помощник для инвалидов</span><span class="rich-checkbox__content-text">На 1 этаже вас встретит специалист  и проводит до номера.</span></span>
+              </label>
+            </div>
+          </div>
+          <div class="search__el-7">
+            <div class="dropdown dropdown dropdown_middle">
+              <div class="dropdown__title">
+                <label class="dropdown__label">Удобства номера
+                </label>
+                <div class="dropdown__hover-text">
+                </div>
+              </div>
+              <div class="dropdown__select dropdown__select dropdown__select_undefined dropdown__select dropdown__select_middle">2 спальни, 2 кровати...
+              </div>
+            </div>
+          </div>
+          <div class="search__el-8">
+            <div class="dropdown-checkbox-list">
+              <div class="dropdown-checkbox-list__head">
+                <div class="dropdown-checkbox-list__label">Дополнительные удобства
+                </div>
+                <div class="dropdown-checkbox-list__arrow dropdown-checkbox-list__arrow_">
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="cards__col-second">
-          <div class="cards__summary">
-            <div class="summary">
-              <div class="summary__content">
-                <div class="summary__head">
-                  <div class="summary__head-elem">
-                    <div class="summary__num">№
-                    </div>
-                    <div class="summary__num-set">888
-                    </div>
-                    <div class="summary__class">люкс
-                    </div>
-                  </div>
-                  <div class="summary__head-elem">
-                    <div class="summary__sum-set">9 990₽
-                    </div>
-                    <div class="summary__interval">в сутки
-                    </div>
-                  </div>
-                </div>
-                <div class="summary__dropdown">
-                  <div class="date-dropdown">
-                    <div class="date-dropdown__title">
-                      <label class="date-dropdown__label date-dropdown__label date-dropdown__label_undefined" for="date-dropdown-default">прибытие
-                      </label>
-                    </div>
-                    <div class="date-dropdown__input">19.08.2019
-                    </div>
-                  </div>
-                  <div class="date-dropdown">
-                    <div class="date-dropdown__title">
-                      <label class="date-dropdown__label date-dropdown__label date-dropdown__label_undefined" for="date-dropdown-default">выезд
-                      </label>
-                    </div>
-                    <div class="date-dropdown__input">23.08.2019
-                    </div>
-                  </div>
-                </div>
-                <div class="summary__long-dropdown">
-                  <div class="dropdown dropdown_">
-                    <div class="dropdown__title">
-                      <label class="dropdown__label">гости
-                      </label>
-                      <div class="dropdown__hover-text">
-                      </div>
-                    </div>
-                    <div class="dropdown__select dropdown__select dropdown__select_undefined dropdown__select_">3 гостя
-                    </div>
-                  </div>
-                </div>
-                <div class="summary__description">
-                  <div class="summary__description-element">
-                    <div class="summary__name">9 990₽ х 4 суток
-                    </div>
-                    <div class="summary__sum">39 960₽
-                    </div>
-                  </div>
-                  <div class="summary__middle-description-element">
-                    <div class="summary__description-element">
-                      <div class="summary__description-title">
-                        <div class="summary__name">Сбор за услуги: скидка 2 179₽
-                        </div>
-                        <div class="summary__icon">
-                        </div>
-                      </div>
-                      <div class="summary__sum">0₽
-                      </div>
-                    </div>
-                  </div>
-                  <div class="summary__description-element">
-                    <div class="summary__description-title">
-                      <div class="summary__name">Сбор за дополнительные услуги
-                      </div>
-                      <div class="summary__icon">
-                      </div>
-                    </div>
-                    <div class="summary__sum">300₽
-                    </div>
-                  </div>
-                </div>
-                <div class="summary__out">
-                  <div class="summary__out-title">Итого
-                  </div>
-                  <div class="summary__out-line">
-                  </div>
-                  <div class="summary__out-sum">38 081₽
-                  </div>
-                </div>
-                <div class="summary__button">
-                  <button class="button button button_long button button_long_with-arrow"> 
-                    <div class="text text_button">забронировать
-                    </div>
-                  </button>
-                </div>
-              </div>
+        <div class="search__result">
+          <div class="search__title-box">
+            <div class="search__title">Номера, которые мы для вас подобрали
             </div>
-          </div>
-          <div class="enter">
-            <div class="enter__content">
-              <div class="enter__title">Войти
-              </div>
-              <div class="enter__login-data">
-                <div class="enter__email">
-                  <div class="text-field">
-                    <div class="text-field__title">
-                      <label class="text-field__label text-field__label text-field__label_undefined">
-                      </label>
-                      <div class="text-field__hover-text">
-                      </div>
-                    </div><input class="text-field__input text-field__input text-field__input_undefined" placeholder="Email" type="email"/>
-                  </div>
-                </div>
-                <div class="text-field">
-                  <div class="text-field__title">
-                    <label class="text-field__label text-field__label text-field__label_undefined">
-                    </label>
-                    <div class="text-field__hover-text">
-                    </div>
-                  </div><input class="text-field__input text-field__input text-field__input_undefined" placeholder="Пароль" type="password"/>
-                </div>
-              </div>
-              <button class="button button button_long button button_long_with-arrow"> 
-                <div class="text text_button">войти
-                </div>
-              </button>
-              <div class="enter__sign-in">
-                <div class="enter__comment">Нет аккаунта на Toxin?
-                </div>
-                <button class="button button button_short button button_light">создать
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cards__col-third">
-          <div class="calendar">
-            <div class="calendar__month-picker">
-              <div class="calendar__arrow-back">
-              </div>
-              <div class="calendar__title-month">Август 2019
-              </div>
-              <div class="calendar__arrow-forward">
-              </div>
-            </div>
-            <div class="calendar__dates">
-              <table class="calendar__table" cellspacing="0" cellpadding="0">
-                <tr class="calendar__row">
-                  <th class="calendar__cell calendar__cell_names">Пн
-                  </th>
-                  <th class="calendar__cell calendar__cell_names">Вт
-                  </th>
-                  <th class="calendar__cell calendar__cell_names">Ср
-                  </th>
-                  <th class="calendar__cell calendar__cell_names">Чт
-                  </th>
-                  <th class="calendar__cell calendar__cell_names">Пт
-                  </th>
-                  <th class="calendar__cell calendar__cell_names">Сб
-                  </th>
-                  <th class="calendar__cell calendar__cell_names">Вс
-                  </th>
-                </tr>
-                <tr class="calendar__row">
-                  <th class="calendar__cell calendar__cell_light">29
-                  </th>
-                  <th class="calendar__cell calendar__cell_light">30
-                  </th>
-                  <th class="calendar__cell calendar__cell_light">31
-                  </th>
-                  <th class="calendar__cell">1
-                  </th>
-                  <th class="calendar__cell">2
-                  </th>
-                  <th class="calendar__cell">3
-                  </th>
-                  <th class="calendar__cell">4
-                  </th>
-                </tr>
-                <tr class="calendar__row">
-                  <th class="calendar__cell">5
-                  </th>
-                  <th class="calendar__cell">6
-                  </th>
-                  <th class="calendar__cell">7
-                  </th>
-                  <th class="calendar__cell calendar__cell_chosen">8
-                  </th>
-                  <th class="calendar__cell">9
-                  </th>
-                  <th class="calendar__cell">10
-                  </th>
-                  <th class="calendar__cell">11
-                  </th>
-                </tr>
-                <tr class="calendar__row">
-                  <th class="calendar__cell">12
-                  </th>
-                  <th class="calendar__cell">13
-                  </th>
-                  <th class="calendar__cell">14
-                  </th>
-                  <th class="calendar__cell">15
-                  </th>
-                  <th class="calendar__cell">16
-                  </th>
-                  <th class="calendar__cell">17
-                  </th>
-                  <th class="calendar__cell">18
-                  </th>
-                </tr>
-                <tr class="calendar__row">
-                  <th class="calendar__cell calendar__cell_interval-left">19
-                  </th>
-                  <th class="calendar__cell calendar__cell_interval">20
-                  </th>
-                  <th class="calendar__cell calendar__cell_interval">21
-                  </th>
-                  <th class="calendar__cell calendar__cell_interval">22
-                  </th>
-                  <th class="calendar__cell calendar__cell_interval-right">23
-                  </th>
-                  <th class="calendar__cell">24
-                  </th>
-                  <th class="calendar__cell">25
-                  </th>
-                </tr>
-                <tr class="calendar__row">
-                  <th class="calendar__cell">26
-                  </th>
-                  <th class="calendar__cell">27
-                  </th>
-                  <th class="calendar__cell">28
-                  </th>
-                  <th class="calendar__cell">29
-                  </th>
-                  <th class="calendar__cell">30
-                  </th>
-                  <th class="calendar__cell">31
-                  </th>
-                  <th class="calendar__cell calendar__cell_light">1
-                  </th>
-                </tr>
-              </table>
-            </div>
-            <div class="calendar__buttons">
-              <button class="button button button_without-border_dark">очистить
-              </button>
-              <button class="button button button_without-border">применить
+            <div class="search__params-button">
+              <button class="button button button_without-border">параметры
               </button>
             </div>
           </div>
-          <div class="cards__room">
-            <div class="room">
-              <div class="room__slides" style="background: url('../../components/cards/room/first-room-background.png') no-repeat 100% 100%">
-                <div class="room__left-grad">
-                  <div class="room__left-button">
+          <div class="search__rooms">
+            <div class="search__room">
+              <div class="room">
+                <div class="room__slides" style="background: url('../search/background-room/background-room0.png') no-repeat 100% 100%">
+                  <div class="room__left-grad">
+                    <div class="room__left-button">
+                    </div>
+                  </div>
+                  <div class="room__right-grad">
+                    <div class="room__right-button">
+                    </div>
+                  </div>
+                  <div class="room__dotts">
+                    <div class="room__dot">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
                   </div>
                 </div>
-                <div class="room__right-grad">
-                  <div class="room__right-button">
+                <div class="room__content">
+                  <div class="room__up">
+                    <div class="room__head-elem">
+                      <div class="room__num">№
+                      </div>
+                      <div class="room__num-set">888
+                      </div>
+                      <div class="room__class room__class room__class_lux">люкс
+                      </div>
+                    </div>
+                    <div class="room__head-elem">
+                      <div class="room__sum-set">9 900₽
+                      </div>
+                      <div class="room__interval">в сутки
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="room__dotts">
-                  <div class="room__dot">
+                  <div class="room__line">
                   </div>
-                  <div class="room__dot room__dot_fill">
-                  </div>
-                  <div class="room__dot room__dot_fill">
-                  </div>
-                  <div class="room__dot room__dot_fill">
+                  <div class="room__down">
+                    <div class="room__down-elem">
+                      <div class="rate-button"><input class="rate-button__input" type="radio" name="star1" value="1" checked="checked"/><input class="rate-button__input" type="radio" name="star1" value="2" checked="checked"/><input class="rate-button__input" type="radio" name="star1" value="3" checked="checked"/><input class="rate-button__input" type="radio" name="star1" value="4" checked="checked"/><input class="rate-button__input" type="radio" name="star1" value="5" checked="checked"/>
+                      </div>
+                    </div>
+                    <div class="room__down-elem">  
+                      <div class="room__num-review">145
+                      </div>
+                      <div class="room__text-review">Отзывов
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="room__content">
-                <div class="room__up">
-                  <div class="room__head-elem">
-                    <div class="room__num">№
-                    </div>
-                    <div class="room__num-set">888
-                    </div>
-                    <div class="room__class room__class room__class_lux">люкс
+            </div>
+            <div class="search__room">
+              <div class="room">
+                <div class="room__slides" style="background: url('../search/background-room/background-room1.png') no-repeat 100% 100%">
+                  <div class="room__left-grad">
+                    <div class="room__left-button">
                     </div>
                   </div>
-                  <div class="room__head-elem">
-                    <div class="room__sum-set">9 990₽
+                  <div class="room__right-grad">
+                    <div class="room__right-button">
                     </div>
-                    <div class="room__interval">в сутки
+                  </div>
+                  <div class="room__dotts">
+                    <div class="room__dot">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                    <div class="room__dot room__dot_fill">
                     </div>
                   </div>
                 </div>
-                <div class="room__line">
-                </div>
-                <div class="room__down">
-                  <div class="room__down-elem">
-                    <div class="rate-button"><input class="rate-button__input" type="radio" name="room_lux" value="1" checked="checked"/><input class="rate-button__input" type="radio" name="room_lux" value="2" checked="checked"/><input class="rate-button__input" type="radio" name="room_lux" value="3" checked="checked"/><input class="rate-button__input" type="radio" name="room_lux" value="4" checked="checked"/><input class="rate-button__input" type="radio" name="room_lux" value="5" checked="checked"/>
+                <div class="room__content">
+                  <div class="room__up">
+                    <div class="room__head-elem">
+                      <div class="room__num">№
+                      </div>
+                      <div class="room__num-set">840
+                      </div>
+                      <div class="room__class room__class_">люкс
+                      </div>
+                    </div>
+                    <div class="room__head-elem">
+                      <div class="room__sum-set">9 900₽
+                      </div>
+                      <div class="room__interval">в сутки
+                      </div>
                     </div>
                   </div>
-                  <div class="room__down-elem">  
-                    <div class="room__num-review">145
+                  <div class="room__line">
+                  </div>
+                  <div class="room__down">
+                    <div class="room__down-elem">
+                      <div class="rate-button"><input class="rate-button__input" type="radio" name="room1" value="1" checked="checked"/><input class="rate-button__input" type="radio" name="room1" value="2" checked="checked"/><input class="rate-button__input" type="radio" name="room1" value="3" checked="checked"/><input class="rate-button__input" type="radio" name="room1" value="4" checked="checked"/><input class="rate-button__input" type="radio" name="room1" value="5"/>
+                      </div>
                     </div>
-                    <div class="room__text-review">Отзывов
+                    <div class="room__down-elem">  
+                      <div class="room__num-review">65
+                      </div>
+                      <div class="room__text-review">Отзывов
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search__room">
+              <div class="room">
+                <div class="room__slides" style="background: url('../search/background-room/background-room2.png') no-repeat 100% 100%">
+                  <div class="room__left-grad">
+                    <div class="room__left-button">
+                    </div>
+                  </div>
+                  <div class="room__right-grad">
+                    <div class="room__right-button">
+                    </div>
+                  </div>
+                  <div class="room__dotts">
+                    <div class="room__dot">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                  </div>
+                </div>
+                <div class="room__content">
+                  <div class="room__up">
+                    <div class="room__head-elem">
+                      <div class="room__num">№
+                      </div>
+                      <div class="room__num-set">980
+                      </div>
+                      <div class="room__class room__class_">люкс
+                      </div>
+                    </div>
+                    <div class="room__head-elem">
+                      <div class="room__sum-set">8 500₽
+                      </div>
+                      <div class="room__interval">в сутки
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room__line">
+                  </div>
+                  <div class="room__down">
+                    <div class="room__down-elem">
+                      <div class="rate-button"><input class="rate-button__input" type="radio" name="room2" value="1" checked="checked"/><input class="rate-button__input" type="radio" name="room2" value="2" checked="checked"/><input class="rate-button__input" type="radio" name="room2" value="3" checked="checked"/><input class="rate-button__input" type="radio" name="room2" value="4"/><input class="rate-button__input" type="radio" name="room2" value="5"/>
+                      </div>
+                    </div>
+                    <div class="room__down-elem">  
+                      <div class="room__num-review">35
+                      </div>
+                      <div class="room__text-review">Отзывов
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search__room">
+              <div class="room">
+                <div class="room__slides" style="background: url('../search/background-room/background-room3.png') no-repeat 100% 100%">
+                  <div class="room__left-grad">
+                    <div class="room__left-button">
+                    </div>
+                  </div>
+                  <div class="room__right-grad">
+                    <div class="room__right-button">
+                    </div>
+                  </div>
+                  <div class="room__dotts">
+                    <div class="room__dot">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                  </div>
+                </div>
+                <div class="room__content">
+                  <div class="room__up">
+                    <div class="room__head-elem">
+                      <div class="room__num">№
+                      </div>
+                      <div class="room__num-set">856
+                      </div>
+                      <div class="room__class room__class room__class_lux">люкс
+                      </div>
+                    </div>
+                    <div class="room__head-elem">
+                      <div class="room__sum-set">7 300₽
+                      </div>
+                      <div class="room__interval">в сутки
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room__line">
+                  </div>
+                  <div class="room__down">
+                    <div class="room__down-elem">
+                      <div class="rate-button"><input class="rate-button__input" type="radio" name="room3" value="1" checked="checked"/><input class="rate-button__input" type="radio" name="room3" value="2" checked="checked"/><input class="rate-button__input" type="radio" name="room3" value="3" checked="checked"/><input class="rate-button__input" type="radio" name="room3" value="4" checked="checked"/><input class="rate-button__input" type="radio" name="room3" value="5" checked="checked"/>
+                      </div>
+                    </div>
+                    <div class="room__down-elem">  
+                      <div class="room__num-review">19
+                      </div>
+                      <div class="room__text-review">Отзывов
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search__room">
+              <div class="room">
+                <div class="room__slides" style="background: url('../search/background-room/background-room4.png') no-repeat 100% 100%">
+                  <div class="room__left-grad">
+                    <div class="room__left-button">
+                    </div>
+                  </div>
+                  <div class="room__right-grad">
+                    <div class="room__right-button">
+                    </div>
+                  </div>
+                  <div class="room__dotts">
+                    <div class="room__dot">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                  </div>
+                </div>
+                <div class="room__content">
+                  <div class="room__up">
+                    <div class="room__head-elem">
+                      <div class="room__num">№
+                      </div>
+                      <div class="room__num-set">780
+                      </div>
+                      <div class="room__class room__class_">люкс
+                      </div>
+                    </div>
+                    <div class="room__head-elem">
+                      <div class="room__sum-set">6 000₽
+                      </div>
+                      <div class="room__interval">в сутки
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room__line">
+                  </div>
+                  <div class="room__down">
+                    <div class="room__down-elem">
+                      <div class="rate-button"><input class="rate-button__input" type="radio" name="room4" value="1" checked="checked"/><input class="rate-button__input" type="radio" name="room4" value="2" checked="checked"/><input class="rate-button__input" type="radio" name="room4" value="3" checked="checked"/><input class="rate-button__input" type="radio" name="room4" value="4" checked="checked"/><input class="rate-button__input" type="radio" name="room4" value="5"/>
+                      </div>
+                    </div>
+                    <div class="room__down-elem">  
+                      <div class="room__num-review">44
+                      </div>
+                      <div class="room__text-review">Отзывов
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search__room">
+              <div class="room">
+                <div class="room__slides" style="background: url('../search/background-room/background-room5.png') no-repeat 100% 100%">
+                  <div class="room__left-grad">
+                    <div class="room__left-button">
+                    </div>
+                  </div>
+                  <div class="room__right-grad">
+                    <div class="room__right-button">
+                    </div>
+                  </div>
+                  <div class="room__dotts">
+                    <div class="room__dot">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                  </div>
+                </div>
+                <div class="room__content">
+                  <div class="room__up">
+                    <div class="room__head-elem">
+                      <div class="room__num">№
+                      </div>
+                      <div class="room__num-set">982
+                      </div>
+                      <div class="room__class room__class_">люкс
+                      </div>
+                    </div>
+                    <div class="room__head-elem">
+                      <div class="room__sum-set">5 800₽
+                      </div>
+                      <div class="room__interval">в сутки
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room__line">
+                  </div>
+                  <div class="room__down">
+                    <div class="room__down-elem">
+                      <div class="rate-button"><input class="rate-button__input" type="radio" name="room5" value="1" checked="checked"/><input class="rate-button__input" type="radio" name="room5" value="2" checked="checked"/><input class="rate-button__input" type="radio" name="room5" value="3" checked="checked"/><input class="rate-button__input" type="radio" name="room5" value="4"/><input class="rate-button__input" type="radio" name="room5" value="5"/>
+                      </div>
+                    </div>
+                    <div class="room__down-elem">  
+                      <div class="room__num-review">56
+                      </div>
+                      <div class="room__text-review">Отзывов
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search__room">
+              <div class="room">
+                <div class="room__slides" style="background: url('../search/background-room/background-room6.png') no-repeat 100% 100%">
+                  <div class="room__left-grad">
+                    <div class="room__left-button">
+                    </div>
+                  </div>
+                  <div class="room__right-grad">
+                    <div class="room__right-button">
+                    </div>
+                  </div>
+                  <div class="room__dotts">
+                    <div class="room__dot">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                  </div>
+                </div>
+                <div class="room__content">
+                  <div class="room__up">
+                    <div class="room__head-elem">
+                      <div class="room__num">№
+                      </div>
+                      <div class="room__num-set">678
+                      </div>
+                      <div class="room__class room__class_">люкс
+                      </div>
+                    </div>
+                    <div class="room__head-elem">
+                      <div class="room__sum-set">5 500₽
+                      </div>
+                      <div class="room__interval">в сутки
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room__line">
+                  </div>
+                  <div class="room__down">
+                    <div class="room__down-elem">
+                      <div class="rate-button"><input class="rate-button__input" type="radio" name="room6" value="1" checked="checked"/><input class="rate-button__input" type="radio" name="room6" value="2" checked="checked"/><input class="rate-button__input" type="radio" name="room6" value="3" checked="checked"/><input class="rate-button__input" type="radio" name="room6" value="4" checked="checked"/><input class="rate-button__input" type="radio" name="room6" value="5" checked="checked"/>
+                      </div>
+                    </div>
+                    <div class="room__down-elem">  
+                      <div class="room__num-review">45
+                      </div>
+                      <div class="room__text-review">Отзывов
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search__room">
+              <div class="room">
+                <div class="room__slides" style="background: url('../search/background-room/background-room7.png') no-repeat 100% 100%">
+                  <div class="room__left-grad">
+                    <div class="room__left-button">
+                    </div>
+                  </div>
+                  <div class="room__right-grad">
+                    <div class="room__right-button">
+                    </div>
+                  </div>
+                  <div class="room__dotts">
+                    <div class="room__dot">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                  </div>
+                </div>
+                <div class="room__content">
+                  <div class="room__up">
+                    <div class="room__head-elem">
+                      <div class="room__num">№
+                      </div>
+                      <div class="room__num-set">450
+                      </div>
+                      <div class="room__class room__class_">люкс
+                      </div>
+                    </div>
+                    <div class="room__head-elem">
+                      <div class="room__sum-set">5 300₽
+                      </div>
+                      <div class="room__interval">в сутки
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room__line">
+                  </div>
+                  <div class="room__down">
+                    <div class="room__down-elem">
+                      <div class="rate-button"><input class="rate-button__input" type="radio" name="room7" value="1" checked="checked"/><input class="rate-button__input" type="radio" name="room7" value="2" checked="checked"/><input class="rate-button__input" type="radio" name="room7" value="3" checked="checked"/><input class="rate-button__input" type="radio" name="room7" value="4" checked="checked"/><input class="rate-button__input" type="radio" name="room7" value="5"/>
+                      </div>
+                    </div>
+                    <div class="room__down-elem">  
+                      <div class="room__num-review">39
+                      </div>
+                      <div class="room__text-review">Отзывов
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search__room">
+              <div class="room">
+                <div class="room__slides" style="background: url('../search/background-room/background-room8.png') no-repeat 100% 100%">
+                  <div class="room__left-grad">
+                    <div class="room__left-button">
+                    </div>
+                  </div>
+                  <div class="room__right-grad">
+                    <div class="room__right-button">
+                    </div>
+                  </div>
+                  <div class="room__dotts">
+                    <div class="room__dot">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                  </div>
+                </div>
+                <div class="room__content">
+                  <div class="room__up">
+                    <div class="room__head-elem">
+                      <div class="room__num">№
+                      </div>
+                      <div class="room__num-set">350
+                      </div>
+                      <div class="room__class room__class_">люкс
+                      </div>
+                    </div>
+                    <div class="room__head-elem">
+                      <div class="room__sum-set">5 000₽
+                      </div>
+                      <div class="room__interval">в сутки
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room__line">
+                  </div>
+                  <div class="room__down">
+                    <div class="room__down-elem">
+                      <div class="rate-button"><input class="rate-button__input" type="radio" name="room8" value="1" checked="checked"/><input class="rate-button__input" type="radio" name="room8" value="2" checked="checked"/><input class="rate-button__input" type="radio" name="room8" value="3" checked="checked"/><input class="rate-button__input" type="radio" name="room8" value="4"/><input class="rate-button__input" type="radio" name="room8" value="5"/>
+                      </div>
+                    </div>
+                    <div class="room__down-elem">  
+                      <div class="room__num-review">77
+                      </div>
+                      <div class="room__text-review">Отзывов
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search__room">
+              <div class="room">
+                <div class="room__slides" style="background: url('../search/background-room/background-room9.png') no-repeat 100% 100%">
+                  <div class="room__left-grad">
+                    <div class="room__left-button">
+                    </div>
+                  </div>
+                  <div class="room__right-grad">
+                    <div class="room__right-button">
+                    </div>
+                  </div>
+                  <div class="room__dotts">
+                    <div class="room__dot">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                  </div>
+                </div>
+                <div class="room__content">
+                  <div class="room__up">
+                    <div class="room__head-elem">
+                      <div class="room__num">№
+                      </div>
+                      <div class="room__num-set">666
+                      </div>
+                      <div class="room__class room__class_">люкс
+                      </div>
+                    </div>
+                    <div class="room__head-elem">
+                      <div class="room__sum-set">5 000₽
+                      </div>
+                      <div class="room__interval">в сутки
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room__line">
+                  </div>
+                  <div class="room__down">
+                    <div class="room__down-elem">
+                      <div class="rate-button"><input class="rate-button__input" type="radio" name="room9" value="1" checked="checked"/><input class="rate-button__input" type="radio" name="room9" value="2" checked="checked"/><input class="rate-button__input" type="radio" name="room9" value="3" checked="checked"/><input class="rate-button__input" type="radio" name="room9" value="4" checked="checked"/><input class="rate-button__input" type="radio" name="room9" value="5" checked="checked"/>
+                      </div>
+                    </div>
+                    <div class="room__down-elem">  
+                      <div class="room__num-review">25
+                      </div>
+                      <div class="room__text-review">Отзывов
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search__room">
+              <div class="room">
+                <div class="room__slides" style="background: url('../search/background-room/background-room10.png') no-repeat 100% 100%">
+                  <div class="room__left-grad">
+                    <div class="room__left-button">
+                    </div>
+                  </div>
+                  <div class="room__right-grad">
+                    <div class="room__right-button">
+                    </div>
+                  </div>
+                  <div class="room__dotts">
+                    <div class="room__dot">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                  </div>
+                </div>
+                <div class="room__content">
+                  <div class="room__up">
+                    <div class="room__head-elem">
+                      <div class="room__num">№
+                      </div>
+                      <div class="room__num-set">444
+                      </div>
+                      <div class="room__class room__class_">люкс
+                      </div>
+                    </div>
+                    <div class="room__head-elem">
+                      <div class="room__sum-set">5 000₽
+                      </div>
+                      <div class="room__interval">в сутки
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room__line">
+                  </div>
+                  <div class="room__down">
+                    <div class="room__down-elem">
+                      <div class="rate-button"><input class="rate-button__input" type="radio" name="room10" value="1" checked="checked"/><input class="rate-button__input" type="radio" name="room10" value="2" checked="checked"/><input class="rate-button__input" type="radio" name="room10" value="3" checked="checked"/><input class="rate-button__input" type="radio" name="room10" value="4"/><input class="rate-button__input" type="radio" name="room10" value="5"/>
+                      </div>
+                    </div>
+                    <div class="room__down-elem">  
+                      <div class="room__num-review">15
+                      </div>
+                      <div class="room__text-review">Отзывов
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search__room">
+              <div class="room">
+                <div class="room__slides" style="background: url('../search/background-room/background-room11.png') no-repeat 100% 100%">
+                  <div class="room__left-grad">
+                    <div class="room__left-button">
+                    </div>
+                  </div>
+                  <div class="room__right-grad">
+                    <div class="room__right-button">
+                    </div>
+                  </div>
+                  <div class="room__dotts">
+                    <div class="room__dot">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                    <div class="room__dot room__dot_fill">
+                    </div>
+                  </div>
+                </div>
+                <div class="room__content">
+                  <div class="room__up">
+                    <div class="room__head-elem">
+                      <div class="room__num">№
+                      </div>
+                      <div class="room__num-set">352
+                      </div>
+                      <div class="room__class room__class_">люкс
+                      </div>
+                    </div>
+                    <div class="room__head-elem">
+                      <div class="room__sum-set">5 000₽
+                      </div>
+                      <div class="room__interval">в сутки
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room__line">
+                  </div>
+                  <div class="room__down">
+                    <div class="room__down-elem">
+                      <div class="rate-button"><input class="rate-button__input" type="radio" name="room11" value="1" checked="checked"/><input class="rate-button__input" type="radio" name="room11" value="2" checked="checked"/><input class="rate-button__input" type="radio" name="room11" value="3" checked="checked"/><input class="rate-button__input" type="radio" name="room11" value="4"/><input class="rate-button__input" type="radio" name="room11" value="5"/>
+                      </div>
+                    </div>
+                    <div class="room__down-elem">  
+                      <div class="room__num-review">55
+                      </div>
+                      <div class="room__text-review">Отзывов
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="room">
-            <div class="room__slides" style="background: url('../../components/cards/room/second-room-background.png') no-repeat 100% 100%">
-              <div class="room__left-grad">
-                <div class="room__left-button">
+          <div class="search__pagination">
+            <div class="pagination">
+              <div class="pagination__pages">
+                <div class="pagination__current"> 
+                  <div class="pagination__text">1
+                  </div>
+                </div>
+                <div class="pagination__default">2
+                </div>
+                <div class="pagination__default">3
+                </div>
+                <div class="pagination__default">...
+                </div>
+                <div class="pagination__default">15
+                </div>
+                <div class="pagination__next">
                 </div>
               </div>
-              <div class="room__right-grad">
-                <div class="room__right-button">
-                </div>
-              </div>
-              <div class="room__dotts">
-                <div class="room__dot">
-                </div>
-                <div class="room__dot room__dot_fill">
-                </div>
-                <div class="room__dot room__dot_fill">
-                </div>
-                <div class="room__dot room__dot_fill">
-                </div>
-              </div>
-            </div>
-            <div class="room__content">
-              <div class="room__up">
-                <div class="room__head-elem">
-                  <div class="room__num">№
-                  </div>
-                  <div class="room__num-set">840
-                  </div>
-                  <div class="room__class room__class_">люкс
-                  </div>
-                </div>
-                <div class="room__head-elem">
-                  <div class="room__sum-set">9 990₽
-                  </div>
-                  <div class="room__interval">в сутки
-                  </div>
-                </div>
-              </div>
-              <div class="room__line">
-              </div>
-              <div class="room__down">
-                <div class="room__down-elem">
-                  <div class="rate-button"><input class="rate-button__input" type="radio" name="room" value="1" checked="checked"/><input class="rate-button__input" type="radio" name="room" value="2" checked="checked"/><input class="rate-button__input" type="radio" name="room" value="3" checked="checked"/><input class="rate-button__input" type="radio" name="room" value="4" checked="checked"/><input class="rate-button__input" type="radio" name="room" value="5"/>
-                  </div>
-                </div>
-                <div class="room__down-elem">  
-                  <div class="room__num-review">65
-                  </div>
-                  <div class="room__text-review">Отзывов
-                  </div>
-                </div>
+              <div class="pagination__comment">1 – 12 из 100+ вариантов аренды
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!--+colors-types-->
-      <!--+form-elements-->
+      <div class="search__margin">
+      </div>
+      <footer class="footer-widgets-copyright">
+        <div class="footer-widgets-copyright__widgets">
+          <div class="footer-widgets-copyright__col-1">
+            <div class="headers-footers-logo">
+              <div class="headers-footers-logo__logo"><img class="logo" src="../../components/logo/logo.svg" alt="" role="presentation"/>
+              </div><img class="headers-footers-logo__toxin-text" src="../../components/headers-footers-logo/toxin-logo.svg" alt="" role="presentation"/>
+            </div>
+            <div class="footer-widgets-copyright__text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+            </div>
+          </div>
+          <div class="footer-widgets-copyright__col-2">
+            <div class="footer-widgets-copyright__title">Навигация
+            </div>
+            <div class="footer-widgets-copyright__point">О нас
+            </div>
+            <div class="footer-widgets-copyright__point">Новости
+            </div>
+            <div class="footer-widgets-copyright__point">Служба поддержки
+            </div>
+            <div class="footer-widgets-copyright__point">Услуги
+            </div>
+          </div>
+          <div class="footer-widgets-copyright__col-3">
+            <div class="footer-widgets-copyright__title">О нас
+            </div>
+            <div class="footer-widgets-copyright__point">О сервисе
+            </div>
+            <div class="footer-widgets-copyright__point">Наша команда
+            </div>
+            <div class="footer-widgets-copyright__point">Вакансии
+            </div>
+            <div class="footer-widgets-copyright__point">Инвесторы 
+            </div>
+          </div>
+          <div class="footer-widgets-copyright__col-4">
+            <div class="footer-widgets-copyright__title">Служба поддержки
+            </div>
+            <div class="footer-widgets-copyright__point">Соглашения
+            </div>
+            <div class="footer-widgets-copyright__point">Сообщества
+            </div>
+            <div class="footer-widgets-copyright__point">Связь с нами
+            </div>
+          </div>
+          <div class="footer-widgets-copyright__col-5">
+            <div class="footer-widgets-copyright__title">Подписки
+            </div>
+            <div class="footer-widgets-copyright__text">Получайте специальные предложения и новости сервиса
+            </div>
+            <div class="text-field">
+              <div class="text-field__title">
+                <label class="text-field__label text-field__label text-field__label_with-arrow">
+                </label>
+                <div class="text-field__hover-text">
+                </div>
+              </div><input class="text-field__input text-field__input text-field__input_with-arrow" placeholder="Email" type="email"/>
+            </div>
+          </div>
+        </div>
+        <div class="footer-widgets-copyright__copyright">
+          <div class="footer-widgets-copyright__copyright-text">Copyright © 2018 Toxin отель. Все права зачищены.
+          </div>
+          <div class="footer-widgets-copyright__icons">
+            <div class="footer-widgets-copyright__icon-1">
+            </div>
+            <div class="footer-widgets-copyright__icon-2">
+            </div>
+            <div class="footer-widgets-copyright__icon-3">
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
+    <!--+ui-->
   </body>
 </html>

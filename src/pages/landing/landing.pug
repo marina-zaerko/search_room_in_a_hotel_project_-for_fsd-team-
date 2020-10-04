@@ -1,15 +1,13 @@
-include ../../../bemto/bemto.pug
-include ../landing/landing.pug
-include ../search/search.pug
-include ../ui/ui.pug
+include ../../components/headers-footers/standart-nav-bar/standart-nav-bar.pug
+include ../../components/headers-footers/footer-widgets-copyright/footer-widgets-copyright.pug
+include ../../components/cards/find-room/find-room.pug
 
-doctype html
-+b.HTML.html(lang="ru")
+mixin landing-page
+    +b.HTML.html(lang="ru")
         +b.HEAD
             meta(charset="utf-8")
             meta(name="viewport" content="initial-scale=1.0, width=device-width")
             link(rel="stylesheet" type="text/css" href="index.css")
-            link(rel="stylesheet" type="text/css" href="./normalize.css/normalize.css")
             link(rel="stylesheet" href="../../assets/fonts/Montserrat-Bold/fonts.css" type="text/css" charset="utf-8")
             link(rel="stylesheet" href="../../assets/fonts/Montserrat-Regular/fonts.css" type="text/css" charset="utf-8")
             link(rel="stylesheet" href="../../assets/fonts/Quicksand-Bold/fonts.css" type="text/css" charset="utf-8")
@@ -18,8 +16,20 @@ doctype html
             link(type="text/javascript" src="./jquery.js")
             link(type="text/javascript" src="./jquery.maskedinput.min.js")
             link(rel="shortcut icon" href="../../components/logo/logo.svg" type="image/svg")
-            title Search page
+            title Landing page
         +b.BODY.body
-            //+landing({})
-            +search({})
-            //+ui
+            +b.landing
+                +standart-nav-bar({state:""})
+                +e.SECTION.search
+                    +find-room
+                    +e.comment Лучшие номера для вашей работы, отдыха и просто вдохновения
+                +footer-widgets-copyright
+
+mixin landing(params)
+    +b.landing
+        +standart-nav-bar({state:""})
+        +e.SECTION.search
+            +find-room
+            +e.comment Лучшие номера для вашей работы, отдыха и просто вдохновения
+        +footer-widgets-copyright
+

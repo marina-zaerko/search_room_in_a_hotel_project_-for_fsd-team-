@@ -2,10 +2,41 @@ include ../../components/colors-types/colors-types.pug
 include ../../components/form-elements/form-elements.pug
 include ../../components/cards/cards.pug
 include ../../components/headers-footers/headers-footers.pug
+include ../../../bemto/bemto.pug
+include ../landing/landing.pug
 
 mixin ui
     +b.ui
-        //+headers-footers
-        +cards
         //+colors-types
-        //+form-elements
+        //+e.margin
+        +form-elements
+        //+e.margin
+        //+cards
+        //+e.margin
+        //+headers-footers
+
+mixin ui-page
+    doctype html
+    +b.HTML.html(lang="ru")
+        +b.HEAD
+            meta(charset="utf-8")
+            meta(name="viewport" content="initial-scale=1.0, width=device-width")
+            link(rel="stylesheet" type="text/css" href="index.css")
+            link(rel="stylesheet" href="../../assets/fonts/Montserrat-Bold/fonts.css" type="text/css" charset="utf-8")
+            link(rel="stylesheet" href="../../assets/fonts/Montserrat-Regular/fonts.css" type="text/css" charset="utf-8")
+            link(rel="stylesheet" href="../../assets/fonts/Quicksand-Bold/fonts.css" type="text/css" charset="utf-8")
+            link(rel="stylesheet" href="../../assets/fonts/Quicksand-Regular/fonts.css" type="text/css" charset="utf-8")
+            link(type="text/javascript" src="./index.js")
+            link(type="text/javascript" src="./jquery.js")
+            link(type="text/javascript" src="./jquery.maskedinput.min.js")
+            link(rel="shortcut icon" href="../../components/logo/logo.svg" type="image/svg")
+            title UI for test
+        +b.BODY.body
+            +b.ui
+                //+colors-types
+                //+e.margin
+                +form-elements
+                //+e.margin
+                //+cards
+                //+e.margin
+                //+headers-footers

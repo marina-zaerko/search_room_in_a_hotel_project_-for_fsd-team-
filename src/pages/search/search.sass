@@ -1,0 +1,130 @@
+
+.search__main
+    width: 100%
+    min-width: 380px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    box-sizing: border-box
+    padding-right: 140px
+    padding-left: 140px
+    padding-top: 30px
+
+.search__params
+    width: 266px
+
+
+.search__checkbox-first
+    margin-bottom: 10.56px
+    
+.search__checkbox-second
+    margin-bottom: 10px
+
+.search__rich-checkbox-element 
+    margin-bottom: 10px
+
+.search__el-1
+    margin-bottom: 19.5px
+
+.search__el-2
+    margin-bottom: 30px
+
+.search__el-3
+    margin-bottom: 10.5px
+
+.search__el-4
+    margin-bottom: 30px
+
+.search__el-5
+    margin-bottom: 30.88px
+    width: 222px
+
+.search__el-6
+    margin-bottom: 30.44px
+
+.search__el-7
+    margin-bottom: 30px
+    
+.search__comment
+    @extend %montserrat-regular-search-comment
+
+.search__title-params
+    @extend %montserrat-bold
+    margin-bottom: 16px
+
+.search__result
+    width: 846px
+    display: flex
+    flex-direction: column
+
+
+.search__title-box
+    display: flex
+    justify-content: space-between
+    align-items: baseline
+    margin-bottom: 20px
+
+.search__params-button
+    display: none
+
+.search__title
+    @extend %quicksand-bold-search
+
+
+.search__rooms
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    justify-content: flex-end
+    
+.search__room
+    margin-bottom: 20px
+    margin-right: 12px
+
+.search__pagination
+    display: flex
+    justify-content: center
+    margin-top: 20px
+    margin-bottom: 69px
+
+.search__margin
+    width: 100%
+    min-width: 380px
+    height: 1px
+    box-sizing: border-box
+    background: #E5E5E5
+
+@media screen and ( max-width: 1410px )
+    .search__main
+        justify-content: center
+
+    .search__params-button
+        display: flex
+
+    .search__params
+        display: none
+
+@media screen and (max-width: 1170px)
+    .search__main
+        padding-right: 50px
+        padding-left: 50px
+
+@media screen and (max-width: 946px)
+    .search__result
+        width: 564px
+
+@media screen and (max-width: 664px)
+    .search__main
+        padding-right: 0px
+        padding-left: 0px
+
+@media screen and (max-width: 620px)
+    .search__result
+        width: 300px
+
+    .search__title-box
+        flex-direction: column
+
+    .search__params-button
+        margin-top: 20px

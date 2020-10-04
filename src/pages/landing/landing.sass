@@ -1,0 +1,44 @@
+.landing__search
+    width: 100%
+    min-width: 380px
+    height: 830px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: flex-start
+    flex-wrap: wrap
+    box-sizing: border-box
+    padding-top: 70px
+    padding-bottom: 18px
+    padding-left: 140px
+    padding-right: 134px
+    background: url('../../pages/landing/landing-background.png') no-repeat
+    background-size: cover
+
+.landing__comment
+    align-self: flex-end
+    @extend %montserrat-regular
+    text-align: right
+    width: 297px
+
+@media screen and (max-width: 1170px)
+    .landing__search
+        padding-left: 50px
+        padding-right: 50px
+        padding-top: 50px
+        height: 600px
+
+@media screen and (max-width: 779px)
+    .landing__search
+        flex-direction: column
+
+@media screen and (max-width: 480px)
+    .landing__search
+        padding-left: 10px
+        padding-right: 10px
+        align-items: center
+
+@media screen and (max-width: 380px)
+    .landing__search
+        padding-left: 0px
+        padding-right: 0px
