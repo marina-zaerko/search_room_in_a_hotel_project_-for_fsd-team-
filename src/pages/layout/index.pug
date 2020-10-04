@@ -1,6 +1,7 @@
 include ../../../bemto/bemto.pug
 include ../landing/landing.pug
 include ../search/search.pug
+include ../room-details/room-details.pug
 include ../ui/ui.pug
 
 doctype html
@@ -21,5 +22,6 @@ doctype html
             title Search page
         +b.BODY.body
             //+landing({})
-            +search({})
+            //+search({})
             //+ui
+            +room-details

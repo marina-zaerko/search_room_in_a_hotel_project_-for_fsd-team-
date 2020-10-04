@@ -1,0 +1,42 @@
+mixin diagram(params)
+    - var sum = params.n1 + params.n2 + params.n3 + params.n4 + params.n5
+    - var p_cent_5 = (params.n5/sum)*100-1
+    - var p_cent_4 = (params.n4/sum)*100-1
+    - var p_cent_3 = (params.n3/sum)*100-1
+    - var p_cent_21 = (params.n2/sum)*100 + (params.n1/sum)*100 -1
+    
+    +b.diagram
+        +e.SVG.chart(width="120" height="120" viewBox="0 0 33 33")
+            +e.DEFS
+                +e.LINEARGRADIENT.grad-1(x1="0" x2="0" y1="0" y2="1" id="diagram__grad-1")
+                    +e.STOP(offset="0%" stop-color="#FFE39C")
+                    +e.STOP(offset="100%" stop-color="#FFBA9C")
+                +e.LINEARGRADIENT.grad-2(x1="0" x2="0" y1="0" y2="1" id="diagram__grad-2")
+                    +e.STOP(offset="0%" stop-color="#6FCF97")
+                    +e.STOP(offset="100%" stop-color="#66D2EA")
+                +e.LINEARGRADIENT.grad-3(x1="0" x2="0" y1="0" y2="1" id="diagram__grad-3")
+                    +e.STOP(offset="0%" stop-color="#BC9CFF")
+                    +e.STOP(offset="100%" stop-color="#8BA4F9")
+                +e.LINEARGRADIENT.grad-4(x1="0" x2="0" y1="0" y2="1" id="diagram__grad-4")
+                    +e.STOP(offset="0%" stop-color="#919191")
+                    +e.STOP(offset="100%" stop-color="#3D497s5")
+            if(p_cent_5 > 0)
+                +e.CIRCLE.unit(r="15.9" cx="50%" cy="50%" stroke="url(#diagram__grad-1)" stroke-dasharray= p_cent_5 + " 100")
+                +e.CIRCLE.unit(r="15.9" cx="50%" cy="50%" stroke="white" stroke-dasharray= "1 100"  stroke-dashoffset=-p_cent_5)
+            if(p_cent_4 > 0)
+                +e.CIRCLE.unit(r="15.9" cx="50%" cy="50%" stroke="url(#diagram__grad-2)" stroke-dasharray= p_cent_4 + " 100" stroke-dashoffset=-p_cent_5-1)
+                +e.CIRCLE.unit(r="15.9" cx="50%" cy="50%" stroke="white" stroke-dasharray= "1 100" stroke-dashoffset=-p_cent_5-1-p_cent_4)
+            if(p_cent_3 > 0)
+                +e.CIRCLE.unit(r="15.9" cx="50%" cy="50%" stroke="url(#diagram__grad-3)" stroke-dasharray= p_cent_3 + " 100" stroke-dashoffset=-p_cent_5-2-p_cent_4)
+                +e.CIRCLE.unit(r="15.9" cx="50%" cy="50%" stroke="white" stroke-dasharray= "1 100" stroke-dashoffset=-p_cent_5-2-p_cent_4-p_cent_3)
+            if(p_cent_21 > 0)
+                +e.CIRCLE.unit(r="15.9" cx="50%" cy="50%" stroke="url(#diagram__grad-4)" stroke-dasharray= p_cent_21 + " 100" stroke-dashoffset=-p_cent_5-3-p_cent_4-p_cent_3)
+                +e.CIRCLE.unit(r="15.9" cx="50%" cy="50%" stroke="white" stroke-dasharray= "1 100" stroke-dashoffset=-p_cent_5-3-p_cent_4-p_cent_3-p_cent_21)
+        +e.title
+                +e.num #{sum}
+                +e.text голосов
+        +e.UL.list
+            +e.LI.item Великолепно
+            +e.LI.item Хорошо
+            +e.LI.item Удовлетворительно
+            +e.LI.item Разочарован

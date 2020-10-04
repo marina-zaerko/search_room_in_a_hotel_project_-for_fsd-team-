@@ -4,6 +4,7 @@
 .body {
   margin: 0;
   padding: 0;
+  min-width: 380px;
 }
 
 .ui {
@@ -68,7 +69,6 @@
 }
 .search__main {
   width: 100%;
-  min-width: 380px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -258,6 +258,16 @@
   font-size: 24px;
 }
 
+.diagram__num {
+  font-family: "Conv_Quicksand-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #BC9CFF;
+  letter-spacing: -0.5px;
+}
+
 .colors__color-name {
   font-family: "Conv_Quicksand-Regular", Arial, sans-serif;
   font-style: normal;
@@ -284,7 +294,7 @@
   text-transform: uppercase;
 }
 
-.room__class, .summary__class {
+.room__class, .summary__class, .diagram__text {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -303,7 +313,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .enter__comment, .reg-user__comment, .calendar__table, .footer-creative__copyright-text, .footer-widgets-copyright__copyright-text, .footer-widgets-copyright__text, .colors-types__body-text, .colors-types__body-title, .colors-types__h3-title, .colors-types__h2-title, .colors-types__h1-title, .landing__comment {
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .enter__comment, .reg-user__comment, .calendar__table, .footer-creative__copyright-text, .footer-widgets-copyright__copyright-text, .footer-widgets-copyright__text, .diagram__item, .colors-types__body-text, .colors-types__body-title, .colors-types__h3-title, .colors-types__h2-title, .colors-types__h1-title, .landing__comment {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -434,7 +444,7 @@
   text-transform: uppercase;
 }
 
-.room__class, .summary__class {
+.room__class, .summary__class, .diagram__text {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -453,7 +463,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .enter__comment, .reg-user__comment, .calendar__table, .footer-creative__copyright-text, .footer-widgets-copyright__copyright-text, .footer-widgets-copyright__text, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text {
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .enter__comment, .reg-user__comment, .calendar__table, .footer-creative__copyright-text, .footer-widgets-copyright__copyright-text, .footer-widgets-copyright__text, .diagram__item, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -729,7 +739,7 @@
   text-transform: uppercase;
 }
 
-.room__class, .summary__class {
+.room__class, .summary__class, .diagram__text {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -748,7 +758,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .enter__comment, .reg-user__comment, .calendar__table, .footer-creative__copyright-text, .footer-widgets-copyright__copyright-text, .footer-widgets-copyright__text, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text {
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .enter__comment, .reg-user__comment, .calendar__table, .footer-creative__copyright-text, .footer-widgets-copyright__copyright-text, .footer-widgets-copyright__text, .diagram__item, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -846,6 +856,72 @@
 .headers-footers__creative {
   width: 100%;
   margin-bottom: 40px;
+}
+
+/*	==========================================================================	*/
+/*  DIAGRAM                                                                   	*/
+/*	==========================================================================	*/ 
+.diagram {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 311px;
+}
+
+.diagram__title {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin-left: 28px;
+}
+
+.diagram__unit {
+  fill: none;
+  stroke-width: 1.3;
+}
+
+.diagram__list {
+  margin-left: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: -3px;
+}
+
+.diagram__item {
+  position: relative;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+.diagram__item::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 8px;
+}
+
+.diagram__item:nth-child(1)::before {
+  background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+}
+
+.diagram__item:nth-child(2)::before {
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+
+.diagram__item:nth-child(3)::before {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.diagram__item:nth-child(4)::before {
+  background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
 }
 
 /*	==========================================================================	*/
@@ -1230,7 +1306,17 @@
   font-size: 24px;
 }
 
-.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .enter__comment, .reg-user__comment, .calendar__table, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text {
+.diagram__num {
+  font-family: "Conv_Quicksand-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #BC9CFF;
+  letter-spacing: -0.5px;
+}
+
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .enter__comment, .reg-user__comment, .calendar__table, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .diagram__item, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1285,7 +1371,7 @@
   text-transform: uppercase;
 }
 
-.room__class, .summary__class {
+.room__class, .summary__class, .diagram__text {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1802,7 +1888,7 @@
   text-transform: uppercase;
 }
 
-.summary__class, .room__class {
+.diagram__text, .summary__class, .room__class {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1821,7 +1907,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment {
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .bullet-list__item, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .diagram__item, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1927,6 +2013,16 @@
   font-size: 24px;
 }
 
+.diagram__num {
+  font-family: "Conv_Quicksand-Bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #BC9CFF;
+  letter-spacing: -0.5px;
+}
+
 .colors__color-name {
   font-family: "Conv_Quicksand-Regular", Arial, sans-serif;
   font-style: normal;
@@ -1998,7 +2094,7 @@
   text-transform: uppercase;
 }
 
-.summary__class, .room__class {
+.diagram__text, .summary__class, .room__class {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -2017,7 +2113,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item {
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .text-field__input, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .diagram__item, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -2134,7 +2230,7 @@
   text-transform: uppercase;
 }
 
-.summary__class, .room__class {
+.diagram__text, .summary__class, .room__class {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -2153,7 +2249,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input {
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .dropdown__count, .dropdown__select, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .diagram__item, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -2340,7 +2436,7 @@
   text-transform: uppercase;
 }
 
-.summary__class, .room__class {
+.diagram__text, .summary__class, .room__class {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -2359,7 +2455,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count {
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .date-dropdown__input, .date-dropdown__hover-text, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .diagram__item, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -2459,7 +2555,7 @@
   text-transform: uppercase;
 }
 
-.summary__class, .room__class {
+.diagram__text, .summary__class, .room__class {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -2478,7 +2574,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input {
+.comment__message, .comment__time, .icon-text__content, .filter-date-dropdown__input, .filter-date-dropdown__hover-text, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .diagram__item, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -2577,7 +2673,7 @@
   text-transform: uppercase;
 }
 
-.summary__class, .room__class {
+.diagram__text, .summary__class, .room__class {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -2636,7 +2732,7 @@
   text-transform: uppercase;
 }
 
-.summary__class, .room__class {
+.diagram__text, .summary__class, .room__class {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -2832,7 +2928,7 @@
   background: #ffffff;
 }
 
-.comment__message, .comment__time, .icon-text__content, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
+.comment__message, .comment__time, .icon-text__content, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .diagram__item, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -2972,7 +3068,7 @@
   text-transform: uppercase;
 }
 
-.summary__class, .room__class {
+.diagram__text, .summary__class, .room__class {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -2991,7 +3087,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.comment__message, .comment__time, .icon-text__content, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
+.comment__message, .comment__time, .icon-text__content, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .diagram__item, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -3142,7 +3238,7 @@
   text-transform: uppercase;
 }
 
-.summary__class, .room__class {
+.diagram__text, .summary__class, .room__class {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -3161,7 +3257,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.comment__message, .comment__time, .icon-text__content, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
+.comment__message, .comment__time, .icon-text__content, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .diagram__item, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -3251,7 +3347,7 @@
   text-transform: uppercase;
 }
 
-.summary__class, .room__class {
+.diagram__text, .summary__class, .room__class {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -3270,7 +3366,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.comment__message, .comment__time, .icon-text__content, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
+.comment__message, .comment__time, .icon-text__content, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .diagram__item, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -3505,7 +3601,7 @@
   text-transform: uppercase;
 }
 
-.summary__class, .room__class {
+.diagram__text, .summary__class, .room__class {
   font-family: "Conv_Montserrat-Bold", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -3524,7 +3620,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.comment__message, .comment__time, .icon-text__content, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
+.comment__message, .comment__time, .icon-text__content, .landing__comment, .colors-types__h1-title, .colors-types__h2-title, .colors-types__h3-title, .colors-types__body-title, .colors-types__body-text, .diagram__item, .footer-widgets-copyright__text, .footer-widgets-copyright__copyright-text, .footer-creative__copyright-text, .calendar__table, .reg-user__comment, .enter__comment, .bullet-list__item, .text-field__input, .dropdown__select, .dropdown__count, .date-dropdown__hover-text, .date-dropdown__input, .filter-date-dropdown__hover-text, .filter-date-dropdown__input {
   font-family: "Conv_Montserrat-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
